@@ -1,12 +1,10 @@
 package dao;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 
 import entities.*;
+
 import static dao.DBConnection.*;
 
 
@@ -17,17 +15,38 @@ public class DAO {
         try {
             ArrayList<User> userList = new ArrayList<User>();
             ResultSet resultSet = getResultSet(getStatement(getConnection()), usersSQLSelect);
+            System.out.println("Getuserlistfromdb после resultseta");
             while (resultSet.next()) {
-                User user = new User();
-                user.setUserID(resultSet.getInt("userID"));
-                user.setUserLogin(resultSet.getString("userLogin"));
-                user.setUserPassword(resultSet.getString("userPassword"));
-                user.setUserName(resultSet.getString("userName"));
-                user.setAdmin(resultSet.getBoolean("isAdmin"));
+
+                int userID = resultSet.getInt(1);
+                String userLogin = resultSet.getString(2);
+                String userPass = resultSet.getString(3);
+                String userName = resultSet.getString(4);
+                boolean isAdm = resultSet.getBoolean(5);
+                ArrayList<Activity> actList = new ArrayList<Activity>();
                 for (Activity actTemp : getActListFromDB()) {
-                    if (actTemp.getUserID() == user.getUserID())
-                        user.addActToUserList(actTemp);
+                    if (actTemp.getUserID() == userID) {
+                        actList.add(actTemp);
+                    }
                 }
+                User user = new User(
+                        userID,
+                        userLogin,
+                        userPass,
+                        userName,
+                        isAdm,
+                        actList
+                );
+                // this.userID = userID;
+                //        this.userLogin = userLogin;
+                //        this.userPassword = userPassword;
+                //        this.userName = userName;
+                //        this.isAdmin = isAdmin;
+//                user.setUserID(resultSet.getInt(1));
+//                user.setUserLogin(resultSet.getString(2));
+//                user.setUserPassword(resultSet.getString(3));
+//                user.setUserName(resultSet.getString(4));
+//                user.setAdmin(resultSet.getBoolean(5));
                 userList.add(user);
             }
             return userList;
@@ -44,11 +63,11 @@ public class DAO {
             ArrayList<Activity> activities = new ArrayList<Activity>();
             while (resultSet.next()) {
                 activities.add(new Activity(
-                        resultSet.getInt("actID"),
-                        resultSet.getString("actName"),
-                        resultSet.getLong("actDuration"),
-                        resultSet.getInt("userID"),
-                        resultSet.getInt("actStatus")));
+                        resultSet.getInt(1),
+                        resultSet.getString(2),
+                        resultSet.getLong(3),
+                        resultSet.getInt(4),
+                        resultSet.getInt(5)));
             }
             return activities;
         } catch (SQLException e) {

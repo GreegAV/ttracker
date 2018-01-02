@@ -6,8 +6,13 @@ import java.util.Properties;
 
 public class DBConnection {
     public static Statement getStatement(Connection connection) {
+        Statement stm1 = null;
         try {
-            return connection.createStatement();
+            if (connection != null) {
+                return stm1 = connection.createStatement();
+            }
+//TODO Exception NoStatment
+            return null;
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -71,7 +76,7 @@ public class DBConnection {
             String dbURL = "jdbc:mysql://localhost:3306/";
             String dbName = "timetrack";
             String dbConParams = "?useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-            String dbConUrl = dbURL + dbName + "?" + dbConParams;
+            String dbConUrl = dbURL + dbName + dbConParams;
 
 //            String dbUser = properties.getProperty("user");
 //            String dbPassword = properties.getProperty("password");
@@ -79,16 +84,13 @@ public class DBConnection {
 //            String dbName = properties.getProperty("dbname");
 //            String dbConParams = properties.getProperty("dbconparams");
 //            String dbConUrl=dbURL+dbName+"?"+dbConParams;
-
             //  Get a connection to database
             Class.forName("com.mysql.jdbc.Driver");
-            System.out.println("++++++@++@+@+@+@+@+@+@++@+@+@++@++@+@++@+@+@++@+@@++@");
             connection = DriverManager.getConnection(dbConUrl, dbUser, dbPassword);
             if (connection != null) {
                 System.out.println("\nConnection successful!\n");
                 return connection;
-            }
-
+            } else System.out.println("Connection failed!");
         } catch (Exception e) {
             e.printStackTrace();
         }
