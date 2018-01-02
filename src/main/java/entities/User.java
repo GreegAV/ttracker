@@ -97,12 +97,12 @@ public class User implements Serializable, UserActions {
 
     @Override
     public String toString() {
-        String result = "";
+        String result = "\n\r";
         result += "ID: " + this.userID + "\t" +
                 "Login: " + this.userLogin + "\t" +
                 "Pass: " + this.userPassword + "\t" +
                 "Name: " + this.userName + "\t" +
-                "Admin: " + this.isAdmin + "\n\r" +
+                "Admin: " + this.isAdmin + "\t" +
                 "Act: " + this.actList;
         return result;
     }
