@@ -26,6 +26,20 @@
         </sourceRoots>
       </configuration>
     </facet>
+    <facet type="web" name="Web3">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/../ttracker/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/../ttracker/web" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/../ttracker/src/main/resources" />
+          <root url="file://$MODULE_DIR$/../ttracker/src/main/java" />
+        </sourceRoots>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/../ttracker/target/classes" />
@@ -41,5 +55,7 @@
     <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />
     <orderEntry type="library" name="Maven: taglibs:standard:1.1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.taglibs:taglibs-standard-spec:1.2.5" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.8-dmr" level="project" />
   </component>
 </module>

@@ -9,7 +9,7 @@
 <c:choose>
     <table border="1">
 
-        <c:forEach var="activity" items="${list}">
+        <c:forEach var="activity" items="${activities}">
             <tr>
                 <td><c:out value="${activity.getActID()}"/></td>
                 <td><c:out value="${activity.actName()}"/></td>

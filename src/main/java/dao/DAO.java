@@ -1,23 +1,21 @@
 package dao;
 
-import entities.*;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-
+import entities.*;
 import static dao.DBConnection.*;
 
 
 public class DAO {
 
     public static ArrayList<User> getUserListFromDB() {
-        ArrayList<User> userList = new ArrayList<User>();
         String usersSQLSelect = "select * from users";
         try {
+            ArrayList<User> userList = new ArrayList<User>();
             ResultSet resultSet = getResultSet(getStatement(getConnection()), usersSQLSelect);
             while (resultSet.next()) {
                 User user = new User();
@@ -40,10 +38,10 @@ public class DAO {
     }
 
     public static ArrayList<Activity> getActListFromDB() {
-        ArrayList<Activity> activities = new ArrayList<Activity>();
         String actSQLSelect = "select * from activities";
         try {
             ResultSet resultSet = getResultSet(getStatement(getConnection()), actSQLSelect);
+            ArrayList<Activity> activities = new ArrayList<Activity>();
             while (resultSet.next()) {
                 activities.add(new Activity(
                         resultSet.getInt("actID"),
@@ -61,7 +59,7 @@ public class DAO {
 
     public void updateActivity(Activity activity) {
         final String SQL = "UPDATE timetrack.activities  SET "
-                + "actDuration=?,  WHERE"   + "actID=? ";
+                + "actDuration=?,  WHERE" + "actID=? ";
 
         try (Connection connection = getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL)) {

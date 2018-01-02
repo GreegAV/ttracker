@@ -37,6 +37,19 @@
             <artifactId>standard</artifactId>
             <version>1.1.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.taglibs/taglibs-standard-spec -->
+        <dependency>
+            <groupId>org.apache.taglibs</groupId>
+            <artifactId>taglibs-standard-spec</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.8-dmr</version>
+        </dependency>
+
 
 
     </dependencies>

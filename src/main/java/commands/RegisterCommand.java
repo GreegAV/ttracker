@@ -1,9 +1,13 @@
 package commands;
 
 import controller.ICommand;
+import entities.Activity;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
+
+import static dao.DAO.getActListFromDB;
 
 public class RegisterCommand implements ICommand {
 
@@ -45,6 +49,9 @@ public class RegisterCommand implements ICommand {
 //            page = "/pages/error.jsp";
 //        }
         System.out.println(login+"--------------"+password);
+        List<Activity> activities = getActListFromDB();
+        System.out.println(activities);
+        request.setAttribute("activities", activities);
         return "/home.jsp";
     }
 }
