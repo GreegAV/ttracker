@@ -15,18 +15,19 @@ public class Activity implements Serializable {
     public Activity() {
     }
 
-    public Activity(int actID, String actName, long actDuration, int userID, int actStatus) {
+    public Activity(int actID, String actName, long actDuration, int actStatus, int userID) {
         this.actID = actID;
         this.actName = actName;
         this.actDuration = actDuration;
         this.actStatus = actStatus;
         this.userID = userID;
-        this.userName=getUserNameByID(userID);
+        this.userName = "";
     }
 
-    public String getUserName(){
+    public String getUserName() {
         return userName;
     }
+
     public int getActStatus() {
         return actStatus;
     }
@@ -75,7 +76,7 @@ public class Activity implements Serializable {
     }
 
     public String getActNameByID(int actID) {
-        for (Activity activity: DBOperation.activityList) {
+        for (Activity activity : DBOperation.activityList) {
             if (activity.actID == actID) return activity.actName;
         }
         return "";
@@ -85,7 +86,7 @@ public class Activity implements Serializable {
         this.actDuration += time;
     }
 
-    private String getUserNameByID(int userID){
+    private String getUserNameByID(int userID) {
         for (User user : DBOperation.userList) {
             if (user.getUserID() == userID) return user.getUserName();
         }
@@ -94,12 +95,12 @@ public class Activity implements Serializable {
 
     @Override
     public String toString() {
-        String result="";
-        result+="ID: "+this.actID+" ";
-        result+="Name: "+this.actName+" ";
-        result+="Time: "+this.actDuration+" ";
-        result+="Status: "+this.actStatus+" ";
-        result+="User: "+this.userName+" ";
+        String result = "\n\r";
+        result += "ID: " + this.actID + " ";
+        result += "Name: " + this.actName + " ";
+        result += "Time: " + this.actDuration + " ";
+        result += "Status: " + this.actStatus + " ";
+        result += "User: " + this.userName ;
         return result;
     }
 }

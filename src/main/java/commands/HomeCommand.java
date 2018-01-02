@@ -49,7 +49,6 @@ public class HomeCommand implements ICommand {
 
             out.close();
         List<Activity> activities = DBOperation.activityList;
-        System.out.println(activities);
         request.setAttribute("activities", activities);
         return "/home.jsp";
     }

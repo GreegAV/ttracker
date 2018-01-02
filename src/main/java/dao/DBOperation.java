@@ -26,29 +26,11 @@ public class DBOperation {
 
                 ArrayList<Activity> actList = new ArrayList<Activity>();
                 for (Activity actTemp : activityList) {
-                    System.out.println(actTemp.getActID() + "\t" + actTemp.getActName());
                     if (actTemp.getUserID() == userID) {
                         actList.add(actTemp);
                     }
                 }
-                User user = new User(
-                        userID,
-                        userLogin,
-                        userPass,
-                        userName,
-                        isAdm,
-                        actList
-                );
-                // this.userID = userID;
-                //        this.userLogin = userLogin;
-                //        this.userPassword = userPassword;
-                //        this.userName = userName;
-                //        this.isAdmin = isAdmin;
-//                user.setUserID(resultSet.getInt(1));
-//                user.setUserLogin(resultSet.getString(2));
-//                user.setUserPassword(resultSet.getString(3));
-//                user.setUserName(resultSet.getString(4));
-//                user.setAdmin(resultSet.getBoolean(5));
+                User user = new User(userID, userLogin, userPass, userName, isAdm, actList);
                 userList.add(user);
             }
             DBConnection.closeResultSet(resultSet);
@@ -69,13 +51,12 @@ public class DBOperation {
             ResultSet resultSet = DBConnection.getResultSet(statement, actSQLSelect);
             ArrayList<Activity> activities = new ArrayList<Activity>();
             while (resultSet.next()) {
-                Activity act = new Activity(
-                        resultSet.getInt(1),    //actID
-                        resultSet.getString(2), //actName
-                        resultSet.getLong(3),   // actDuration
-                        resultSet.getInt(4),    //actMarked
-                        resultSet.getInt(5));   //actUserID
-                System.out.println(act);
+                int actID = resultSet.getInt(1);   //actID
+                String actName = resultSet.getString(2); //actName
+                long actTime = resultSet.getLong(3);   // actDuration
+                int actMark = resultSet.getInt(4);    //actMarked
+                int actUser = resultSet.getInt(5);   //actUserID
+                Activity act = new Activity(actID, actName, actTime, actMark, actUser);   //actUserID
                 activities.add(act);
             }
             resultSet.close();

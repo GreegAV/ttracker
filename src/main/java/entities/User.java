@@ -81,26 +81,29 @@ public class User implements Serializable, UserActions {
 
     public User getUserByID(int userID) {
         for (User user : DBOperation.userList) {
-            if (user.userID == userID) return user;
+            if (user.userID == userID)
+                return user;
         }
         return null;
     }
 
     public String getUserNameByID(int userID) {
         for (User user : DBOperation.userList) {
-            if (user.userID == userID) return user.userName;
+            if (user.userID == userID)
+                return user.userName;
         }
         return null;
     }
 
     @Override
     public String toString() {
-        String result="";
-        result+="ID: "+this.userID+ "\t" +
-                "Login: "+this.userLogin + "\t" +
-                "Pass: "+this.userPassword + "\t" +
-                "Name: "+this.userName + "\t" +
-                "Admin: "+this.isAdmin;
+        String result = "";
+        result += "ID: " + this.userID + "\t" +
+                "Login: " + this.userLogin + "\t" +
+                "Pass: " + this.userPassword + "\t" +
+                "Name: " + this.userName + "\t" +
+                "Admin: " + this.isAdmin + "\n\r" +
+                "Act: " + this.actList;
         return result;
     }
 }
