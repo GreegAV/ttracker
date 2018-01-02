@@ -44,6 +44,7 @@ public class RegisterCommand implements ICommand {
 //        } else {
 //            page = "/pages/error.jsp";
 //        }
+        System.out.println(login+"--------------"+password);
         return "/home.jsp";
     }
 }

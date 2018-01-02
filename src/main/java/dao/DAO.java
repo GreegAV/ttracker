@@ -1,13 +1,13 @@
 package dao;
 
-import entities.Activity;
-import entities.User;
+import entities.*;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+
 
 import static dao.DBConnection.*;
 

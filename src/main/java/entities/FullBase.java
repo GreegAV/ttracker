@@ -1,4 +1,4 @@
-//package entities;
+//package ttracker.entities;
 //
 //import dao.DAO;
 //

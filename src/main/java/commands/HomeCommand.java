@@ -48,7 +48,7 @@ public class HomeCommand implements ICommand {
             out.print("<a href='ViewServlet?page=3'>3</a> ");
 
             out.close();
-
+        request.setAttribute("activities", list);
         return "/home.jsp";
     }
 }

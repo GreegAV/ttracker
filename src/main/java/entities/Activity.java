@@ -1,11 +1,10 @@
 package entities;
 
-import actions.ActivityActions;
 import dao.DAO;
 
 import java.io.Serializable;
 
-public class Activity implements Serializable, ActivityActions {
+public class Activity implements Serializable {
     private int actID;
     private String actName;
     private long actDuration;
@@ -76,7 +75,7 @@ public class Activity implements Serializable, ActivityActions {
     }
 
     public String getActNameByID(int actID) {
-        for (Activity activity : DAO.getActListFromDB()) {
+        for (Activity activity:DAO.getActListFromDB()) {
             if (activity.actID == actID) return activity.actName;
         }
         return "";

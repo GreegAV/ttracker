@@ -7,8 +7,8 @@
           <root url="file://$MODULE_DIR$/../ttracker/web" relative="/" />
         </webroots>
         <sourceRoots>
-          <root url="file://$MODULE_DIR$/../ttracker/src/main/java" />
           <root url="file://$MODULE_DIR$/../ttracker/src/main/resources" />
+          <root url="file://$MODULE_DIR$/../ttracker/src/main/java" />
         </sourceRoots>
       </configuration>
     </facet>
@@ -21,24 +21,23 @@
           <root url="file://$MODULE_DIR$/../ttracker/web" relative="/WEB-INF" />
         </webroots>
         <sourceRoots>
-          <root url="file://$MODULE_DIR$/../ttracker/src/main/java" />
           <root url="file://$MODULE_DIR$/../ttracker/src/main/resources" />
+          <root url="file://$MODULE_DIR$/../ttracker/src/main/java" />
         </sourceRoots>
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/../ttracker/target/classes" />
     <output-test url="file://$MODULE_DIR$/../ttracker/target/test-classes" />
     <content url="file://$MODULE_DIR$/../ttracker">
-      <sourceFolder url="file://$MODULE_DIR$/../ttracker/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../ttracker/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../ttracker/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../ttracker/src/main/java" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/../ttracker/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="taglibs:standard:1.1.2" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />
     <orderEntry type="library" name="Maven: taglibs:standard:1.1.2" level="project" />
