@@ -1,6 +1,7 @@
 package commands;
 
 import controller.ICommand;
+import dao.DBOperation;
 import entities.Activity;
 
 import javax.servlet.ServletException;
@@ -10,7 +11,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-import static dao.DAO.getActListFromDB;
 
 public class HomeCommand implements ICommand {
     @Override
@@ -27,7 +27,7 @@ public class HomeCommand implements ICommand {
                 pageid=pageid-1;
                 pageid=pageid*total+1;
             }
-            List<Activity> list= getActListFromDB();
+            List<Activity> list= DBOperation.activityList;
 
             out.print("<h1>Page No: "+spageid+"</h1>");
             out.print("<table border='1' cellpadding='5' width='60%'>");
@@ -48,7 +48,7 @@ public class HomeCommand implements ICommand {
             out.print("<a href='ViewServlet?page=3'>3</a> ");
 
             out.close();
-        List<Activity> activities = getActListFromDB();
+        List<Activity> activities = DBOperation.activityList;
         System.out.println(activities);
         request.setAttribute("activities", activities);
         return "/home.jsp";

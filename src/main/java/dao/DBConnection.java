@@ -5,19 +5,6 @@ import java.sql.*;
 import java.util.Properties;
 
 public class DBConnection {
-    public static Statement getStatement(Connection connection) {
-        Statement stm1 = null;
-        try {
-            if (connection != null) {
-                return stm1 = connection.createStatement();
-            }
-//TODO Exception NoStatment
-            return null;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
 
     public static ResultSet getResultSet(Statement statement, String sqlSelect) {
         try {
@@ -28,34 +15,15 @@ public class DBConnection {
         return null;
     }
 
-    public static void closeResultSet(ResultSet resultSet) {
-        if (resultSet != null) {
-            try {
-                resultSet.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
+    public static Statement getStatement(Connection connection) {
+        try {
+            if (connection != null) {
+                return connection.createStatement();
             }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
-    }
-
-    public static void closeStatement(Statement statement) {
-        if (statement != null) {
-            try {
-                statement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    public static void closeConnection(Connection connection) {
-        if (connection != null) {
-            try {
-                connection.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
+        return null;
     }
 
     public static Connection getConnection() {
@@ -95,6 +63,36 @@ public class DBConnection {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public static void closeResultSet(ResultSet resultSet) {
+        if (resultSet != null) {
+            try {
+                resultSet.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static void closeStatement(Statement statement) {
+        if (statement != null) {
+            try {
+                statement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static void closeConnection(Connection connection) {
+        if (connection != null) {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
 }

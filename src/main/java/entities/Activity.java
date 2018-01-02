@@ -1,6 +1,6 @@
 package entities;
 
-import dao.DAO;
+import dao.DBOperation;
 
 import java.io.Serializable;
 
@@ -68,14 +68,14 @@ public class Activity implements Serializable {
     }
 
     public Activity getActByID(int actID) {
-        for (Activity activity : DAO.getActListFromDB()) {
+        for (Activity activity : DBOperation.activityList) {
             if (activity.actID == actID) return activity;
         }
         return null;
     }
 
     public String getActNameByID(int actID) {
-        for (Activity activity:DAO.getActListFromDB()) {
+        for (Activity activity: DBOperation.activityList) {
             if (activity.actID == actID) return activity.actName;
         }
         return "";
@@ -86,7 +86,7 @@ public class Activity implements Serializable {
     }
 
     private String getUserNameByID(int userID){
-        for (User user : DAO.getUserListFromDB()) {
+        for (User user : DBOperation.userList) {
             if (user.getUserID() == userID) return user.getUserName();
         }
         return "";
