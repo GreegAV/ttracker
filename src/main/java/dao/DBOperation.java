@@ -7,10 +7,29 @@ import entities.*;
 
 
 public class DBOperation {
+
     public static ArrayList<Activity> activityList = getActListFromDB();
     public static ArrayList<User> userList = getUserListFromDB();
+//    private static ArrayList<User> simpleUserList = getSimpleUserListFromDB();
 
     private static ArrayList<User> getUserListFromDB() {
+        ArrayList<User> fullUserList = new ArrayList<User>();
+//        for (User tempUser : simpleUserList) {
+        for (User tempUser : getSimpleUserListFromDB()) {
+            for (Activity actTemp : activityList) {
+                if (actTemp.getUserID() == tempUser.getUserID()) {
+//                    System.out.println("ActID: "+actTemp.getUserID() +
+//                                        " UserID: "+tempUser.getUserID()+
+//                                        " UserName: "+tempUser.getUserName());
+                    actTemp.setUserName(tempUser.getUserName());
+                }
+            }
+            fullUserList.add(tempUser);
+        }
+        return fullUserList;
+    }
+
+    private static ArrayList<User> getSimpleUserListFromDB() {
         String usersSQLSelect = "select * from users";
         try {
             ArrayList<User> userList = new ArrayList<User>();

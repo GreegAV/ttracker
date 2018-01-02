@@ -24,6 +24,10 @@ public class Activity implements Serializable {
         this.userName = "";
     }
 
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
     public String getUserName() {
         return userName;
     }
@@ -86,13 +90,6 @@ public class Activity implements Serializable {
         this.actDuration += time;
     }
 
-    private String getUserNameByID(int userID) {
-        for (User user : DBOperation.userList) {
-            if (user.getUserID() == userID) return user.getUserName();
-        }
-        return "";
-    }
-
     @Override
     public String toString() {
         String result = "\n\r";
@@ -100,7 +97,7 @@ public class Activity implements Serializable {
         result += "Name: " + this.actName + " ";
         result += "Time: " + this.actDuration + " ";
         result += "Status: " + this.actStatus + " ";
-        result += "User: " + this.userName ;
+        result += "User: " + this.userName;
         return result;
     }
 }

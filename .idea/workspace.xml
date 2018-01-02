@@ -8,11 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../ttracker/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ttracker/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/commands/HomeCommand.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/HomeCommand.java" />
+      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java" />
       <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/dao/DBOperation.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/dao/DBOperation.java" />
       <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/entities/Activity.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/entities/Activity.java" />
-      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/entities/FullBase.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/entities/User.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/entities/User.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,14 +65,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Activity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Activity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/entities/Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="89" column="42" lean-forward="true" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
+            <state relative-caret-position="36">
+              <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
               <folding>
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
+                <element signature="e#655#656#0" expanded="true" />
+                <element signature="e#695#696#0" expanded="true" />
+                <element signature="e#730#731#0" expanded="true" />
+                <element signature="e#761#762#0" expanded="true" />
+                <element signature="e#1391#1392#0" expanded="true" />
+                <element signature="e#1420#1421#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,8 +85,8 @@
       <file leaf-file-name="RegisterCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-323">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="160">
+              <caret line="53" column="30" lean-forward="false" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,19 +97,23 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/entities/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="86" column="20" lean-forward="true" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
+            <state relative-caret-position="410">
+              <caret line="28" column="15" lean-forward="false" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#838#839#0" expanded="true" />
+                <element signature="e#1675#1676#0" expanded="true" />
+                <element signature="e#1712#1713#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeCommand.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HomeCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/HomeCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
+            <state relative-caret-position="193">
               <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -119,13 +125,15 @@
       <file leaf-file-name="DBOperation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/dao/DBOperation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+            <state relative-caret-position="159">
+              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1046#1056#0" expanded="true" />
-                <element signature="e#2110#2120#0" expanded="true" />
-                <marker date="1514933878739" expanded="true" signature="2954:3041" ph="UPDATE timetrack.activities... " />
+                <element signature="e#441#447#0" expanded="true" />
+                <element signature="e#1892#1902#0" expanded="true" />
+                <element signature="e#2956#2966#0" expanded="true" />
+                <element signature="method#updateActivity#0;class#DBOperation#0" expanded="false" />
+                <marker date="1514936097798" expanded="false" signature="2599:3718" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -229,11 +237,11 @@
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/dao/DAO.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/dao/DBConnection.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/entities/FullBase.java" />
+        <option value="$PROJECT_DIR$/../ttracker/src/main/java/entities/User.java" />
+        <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/HomeCommand.java" />
+        <option value="$PROJECT_DIR$/../ttracker/src/main/java/dao/DBOperation.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/entities/Activity.java" />
-        <option value="$PROJECT_DIR$/../ttracker/src/main/java/entities/User.java" />
-        <option value="$PROJECT_DIR$/../ttracker/src/main/java/dao/DBOperation.java" />
-        <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/HomeCommand.java" />
       </list>
     </option>
   </component>
@@ -586,7 +594,7 @@
       <updated>1514459314563</updated>
       <workItem from="1514459317962" duration="26893000" />
       <workItem from="1514888427801" duration="26000" />
-      <workItem from="1514888637392" duration="28093000" />
+      <workItem from="1514888637392" duration="30358000" />
     </task>
     <task id="LOCAL-00001" summary="throws -&gt; printstacktrace">
       <created>1514468744209</created>
@@ -714,11 +722,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514931742517</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="userlist + activitylist completed">
+      <created>1514933957701</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1514933957701</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55012000" />
+    <option name="totallyTimeSpent" value="57277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -742,7 +757,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40686274" sideWeight="0.4969743" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46732026" sideWeight="0.4969743" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2246596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -779,7 +794,8 @@
     <MESSAGE value="new ideas" />
     <MESSAGE value="tostring" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="userlist + activitylist completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="userlist + activitylist completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -794,28 +810,28 @@
           <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#706#707#0" expanded="false" />
-            <element signature="e#738#739#0" expanded="false" />
-            <element signature="e#785#786#0" expanded="false" />
-            <element signature="e#827#828#0" expanded="false" />
-            <element signature="e#856#857#0" expanded="false" />
-            <element signature="e#884#885#0" expanded="false" />
-            <element signature="e#923#924#0" expanded="false" />
-            <element signature="e#957#958#0" expanded="false" />
-            <element signature="e#991#992#0" expanded="false" />
-            <element signature="e#1021#1022#0" expanded="false" />
-            <element signature="e#1067#1068#0" expanded="false" />
-            <element signature="e#1105#1106#0" expanded="false" />
-            <element signature="e#1141#1142#0" expanded="false" />
-            <element signature="e#1175#1176#0" expanded="false" />
-            <element signature="e#1227#1228#0" expanded="false" />
-            <element signature="e#1273#1274#0" expanded="false" />
-            <element signature="e#1303#1304#0" expanded="false" />
-            <element signature="e#1332#1333#0" expanded="false" />
-            <element signature="e#1373#1374#0" expanded="false" />
-            <element signature="e#1409#1410#0" expanded="false" />
-            <element signature="e#1861#1862#0" expanded="false" />
-            <element signature="e#1901#1902#0" expanded="false" />
+            <element signature="e#794#795#0" expanded="false" />
+            <element signature="e#826#827#0" expanded="false" />
+            <element signature="e#873#874#0" expanded="false" />
+            <element signature="e#915#916#0" expanded="false" />
+            <element signature="e#944#945#0" expanded="false" />
+            <element signature="e#972#973#0" expanded="false" />
+            <element signature="e#1011#1012#0" expanded="false" />
+            <element signature="e#1045#1046#0" expanded="false" />
+            <element signature="e#1079#1080#0" expanded="false" />
+            <element signature="e#1109#1110#0" expanded="false" />
+            <element signature="e#1155#1156#0" expanded="false" />
+            <element signature="e#1193#1194#0" expanded="false" />
+            <element signature="e#1229#1230#0" expanded="false" />
+            <element signature="e#1263#1264#0" expanded="false" />
+            <element signature="e#1315#1316#0" expanded="false" />
+            <element signature="e#1361#1362#0" expanded="false" />
+            <element signature="e#1391#1392#0" expanded="true" />
+            <element signature="e#1420#1421#0" expanded="true" />
+            <element signature="e#1461#1462#0" expanded="false" />
+            <element signature="e#1497#1498#0" expanded="false" />
+            <element signature="e#1949#1950#0" expanded="false" />
+            <element signature="e#1989#1990#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -826,8 +842,8 @@
           <caret line="77" column="41" lean-forward="false" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#809#810#0" expanded="false" />
-            <element signature="e#838#839#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
             <element signature="e#879#880#0" expanded="false" />
             <element signature="e#915#916#0" expanded="false" />
             <element signature="e#951#952#0" expanded="false" />
@@ -848,8 +864,8 @@
             <element signature="e#1548#1549#0" expanded="false" />
             <element signature="e#1595#1596#0" expanded="false" />
             <element signature="e#1625#1626#0" expanded="false" />
-            <element signature="e#1675#1676#0" expanded="false" />
-            <element signature="e#1712#1713#0" expanded="false" />
+            <element signature="e#1675#1676#0" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
             <element signature="e#1800#1801#0" expanded="false" />
             <element signature="e#1848#1849#0" expanded="false" />
           </folding>
@@ -922,7 +938,7 @@
           <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#428#434#0" expanded="false" />
+            <element signature="e#1274#1280#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1189,55 +1205,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/entities/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="89" column="42" lean-forward="true" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
-          <folding>
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/entities/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="86" column="20" lean-forward="true" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/entities/FullBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-68">
           <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/dao/DBOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1046#1056#0" expanded="true" />
-            <element signature="e#2110#2120#0" expanded="true" />
-            <marker date="1514933878739" expanded="true" signature="2954:3041" ph="UPDATE timetrack.activities... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1258,10 +1230,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/HomeCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
+        <state relative-caret-position="193">
           <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/entities/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="28" column="15" lean-forward="false" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#1675#1676#0" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/dao/DBOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#441#447#0" expanded="true" />
+            <element signature="e#1892#1902#0" expanded="true" />
+            <element signature="e#2956#2966#0" expanded="true" />
+            <element signature="method#updateActivity#0;class#DBOperation#0" expanded="false" />
+            <marker date="1514936097798" expanded="false" signature="2599:3718" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="53" column="30" lean-forward="false" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/entities/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding>
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+            <element signature="e#1420#1421#0" expanded="true" />
           </folding>
         </state>
       </provider>

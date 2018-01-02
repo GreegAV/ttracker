@@ -50,6 +50,7 @@ public class RegisterCommand implements ICommand {
         System.out.println(login+"--------------"+password);
         List<Activity> activities = DBOperation.activityList;
         System.out.println(activities);
+//        System.out.println(DBOperation.userList);
         request.setAttribute("activities", activities);
         return "/home.jsp";
     }
