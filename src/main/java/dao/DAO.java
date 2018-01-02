@@ -15,7 +15,6 @@ public class DAO {
         try {
             ArrayList<User> userList = new ArrayList<User>();
             ResultSet resultSet = getResultSet(getStatement(getConnection()), usersSQLSelect);
-            System.out.println("Getuserlistfromdb после resultseta");
             while (resultSet.next()) {
 
                 int userID = resultSet.getInt(1);
@@ -23,8 +22,15 @@ public class DAO {
                 String userPass = resultSet.getString(3);
                 String userName = resultSet.getString(4);
                 boolean isAdm = resultSet.getBoolean(5);
+                System.out.println(userID + "\t" +
+                        userLogin + "\t" +
+                        userPass + "\t" +
+                        userName + "\t" +
+                        isAdm + "\t"
+                );
                 ArrayList<Activity> actList = new ArrayList<Activity>();
                 for (Activity actTemp : getActListFromDB()) {
+                    System.out.println(actTemp.getActID() + "\t" + actTemp.getActName());
                     if (actTemp.getUserID() == userID) {
                         actList.add(actTemp);
                     }
@@ -62,12 +68,14 @@ public class DAO {
             ResultSet resultSet = getResultSet(getStatement(getConnection()), actSQLSelect);
             ArrayList<Activity> activities = new ArrayList<Activity>();
             while (resultSet.next()) {
-                activities.add(new Activity(
+                Activity act = new Activity(
                         resultSet.getInt(1),
                         resultSet.getString(2),
                         resultSet.getLong(3),
                         resultSet.getInt(4),
-                        resultSet.getInt(5)));
+                        resultSet.getInt(5));
+                System.out.println(act);
+                activities.add(act);
             }
             return activities;
         } catch (SQLException e) {

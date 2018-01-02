@@ -92,5 +92,14 @@ public class Activity implements Serializable {
         return "";
     }
 
-
+    @Override
+    public String toString() {
+        String result="";
+        result+="ID: "+this.actID+" ";
+        result+="Name: "+this.actName+" ";
+        result+="Time: "+this.actDuration+" ";
+        result+="Status: "+this.actStatus+" ";
+        result+="User: "+this.userName+" ";
+        return result;
+    }
 }

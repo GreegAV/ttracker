@@ -7,14 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../ttracker/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_45.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../ttracker/.idea/sqldialects.xml" />
-      <change beforePath="$PROJECT_DIR$/../ttracker/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_8_dmr.xml" afterPath="$PROJECT_DIR$/../ttracker/.idea/libraries/mysql_mysql_connector_java_8_0_8_dmr.xml" />
       <change beforePath="$PROJECT_DIR$/../ttracker/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ttracker/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../ttracker/pom.xml" afterPath="$PROJECT_DIR$/../ttracker/pom.xml" />
       <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/dao/DAO.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/dao/DAO.java" />
-      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/dao/DBConnection.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/dao/DBConnection.java" />
-      <change beforePath="$PROJECT_DIR$/../ttracker/ttracker.iml" afterPath="$PROJECT_DIR$/../ttracker/ttracker.iml" />
+      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/entities/Activity.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/entities/Activity.java" />
+      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/entities/FullBase.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/entities/FullBase.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,6 +51,13 @@
         <item name="timetrack@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="timetrack: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="activities: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="timetrack@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="timetrack: schema" type="c314c289:MysqlImplModel$Schema" />
         <item name="users: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
@@ -65,8 +68,8 @@
       <file leaf-file-name="Activity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/entities/Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="88" column="32" lean-forward="true" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
+            <state relative-caret-position="340">
+              <caret line="97" column="38" lean-forward="true" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
               <folding>
                 <element signature="method#getActByID#0;class#Activity#0" expanded="false" />
               </folding>
@@ -84,16 +87,34 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="FullBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/entities/FullBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="57" lean-forward="false" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#788#789#0" expanded="true" />
+                <element signature="e#830#831#0" expanded="true" />
+                <element signature="e#879#880#0" expanded="true" />
+                <element signature="e#924#925#0" expanded="true" />
+                <marker date="1514929753887" expanded="false" signature="295:305" ph="&lt;~&gt;" />
+                <marker date="1514929753887" expanded="false" signature="369:375" ph="&lt;~&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/dao/DAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="27" column="56" lean-forward="true" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+            <state relative-caret-position="43">
+              <caret line="64" column="38" lean-forward="false" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#871#881#0" expanded="true" />
-                <element signature="e#2367#2377#0" expanded="true" />
-                <marker date="1514928438601" expanded="true" signature="2927:3014" ph="UPDATE timetrack.activities... " />
+                <element signature="e#1035#1045#0" expanded="true" />
+                <element signature="e#2621#2631#0" expanded="true" />
+                <marker date="1514929324011" expanded="true" signature="3258:3345" ph="UPDATE timetrack.activities... " />
               </folding>
             </state>
           </provider>
@@ -104,28 +125,6 @@
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activities" pinned="false" current-in-tab="false">
-        <entry file="das://src:table:/ac6624ba/704bc9d8-b854-44ad-8add-c2f6434e65be/timetrack.activities">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisterCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -141,26 +140,6 @@
                 <element signature="method#closeStatement#0;class#DBConnection#0" expanded="false" />
                 <element signature="method#closeConnection#0;class#DBConnection#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ttracker/web/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="9" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ttracker/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="33" column="68" lean-forward="false" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -234,7 +213,6 @@
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/dao/DBOperation.java" />
         <option value="src:table:/ac6624ba/704bc9d8-b854-44ad-8add-c2f6434e65be/timetrack.activities" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/entities/User.java" />
-        <option value="$PROJECT_DIR$/../ttracker/src/main/java/entities/Activity.java" />
         <option value="$PROJECT_DIR$/../ttracker/web/web.xml.tld" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/LoginCommand.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/ttracker/Helper.java" />
@@ -252,14 +230,15 @@
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/actions/ActivityActions.java" />
         <option value="$PROJECT_DIR$/../ttracker/web/web.xml" />
         <option value="$PROJECT_DIR$/../ttracker/ttracker.iml" />
-        <option value="$PROJECT_DIR$/../ttracker/src/main/java/entities/FullBase.java" />
         <option value="$PROJECT_DIR$/../ttracker/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/../ttracker/web/home.jsp" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/HomeCommand.java" />
         <option value="$PROJECT_DIR$/../ttracker/pom.xml" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/dao/DBConnection.java" />
+        <option value="$PROJECT_DIR$/../ttracker/src/main/java/entities/Activity.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/dao/DAO.java" />
+        <option value="$PROJECT_DIR$/../ttracker/src/main/java/entities/FullBase.java" />
       </list>
     </option>
   </component>
@@ -612,7 +591,7 @@
       <updated>1514459314563</updated>
       <workItem from="1514459317962" duration="26893000" />
       <workItem from="1514888427801" duration="26000" />
-      <workItem from="1514888637392" duration="22662000" />
+      <workItem from="1514888637392" duration="23932000" />
     </task>
     <task id="LOCAL-00001" summary="throws -&gt; printstacktrace">
       <created>1514468744209</created>
@@ -719,11 +698,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514923649104</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="1">
+      <created>1514928504255</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1514928504255</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49581000" />
+    <option name="totallyTimeSpent" value="50851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -747,9 +733,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31543118" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40359476" sideWeight="0.4969743" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15355521" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2246596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -865,7 +851,11 @@
         <state relative-caret-position="204">
           <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1116,17 +1106,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/entities/FullBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-          <folding>
-            <marker date="1514921429989" expanded="false" signature="317:327" ph="&lt;~&gt;" />
-            <marker date="1514921429989" expanded="false" signature="393:399" ph="&lt;~&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/controller/MainServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1216,16 +1195,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/entities/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="88" column="32" lean-forward="true" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
-          <folding>
-            <element signature="method#getActByID#0;class#Activity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1257,15 +1226,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/dao/DAO.java">
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/entities/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="27" column="56" lean-forward="true" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+        <state relative-caret-position="340">
+          <caret line="97" column="38" lean-forward="true" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
+          <folding>
+            <element signature="method#getActByID#0;class#Activity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/entities/FullBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="57" lean-forward="false" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#871#881#0" expanded="true" />
-            <element signature="e#2367#2377#0" expanded="true" />
-            <marker date="1514928438601" expanded="true" signature="2927:3014" ph="UPDATE timetrack.activities... " />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <marker date="1514929753887" expanded="false" signature="295:305" ph="&lt;~&gt;" />
+            <marker date="1514929753887" expanded="false" signature="369:375" ph="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/dao/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="64" column="38" lean-forward="false" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1035#1045#0" expanded="true" />
+            <element signature="e#2621#2631#0" expanded="true" />
+            <marker date="1514929324011" expanded="true" signature="3258:3345" ph="UPDATE timetrack.activities... " />
           </folding>
         </state>
       </provider>
