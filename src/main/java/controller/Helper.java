@@ -12,8 +12,8 @@ public class Helper {
     private HashMap<String, ICommand> commands = new HashMap<>();
 
     private Helper() {
-        commands.put("logout", new LogoutCommand());
-        commands.put("register", new RegisterCommand());
+        commands.put("Logout", new LogoutCommand());
+        commands.put("Login", new RegisterCommand());
         commands.put("Approve", new ApproveCommand());
         commands.put("Pending", new PendingCommand());
         commands.put("Free", new FreeCommand());

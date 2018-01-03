@@ -63,7 +63,7 @@ public class RegisterCommand implements ICommand {
             stringBuffer.append("<td>" + activity.getActDuration() + "</td>");
             stringBuffer.append("<td>" + activity.getUserName() + "</td>");
             stringBuffer.append("<td align='center'>");
-            stringBuffer.append(" <form method='post' action='MainServlet'>");
+            stringBuffer.append(" <form method='get' action='MainServlet'>");
 //            stringBuffer.append("<input type='hidden' name='command' value='changeStatus'>");
             switch (activity.getActStatus()) {
                 case 1:
