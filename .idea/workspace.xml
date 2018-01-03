@@ -6,15 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/Display.java" />
-      <change beforePath="$PROJECT_DIR$/../ttracker/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ttracker/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/actions/ActivityActions.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/actions/UserActions.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/entities/UserActions.java" />
-      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java" />
-      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/entities/Activity.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/entities/Activity.java" />
-      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/entities/User.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/entities/User.java" />
-    </list>
+    <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,7 +60,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Activity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Activity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/entities/Activity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="799">
@@ -79,16 +71,6 @@
                 <element signature="method#getActNameByID#0;class#Activity#0" expanded="false" />
                 <element signature="method#toString#0;class#Activity#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/LoginCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -179,7 +161,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Display.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Display.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/Display.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -614,7 +596,7 @@
       <updated>1514459314563</updated>
       <workItem from="1514459317962" duration="26893000" />
       <workItem from="1514888427801" duration="26000" />
-      <workItem from="1514888637392" duration="61209000" />
+      <workItem from="1514888637392" duration="61276000" />
     </task>
     <task id="LOCAL-00001" summary="throws -&gt; printstacktrace">
       <created>1514468744209</created>
@@ -826,15 +808,21 @@
       <option name="project" value="LOCAL" />
       <updated>1515012597414</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="autorization&#10;list activities acc to it">
+      <created>1515021584575</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1515021584575</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88128000" />
+    <option name="totallyTimeSpent" value="88195000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.375817" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
@@ -856,7 +844,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39379084" sideWeight="0.4969743" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2246596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2246596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33169934" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -932,7 +920,8 @@
     <MESSAGE value=":(" />
     <MESSAGE value="1" />
     <MESSAGE value="passing parameters!!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="passing parameters!!!!!" />
+    <MESSAGE value="autorization&#10;list activities acc to it" />
+    <option name="LAST_COMMIT_MESSAGE" value="autorization&#10;list activities acc to it" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1275,14 +1264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/LoginCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/changeStatusCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1375,6 +1356,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/LoginCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
