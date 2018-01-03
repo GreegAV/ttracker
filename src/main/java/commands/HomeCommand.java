@@ -1,6 +1,7 @@
 package commands;
 
 import controller.ICommand;
+import dao.DBOperation;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -9,11 +10,13 @@ import java.io.IOException;
 
 public class HomeCommand implements ICommand {
     @Override
-    public String execute(HttpServletRequest request, HttpServletResponse response) throws  IOException {
+    public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        request.setAttribute("activities", DBOperation.activityList);
+
         return "/home.jsp";
     }
 
-        //
+    //
 //            response.setContentType("text/html");
 //            PrintWriter out=response.getWriter();
 //

@@ -12,10 +12,8 @@ import java.io.IOException;
 public class ApproveCommand implements controller.ICommand {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.getWriter().write("ApproveCommand");
-//        String prmt=request.getParameter("activity");
+        request.setAttribute("activities", DBOperation.activityList);
 
-        //request.setAttribute("activity", activity.getActID());
-        return "";
+        return "/home.jsp";
     }
 }
