@@ -64,16 +64,16 @@ public class RegisterCommand implements ICommand {
             stringBuffer.append("<td>" + activity.getUserName() + "</td>");
             stringBuffer.append("<td align='center'>");
             stringBuffer.append(" <form method='post' action='MainServlet'>");
-//            stringBuffer.append("<input type='hidden' name='command' value='changeStatus'>");
             switch (activity.getActStatus()) {
-                case 1: {
-                    if (activity.getUserID() == 1) {
-                        stringBuffer.append("<input type='submit' name='command' value='Approve'>");
-                    } else {
-                        stringBuffer.append("<input type='submit' name='command' value='Pending'>");
-                    }
-                    break;
-                }
+                case 1:
+//                    {
+//                    if (activity.getUserID() == 1) {
+//                        stringBuffer.append("<input type='submit' name='command' value='Approve'>");
+//                    } else {
+//                        stringBuffer.append("<input type='submit' name='command' value='Pending'>");
+//                    }
+//                    break;
+//                }
                 case 2: {
                     if (activity.getUserID() == 1) {
                         stringBuffer.append("<input type='submit' name='command' value='Approve'>");
@@ -110,7 +110,7 @@ public class RegisterCommand implements ICommand {
 // ***********************************************************************************
 
 //        request.setAttribute("activities", DBOperation.userList);
-//        return "/home.jsp";
-        return "";
+        return "/home.jsp";
+//        return "";
     }
 }

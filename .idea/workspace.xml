@@ -7,14 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/ApproveCommand.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/FreeCommand.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/PendingCommand.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/TakeCommand.java" />
       <change beforePath="$PROJECT_DIR$/../ttracker/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ttracker/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/commands/ApproveCommand.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/ApproveCommand.java" />
+      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/commands/FreeCommand.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/FreeCommand.java" />
+      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/commands/LoginCommand.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/LogoutCommand.java" />
+      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/commands/PendingCommand.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/PendingCommand.java" />
       <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java" />
+      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/commands/TakeCommand.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/TakeCommand.java" />
       <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/controller/Helper.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/controller/Helper.java" />
-      <change beforePath="$PROJECT_DIR$/../ttracker/web/home.jsp" afterPath="$PROJECT_DIR$/../ttracker/web/home.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -69,58 +69,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RegisterCommand.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RegisterCommand.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="78" column="95" lean-forward="false" selection-start-line="78" selection-start-column="88" selection-end-line="78" selection-end-column="95" />
+            <state relative-caret-position="156">
+              <caret line="76" column="24" lean-forward="true" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1636#1692#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/LoginCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/HomeCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="48" column="0" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="48" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/controller/MainServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Helper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/controller/Helper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3000#3023#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -129,8 +86,8 @@
       <file leaf-file-name="TakeCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/TakeCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="235">
+              <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,11 +98,21 @@
       <file leaf-file-name="FreeCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/FreeCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="252">
+              <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogoutCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/LogoutCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -153,8 +120,8 @@
       <file leaf-file-name="PendingCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/PendingCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="235">
+              <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -162,14 +129,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApproveCommand.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ApproveCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/ApproveCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            <state relative-caret-position="218">
+              <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ttracker/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-85">
+              <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -177,8 +154,8 @@
       <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ttracker/web/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+            <state relative-caret-position="133">
+              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -223,7 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/errors/getActByIDException.java" />
         <option value="$PROJECT_DIR$/src/main/java/errors/IllegalActivitiesExceptions.java" />
         <option value="$PROJECT_DIR$/src/main/java/errors/IllegalUserExceptions.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DBOperation.java" />
@@ -240,7 +216,6 @@
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/dao/DigDB.java" />
         <option value="src:table:/ac6624ba/704bc9d8-b854-44ad-8add-c2f6434e65be/timetrack.activities" />
         <option value="$PROJECT_DIR$/../ttracker/web/web.xml.tld" />
-        <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/LoginCommand.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/ttracker/Helper.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/ttracker/controller/MainServlet.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/ttracker/controller/Helper.java" />
@@ -267,13 +242,15 @@
         <option value="$PROJECT_DIR$/../ttracker/web/index.jsp" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/entities/User.java" />
         <option value="$PROJECT_DIR$/../ttracker/web/home.jsp" />
-        <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/ChangeStatusCommand.java" />
+        <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/LoginCommand.java" />
+        <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/LogoutCommand.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/controller/Helper.java" />
-        <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/PendingCommand.java" />
-        <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/ApproveCommand.java" />
-        <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/TakeCommand.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/FreeCommand.java" />
+        <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/ApproveCommand.java" />
+        <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/PendingCommand.java" />
+        <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/TakeCommand.java" />
+        <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java" />
       </list>
     </option>
   </component>
@@ -414,6 +391,7 @@
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/../ttracker/src/main/java" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -622,7 +600,7 @@
       <updated>1514459314563</updated>
       <workItem from="1514459317962" duration="26893000" />
       <workItem from="1514888427801" duration="26000" />
-      <workItem from="1514888637392" duration="42729000" />
+      <workItem from="1514888637392" duration="48288000" />
     </task>
     <task id="LOCAL-00001" summary="throws -&gt; printstacktrace">
       <created>1514468744209</created>
@@ -799,11 +777,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514983702723</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add commands">
+      <created>1514987089134</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1514987089134</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69648000" />
+    <option name="totallyTimeSpent" value="75207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -902,7 +887,8 @@
     <MESSAGE value="Рисует таблицу активностей ПРАВИЛЬНО" />
     <MESSAGE value="user validation" />
     <MESSAGE value="add buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="add buttons" />
+    <MESSAGE value="add commands" />
+    <option name="LAST_COMMIT_MESSAGE" value="add commands" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1254,18 +1240,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/LoginCommand.java">
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/HomeCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="796">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/controller/MainServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/HomeCommand.java">
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/controller/Helper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1274,7 +1270,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../ttracker/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="-85">
           <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="23" />
           <folding />
         </state>
@@ -1282,45 +1278,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../ttracker/web/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+        <state relative-caret-position="133">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/controller/MainServlet.java">
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/ApproveCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="78" column="95" lean-forward="false" selection-start-line="78" selection-start-column="88" selection-end-line="78" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1636#1692#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/controller/Helper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/TakeCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="218">
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1329,30 +1296,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/FreeCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="252">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/LogoutCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/PendingCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="235">
+          <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/ApproveCommand.java">
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/TakeCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        <state relative-caret-position="235">
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="76" column="24" lean-forward="true" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1636#1692#0" expanded="false" />
+            <element signature="e#3000#3023#0" expanded="false" />
           </folding>
         </state>
       </provider>

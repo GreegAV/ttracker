@@ -12,7 +12,7 @@ public class Helper {
     private HashMap<String, ICommand> commands = new HashMap<>();
 
     private Helper() {
-        commands.put("login", new LoginCommand());
+        commands.put("logout", new LogoutCommand());
         commands.put("register", new RegisterCommand());
         commands.put("Approve", new ApproveCommand());
         commands.put("Pending", new PendingCommand());

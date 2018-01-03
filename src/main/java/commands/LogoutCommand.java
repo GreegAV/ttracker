@@ -6,9 +6,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-public class LoginCommand implements ICommand {
+public class LogoutCommand implements ICommand {
 
-    //    private static final Logger LOGGER = Logger.getLogger(LoginCommand.class);
+    //    private static final Logger LOGGER = Logger.getLogger(LogoutCommand.class);
     private static final String LOGIN = "nameInput";
     private static final String PASSWORD = "passInput";
 //    private DAOFactory daoFactory = DAOFactory.getDAOFactory(DAOFactory.H2);
@@ -33,7 +33,7 @@ public class LoginCommand implements ICommand {
 //        } else {
 //            page = "/pages/error.jsp";
 //        }
-        System.out.println("LoginCommand passed!!!");
+        System.out.println("LogoutCommand passed!!!");
         return "/home.jsp";
     }
 }
