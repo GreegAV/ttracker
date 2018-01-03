@@ -18,7 +18,7 @@ public class Helper {
         commands.put("Pending", new PendingCommand());
         commands.put("Free", new FreeCommand());
         commands.put("Take", new TakeCommand());
-//        commands.put("delete", new DeleteProductCommand());
+        commands.put("changeStatus", new changeStatusCommand());
 //        commands.put("order", new OrderCommand());
 //        commands.put("addProduct", new AddNewProductCommand());
 //        commands.put("addMoney", new AddMoneyCommand());
