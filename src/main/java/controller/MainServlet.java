@@ -27,7 +27,7 @@ public class MainServlet extends HttpServlet {
 //            logger.error("Redirect to "+page);
         } catch (ServletException | IOException e) {
 //            logger.error(e.getMessage());
-            page = "error.jsp";
+            page = "/error.jsp";
         }
         getServletContext().getRequestDispatcher(page).forward(request, response);
 //        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(page);

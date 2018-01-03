@@ -21,7 +21,8 @@
       </tr>
       <tr>
         <td align="center">
-          <input type="submit" value="Login">
+          <a href='MainServlet?page=1'>
+          <input type="submit" value="Login"></a>
           <input type="hidden" name="command" value="register">
         </td>
       </tr>
