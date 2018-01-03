@@ -106,4 +106,24 @@ public class User implements Serializable, UserActions {
                 "Act: " + this.actList;
         return result;
     }
+
+    public boolean isUserExists(String loginName) {
+        boolean exists = false;
+        for (User tmpUser : DBOperation.userList) {
+            if (tmpUser.getUserLogin().equalsIgnoreCase(loginName))
+                exists = true;
+        }
+        return exists;
+    }
+
+    public boolean isUserValid(String loginName, String loginPass){
+        boolean valid=false;
+        if (isUserExists(loginName)) {
+            for (User tmpUser : DBOperation.userList) {
+                if (tmpUser.getUserPassword().equalsIgnoreCase(loginPass))
+                    valid = true;
+            }
+        }
+        return valid;
+    }
 }

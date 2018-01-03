@@ -1,20 +1,18 @@
 package commands;
 
 import controller.ICommand;
-import dao.DBOperation;
-import entities.Activity;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.List;
 
 
 public class HomeCommand implements ICommand {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws  IOException {
+        return "/home.jsp";
+    }
+
         //
 //            response.setContentType("text/html");
 //            PrintWriter out=response.getWriter();
@@ -48,6 +46,5 @@ public class HomeCommand implements ICommand {
 //
 //            out.close();
 //        request.setAttribute("activities", DBOperation.activityList);
-        return "/home.jsp";
-    }
+
 }
