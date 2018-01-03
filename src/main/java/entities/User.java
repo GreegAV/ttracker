@@ -7,6 +7,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class User implements Serializable, UserActions {
+    public static String loggedUser="";
     private int userID;
     private String userLogin;
     private String userPassword;

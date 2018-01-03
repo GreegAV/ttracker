@@ -37,7 +37,6 @@ public class Helper {
 
     public ICommand getCommand(HttpServletRequest request) {
         ICommand command = commands.get(request.getParameter("command"));
-//        System.out.println("command.toString: "+command.toString());
         System.out.println("request.getParameter: "+request.getParameter("command"));
         if (command == null) {
             command = new HomeCommand();
