@@ -1,8 +1,4 @@
-package actions;
-
-
-import entities.Activity;
-import entities.User;
+package entities;
 
 public interface UserActions {
 
@@ -13,7 +9,5 @@ public interface UserActions {
     void addActToUserList(Activity activity);
 
     void changeActivityStatus(Activity activity, int actStatus);
-
-
 
 }

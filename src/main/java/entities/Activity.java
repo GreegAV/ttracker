@@ -4,7 +4,7 @@ import dao.DBOperation;
 
 import java.io.Serializable;
 
-public class Activity implements Serializable {
+public class Activity implements ActivityActions {
     private int actID;
     private String actName;
     private long actDuration;
@@ -72,6 +72,7 @@ public class Activity implements Serializable {
         this.userID = userID;
     }
 
+    @Override
     public Activity getActByID(int actID) {
         for (Activity activity : DBOperation.activityList) {
             if (activity.actID == actID) return activity;
@@ -79,6 +80,7 @@ public class Activity implements Serializable {
         return null;
     }
 
+    @Override
     public String getActNameByID(int actID) {
         for (Activity activity : DBOperation.activityList) {
             if (activity.actID == actID) return activity.actName;
@@ -86,6 +88,7 @@ public class Activity implements Serializable {
         return "";
     }
 
+    @Override
     public void addDuration(long time) {
         this.actDuration += time;
     }

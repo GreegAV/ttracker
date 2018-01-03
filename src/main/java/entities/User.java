@@ -1,13 +1,11 @@
 package entities;
 
-import actions.UserActions;
 import dao.DBOperation;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 
 public class User implements Serializable, UserActions {
-    public static String loggedUser="";
     private int userID;
     private String userLogin;
     private String userPassword;
@@ -60,7 +58,7 @@ public class User implements Serializable, UserActions {
     }
 
     public boolean isAdmin() {
-        return isAdmin;
+        return (this.userID==1);
     }
 
     public void setAdmin(boolean admin) {
@@ -71,6 +69,7 @@ public class User implements Serializable, UserActions {
         return actList;
     }
 
+    @Override
     public void addActToUserList(Activity act) {
         this.actList.add(act);
     }
@@ -80,6 +79,7 @@ public class User implements Serializable, UserActions {
         activity.setActStatus(actStatus);
     }
 
+    @Override
     public User getUserByID(int userID) {
         for (User user : DBOperation.userList) {
             if (user.userID == userID)
@@ -88,6 +88,7 @@ public class User implements Serializable, UserActions {
         return null;
     }
 
+    @Override
     public String getUserNameByID(int userID) {
         for (User user : DBOperation.userList) {
             if (user.userID == userID)
@@ -108,23 +109,21 @@ public class User implements Serializable, UserActions {
         return result;
     }
 
-    public boolean isUserExists(String loginName) {
-        boolean exists = false;
-        for (User tmpUser : DBOperation.userList) {
-            if (tmpUser.getUserLogin().equalsIgnoreCase(loginName))
-                exists = true;
-        }
-        return exists;
-    }
+//    public boolean isUserExists(String loginName) {
+//        boolean exists = false;
+//        for (User tmpUser : DBOperation.userList) {
+//            if (tmpUser.getUserLogin().equalsIgnoreCase(loginName))
+//                exists = true;
+//        }
+//        return exists;
+//    }
 
-    public boolean isUserValid(String loginName, String loginPass){
-        boolean valid=false;
-        if (isUserExists(loginName)) {
-            for (User tmpUser : DBOperation.userList) {
-                if (tmpUser.getUserPassword().equalsIgnoreCase(loginPass))
-                    valid = true;
-            }
+    public static User isUserValid(String loginName, String loginPass) {
+        for (User tmpUser : DBOperation.userList) {
+            if (tmpUser.getUserLogin().equalsIgnoreCase(loginName) &&
+                tmpUser.getUserPassword().equals(loginPass))
+                return tmpUser;
         }
-        return valid;
+        return null;
     }
 }
