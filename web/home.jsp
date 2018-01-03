@@ -5,13 +5,13 @@
     <title>Home Page</title>
 </head>
 <body>
-    <%--<table border="1" align="center" width="75%">--%>
-        <%--<c:forEach var="activity" items="${activities}">--%>
-            <%--<tr>--%>
-                <%--<td><c:out value="${activity.getActID()}"/></td>--%>
-                <%--<td><c:out value="${activity.getActName()}"/></td>--%>
-                <%--<td><c:out value="${activity.getActDuration()}"/></td>--%>
-                <%--<td><c:out value="${activity.getUserName()}"/></td>--%>
+    <table border="1" align="center" width="60%">
+        <c:forEach var="activity" items="${activities}">
+            <tr>
+                <td><c:out value="${activity.getActID()}"/></td>
+                <td><c:out value="${activity.getActName()}"/></td>
+                <td><c:out value="${activity.getActDuration()}"/></td>
+                <td><c:out value="${activity.getUserName()}"/></td>
                     <%--<c:if test="${activity.getUserID() > 0}">--%>
                     <%--<form method="post" action="/?command=bucket">--%>
                     <%--<input type="hidden" name="addToBucket" value="${product.series}">--%>
@@ -20,9 +20,9 @@
                     <%--</form></td>--%>
                     <%--<br/>--%>
                     <%--</c:if>--%>
-            <%--</tr>--%>
-        <%--</c:forEach>--%>
-    <%--</table>--%>
+            </tr>
+        </c:forEach>
+    </table>
 
 </body>
 </html>

@@ -14,11 +14,10 @@ public class Helper {
     private Helper() {
         commands.put("login", new LoginCommand());
         commands.put("register", new RegisterCommand());
-//        commands.put("phones", new PhonesCommand());
-//        commands.put("laptops", new LaptopsCommand());
-//        commands.put("logout", new LogoutCommand());
-//        commands.put("bucket", new CartCommand());
-//        commands.put("admin", new AdminCommand());
+        commands.put("Approve", new ApproveCommand());
+        commands.put("Pending", new PendingCommand());
+        commands.put("Free", new FreeCommand());
+        commands.put("Take", new TakeCommand());
 //        commands.put("delete", new DeleteProductCommand());
 //        commands.put("order", new OrderCommand());
 //        commands.put("addProduct", new AddNewProductCommand());

@@ -33,7 +33,7 @@ public class RegisterCommand implements ICommand {
 //        List<Activity> activities = DBOperation.activityList;
 //        System.out.println(activities);
 //        System.out.println(DBOperation.userList);
-//        request.setAttribute("activities", activities);
+//        request.setAttribute("activities", DBOperation.userList);
 // ***********************************************************************************
 
         response.setContentType("text/html");
@@ -64,33 +64,29 @@ public class RegisterCommand implements ICommand {
             stringBuffer.append("<td>" + activity.getUserName() + "</td>");
             stringBuffer.append("<td align='center'>");
             stringBuffer.append(" <form method='post' action='MainServlet'>");
-            stringBuffer.append("<input type='hidden' name='command' value='changeStatus'>");
+//            stringBuffer.append("<input type='hidden' name='command' value='changeStatus'>");
             switch (activity.getActStatus()) {
-                //  <input type="submit" value="Login"></a>
-                //  <input type="hidden" name="command" value="register">
                 case 1: {
-                    if (activity.getUserID()==1){
-                        stringBuffer.append("<input type='submit' value='Approve' width='75%'>");
-                    } else{
-                        stringBuffer.append("<input type='submit' value='Pending' width='75%'>");
+                    if (activity.getUserID() == 1) {
+                        stringBuffer.append("<input type='submit' name='command' value='Approve'>");
+                    } else {
+                        stringBuffer.append("<input type='submit' name='command' value='Pending'>");
                     }
-
-//                    stringBuffer.append("<input name='quantity' min='1' max ='${product.stock}' value='1' type='number'/>");
                     break;
                 }
                 case 2: {
-                    if (activity.getUserID()==1){
-                        stringBuffer.append("<input type='submit' value='Approve' width='75%'>");
-                    } else{
-                        stringBuffer.append("<input type='submit' value='Pending' width='75%'>");
+                    if (activity.getUserID() == 1) {
+                        stringBuffer.append("<input type='submit' name='command' value='Approve'>");
+                    } else {
+                        stringBuffer.append("<input type='submit' name='command' value='Pending'>");
                     }
                     break;
                 }
                 case 3: {
-                    if (activity.getUserID()==1){
-                        stringBuffer.append("<input type='submit' value='Free' width='75%'>");
-                    } else{
-                        stringBuffer.append("<input type='submit' value='Take' width='75%'>");
+                    if (activity.getUserID() == 1) {
+                        stringBuffer.append("<input type='submit' name='command' value='Free'>");
+                    } else {
+                        stringBuffer.append("<input type='submit' name='command' value='Take'>");
                     }
                     break;
                 }
@@ -113,7 +109,8 @@ public class RegisterCommand implements ICommand {
 
 // ***********************************************************************************
 
-
-        return "/home.jsp";
+//        request.setAttribute("activities", DBOperation.userList);
+//        return "/home.jsp";
+        return "";
     }
 }
