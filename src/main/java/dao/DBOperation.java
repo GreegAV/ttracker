@@ -88,15 +88,16 @@ public class DBOperation {
         return null;
     }
 
-    public void updateActivityDB(Activity activity) {
+    public static void updateActivityDB(Activity activity) {
         final String SQL = "UPDATE timetrack.activities  SET "
-                + "actDuration=?,  WHERE" + "actID=? ";
+                + "actDuration=?, actMarked=?, WHERE" + "actID=? ";
 
         try (Connection connection = DBConnection.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL)) {
 
             statement.setLong(1, activity.getActDuration());
-            statement.setInt(2, activity.getActID());
+            statement.setInt(2, activity.getActStatus());
+            statement.setInt(3, activity.getActID());
             statement.executeUpdate();
 
         } catch (SQLException e) {

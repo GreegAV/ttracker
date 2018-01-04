@@ -6,7 +6,7 @@ import javax.servlet.ServletContext;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class User implements Serializable, UserActions {
+public class User {
     private int userID;
     private String userLogin;
     private String userPassword;
@@ -80,17 +80,14 @@ public class User implements Serializable, UserActions {
         return actList;
     }
 
-    @Override
     public void addActToUserList(Activity act) {
         this.actList.add(act);
     }
 
-    @Override
     public void changeActivityStatus(Activity activity, int actStatus) {
         activity.setActStatus(actStatus);
     }
 
-    @Override
     public User getUserByID(int userID) {
         for (User user : DBOperation.userList) {
             if (user.userID == userID)
@@ -99,8 +96,7 @@ public class User implements Serializable, UserActions {
         return null;
     }
 
-    @Override
-    public String getUserNameByID(int userID) {
+    public static String getUserNameByID(int userID) {
         for (User user : DBOperation.userList) {
             if (user.userID == userID)
                 return user.userName;

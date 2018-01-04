@@ -4,7 +4,7 @@ import dao.DBOperation;
 
 import java.io.Serializable;
 
-public class Activity implements ActivityActions {
+public class Activity {
     private int actID;
     private String actName;
     private long actDuration;
@@ -24,12 +24,19 @@ public class Activity implements ActivityActions {
         this.userName = "";
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public static Activity getActByID(int actID) {
+        for (Activity activity : DBOperation.activityList) {
+            if (activity.actID == actID) return activity;
+        }
+        return null;
     }
 
     public String getUserName() {
         return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public int getActStatus() {
@@ -72,15 +79,6 @@ public class Activity implements ActivityActions {
         this.userID = userID;
     }
 
-    @Override
-    public Activity getActByID(int actID) {
-        for (Activity activity : DBOperation.activityList) {
-            if (activity.actID == actID) return activity;
-        }
-        return null;
-    }
-
-    @Override
     public String getActNameByID(int actID) {
         for (Activity activity : DBOperation.activityList) {
             if (activity.actID == actID) return activity.actName;
@@ -88,7 +86,6 @@ public class Activity implements ActivityActions {
         return "";
     }
 
-    @Override
     public void addDuration(long time) {
         this.actDuration += time;
     }
