@@ -3,7 +3,6 @@ package commands;
 import controller.ICommand;
 import entities.User;
 
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -23,12 +22,11 @@ public class RegisterCommand implements ICommand {
             System.out.println(loggedUser.getUserName());
             response.getWriter().print(Display.showPage(loggedUser));
             request.getServletContext().setAttribute("loggedUser", loggedUser);
-        } else {
-            response.getWriter().print("Username/Password error!");
+        }
+
+        System.out.println("Username/Password error!");
             return "/index.jsp";
         }
-        return "";
     }
 
 
-}
