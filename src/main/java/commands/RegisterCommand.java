@@ -1,15 +1,12 @@
 package commands;
 
 import controller.ICommand;
-import dao.DBOperation;
-import entities.Activity;
 import entities.User;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.List;
 
 public class RegisterCommand implements ICommand {
     //    private static final Logger log = Logger.getLogger(RegisterCommand.class);
@@ -25,6 +22,7 @@ public class RegisterCommand implements ICommand {
         if (loggedUser != null) {
             System.out.println(loggedUser.getUserName());
             response.getWriter().print(Display.showPage(loggedUser));
+            request.getServletContext().setAttribute("loggedUser", loggedUser);
         } else {
             response.getWriter().print("Username/Password error!");
             return "/index.jsp";

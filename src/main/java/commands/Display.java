@@ -17,7 +17,7 @@ public class Display {
             stringBuffer.append("<tr><th>Id</th><th>Name</th><th>Duration</th><th>Status</th>");
         }
         for (Activity activity : DBOperation.activityList) {
-            if (user.getUserID()==activity.getUserID()| user.isAdmin()) {
+            if (user.getUserID() == activity.getUserID() | user.isAdmin()) {
                 stringBuffer.append("<tr>");
                 stringBuffer.append("<td>" + activity.getActID() + "</td>");
                 stringBuffer.append("<td>" + activity.getActName() + "</td>");
@@ -28,9 +28,27 @@ public class Display {
                 stringBuffer.append("<td align='center'>");
                 stringBuffer.append(" <form method='get' action='MainServlet'>");
                 switch (activity.getActStatus()) {
-                    case 1:
+                    /* Marked 4 Del*/
+                    case 1:{
+                        if (user.getUserID() == 1) {
+                            stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=Approve&actid=");
+                            stringBuffer.append(activity.getActID());
+                            stringBuffer.append("'>");
+                            stringBuffer.append("<input type='button' value='Remove'>");
+                            stringBuffer.append("</a>");
+                        } else {
+                            stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=Pending&actid=");
+                            stringBuffer.append(activity.getActID());
+                            stringBuffer.append("'>");
+                            stringBuffer.append("<input type='button' value='Pending'>");
+                            stringBuffer.append("</a>");
+                        }
+                        break;
+                    }
+
+                     /*Marked 4 Add */
                     case 2: {
-                        if (activity.getUserID() == 1) {
+                        if (user.getUserID() == 1) {
                             stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=Approve&actid=");
                             stringBuffer.append(activity.getActID());
                             stringBuffer.append("'>");
@@ -45,13 +63,15 @@ public class Display {
                         }
                         break;
                     }
+
+                    /*Marked as Free */
                     case 3: {
-                        if (activity.getUserID() == 1) {
-                            stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=Free&actid=");
-                            stringBuffer.append(activity.getActID());
-                            stringBuffer.append("'>");
+                        if (user.getUserID() == 1) {
+//                            stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=Free&actid=");
+//                            stringBuffer.append(activity.getActID());
+//                            stringBuffer.append("'>");
                             stringBuffer.append("<input type='button' value='Free'>");
-                            stringBuffer.append("</a>");
+//                            stringBuffer.append("</a>");
                         } else {
                             stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=Take&actid=");
                             stringBuffer.append(activity.getActID());
@@ -61,8 +81,24 @@ public class Display {
                         }
                         break;
                     }
-                    default:
+
+                    /*Mrked as Taken */
+                    default:{
+                        if (user.getUserID() == 1) {
+//                            stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=Approve&actid=");
+//                            stringBuffer.append(activity.getActID());
+//                            stringBuffer.append("'>");
+                            stringBuffer.append("<input type='button' value='Taken'>");
+//                            stringBuffer.append("</a>");
+                        } else {
+                            stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=Pending&actid=");
+                            stringBuffer.append(activity.getActID());
+                            stringBuffer.append("'>");
+                            stringBuffer.append("<input type='button' value='Drop'>");
+                            stringBuffer.append("</a>");
+                        }
                         break;
+                    }
                 }
                 stringBuffer.append("</form>");
                 stringBuffer.append("</td>");

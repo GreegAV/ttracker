@@ -2,6 +2,7 @@ package entities;
 
 import dao.DBOperation;
 
+import javax.servlet.ServletContext;
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -23,6 +24,16 @@ public class User implements Serializable, UserActions {
         this.userName = userName;
         this.isAdmin = isAdmin;
         this.actList = actList;
+    }
+
+    public static User isUserValid(String loginName, String loginPass) {
+        for (User tmpUser : DBOperation.userList) {
+            if (tmpUser.getUserLogin().equalsIgnoreCase(loginName) &&
+                    tmpUser.getUserPassword().equals(loginPass)) {
+                return tmpUser;
+            }
+        }
+        return null;
     }
 
     public int getUserID() {
@@ -58,7 +69,7 @@ public class User implements Serializable, UserActions {
     }
 
     public boolean isAdmin() {
-        return (this.userID==1);
+        return (this.userID == 1);
     }
 
     public void setAdmin(boolean admin) {
@@ -97,6 +108,15 @@ public class User implements Serializable, UserActions {
         return null;
     }
 
+//    public boolean isUserExists(String loginName) {
+//        boolean exists = false;
+//        for (User tmpUser : DBOperation.userList) {
+//            if (tmpUser.getUserLogin().equalsIgnoreCase(loginName))
+//                exists = true;
+//        }
+//        return exists;
+//    }
+
     @Override
     public String toString() {
         String result = "\n\r";
@@ -107,23 +127,5 @@ public class User implements Serializable, UserActions {
                 "Admin: " + this.isAdmin + "\t" +
                 "Act: " + this.actList;
         return result;
-    }
-
-//    public boolean isUserExists(String loginName) {
-//        boolean exists = false;
-//        for (User tmpUser : DBOperation.userList) {
-//            if (tmpUser.getUserLogin().equalsIgnoreCase(loginName))
-//                exists = true;
-//        }
-//        return exists;
-//    }
-
-    public static User isUserValid(String loginName, String loginPass) {
-        for (User tmpUser : DBOperation.userList) {
-            if (tmpUser.getUserLogin().equalsIgnoreCase(loginName) &&
-                tmpUser.getUserPassword().equals(loginPass))
-                return tmpUser;
-        }
-        return null;
     }
 }
