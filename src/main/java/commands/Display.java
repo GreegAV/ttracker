@@ -100,12 +100,17 @@ public class Display {
                         break;
                     }
                 }
-                stringBuffer.append("</form>");
+
                 stringBuffer.append("</td>");
                 stringBuffer.append("</tr>");
             }
         }
         stringBuffer.append("</table>");
+        stringBuffer.append("<br/><br/><br/>");
+//        stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=Pending&actid=");
+        stringBuffer.append("<input type='submit' name='command' value='Logout'>");
+        stringBuffer.append("</form>");
+//        stringBuffer.append("</a>");
         return stringBuffer;
     }
 }

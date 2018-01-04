@@ -78,9 +78,9 @@ public class DBOperation {
                 Activity act = new Activity(actID, actName, actTime, actMark, actUser);   //actUserID
                 activities.add(act);
             }
-            resultSet.close();
-            statement.close();
-            connection.close();
+            DBConnection.closeResultSet(resultSet);
+            DBConnection.closeStatement(statement);
+            DBConnection.closeConnection(connection);
             return activities;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -88,7 +88,7 @@ public class DBOperation {
         return null;
     }
 
-    public void updateActivity(Activity activity) {
+    public void updateActivityDB(Activity activity) {
         final String SQL = "UPDATE timetrack.activities  SET "
                 + "actDuration=?,  WHERE" + "actID=? ";
 

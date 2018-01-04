@@ -9,9 +9,8 @@
     <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../ttracker/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ttracker/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/commands/Display.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/Display.java" />
-      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java" />
-      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/commands/changeStatusCommand.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/changeStatusCommand.java" />
-      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/entities/User.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/entities/User.java" />
+      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/commands/LogoutCommand.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/commands/LogoutCommand.java" />
+      <change beforePath="$PROJECT_DIR$/../ttracker/src/main/java/dao/DBOperation.java" afterPath="$PROJECT_DIR$/../ttracker/src/main/java/dao/DBOperation.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -110,6 +109,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DBOperation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/dao/DBOperation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="82" column="53" lean-forward="false" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
+              <folding>
+                <element signature="method#updateActivityDB#0;class#DBOperation#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="RegisterCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -125,11 +136,21 @@
       <file leaf-file-name="Display.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="86" column="32" lean-forward="false" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
+            <state relative-caret-position="349">
+              <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Helper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/controller/Helper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -202,11 +223,9 @@
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/dao/DAO.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/dao/DBConnection.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/entities/FullBase.java" />
-        <option value="$PROJECT_DIR$/../ttracker/src/main/java/dao/DBOperation.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/controller/MainServlet.java" />
         <option value="$PROJECT_DIR$/../ttracker/web/home.jsp" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/ChangeStatusCommand.java" />
-        <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/LogoutCommand.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/TakeCommand.java" />
         <option value="$PROJECT_DIR$/../ttracker/web/index.jsp" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/PendingCommand.java" />
@@ -223,6 +242,8 @@
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/entities/User.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/RegisterCommand.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/changeStatusCommand.java" />
+        <option value="$PROJECT_DIR$/../ttracker/src/main/java/dao/DBOperation.java" />
+        <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/LogoutCommand.java" />
         <option value="$PROJECT_DIR$/../ttracker/src/main/java/commands/Display.java" />
       </list>
     </option>
@@ -302,6 +323,22 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="commands" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ttracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ttracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ttracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ttracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ttracker" type="b2602c69:ProjectViewProjectNode" />
@@ -557,7 +594,7 @@
       <updated>1514459314563</updated>
       <workItem from="1514459317962" duration="26893000" />
       <workItem from="1514888427801" duration="26000" />
-      <workItem from="1514888637392" duration="68057000" />
+      <workItem from="1514888637392" duration="69037000" />
     </task>
     <task id="LOCAL-00001" summary="throws -&gt; printstacktrace">
       <created>1514468744209</created>
@@ -790,11 +827,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515061387730</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="display status/button OK">
+      <created>1515067894614</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1515067894614</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94976000" />
+    <option name="totallyTimeSpent" value="95956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -818,7 +862,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3931186" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22401172" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21742313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -898,7 +942,8 @@
     <MESSAGE value="passing parameters!!!!!" />
     <MESSAGE value="autorization&#10;list activities acc to it" />
     <MESSAGE value="login&amp;redirect OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="login&amp;redirect OK" />
+    <MESSAGE value="display status/button OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="display status/button OK" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1128,21 +1173,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/dao/DBConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="62" column="32" lean-forward="true" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#getResultSet#0;class#DBConnection#0" expanded="false" />
-            <element signature="method#getStatement#0;class#DBConnection#0" expanded="false" />
-            <element signature="method#closeResultSet#0;class#DBConnection#0" expanded="false" />
-            <element signature="method#closeStatement#0;class#DBConnection#0" expanded="false" />
-            <element signature="method#closeConnection#0;class#DBConnection#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ttracker/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1213,41 +1243,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/controller/Helper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/controller/MainServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/LogoutCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/dao/DBOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="51" column="32" lean-forward="false" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
-          <folding>
-            <element signature="method#getActListFromDB#0;class#DBOperation#0" expanded="false" />
-            <element signature="method#updateActivity#0;class#DBOperation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1334,10 +1335,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/dao/DBOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="82" column="53" lean-forward="false" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
+          <folding>
+            <element signature="method#updateActivityDB#0;class#DBOperation#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/LogoutCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/dao/DBConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getResultSet#0;class#DBConnection#0" expanded="false" />
+            <element signature="method#getStatement#0;class#DBConnection#0" expanded="false" />
+            <element signature="method#closeResultSet#0;class#DBConnection#0" expanded="false" />
+            <element signature="method#closeStatement#0;class#DBConnection#0" expanded="false" />
+            <element signature="method#closeConnection#0;class#DBConnection#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/controller/Helper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../ttracker/src/main/java/commands/Display.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="86" column="32" lean-forward="false" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
+        <state relative-caret-position="349">
+          <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
