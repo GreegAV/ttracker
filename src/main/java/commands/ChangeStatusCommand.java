@@ -65,9 +65,15 @@ public class ChangeStatusCommand implements controller.ICommand {
             if (activity != null) {
                 System.out.println("Add time");
                 // TODO addtime to activity
+//                DBOperation.updateActivityDB(activity);
+//                String timeString[] = request.getParameterValues("time");
+//                for (String str : timeString) {
+//                    System.out.println(str);
+//                }
                 response.getWriter().print(Display.showPage(loggedUser));
             }
         }
+
 
         return "";
     }

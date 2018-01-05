@@ -85,7 +85,6 @@ public class Display {
                         break;
                     }
                 }
-
                 stringBuffer.append("</td>");
                 stringBuffer.append("</tr>");
             }
