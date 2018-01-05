@@ -9,6 +9,7 @@ public class Display {
 
         stringBuffer.append("Hello, " + user.getUserName() + ".");
         stringBuffer.append("<br/>");
+
         if (user.isAdmin()) {
             stringBuffer.append("<table border='1' cellpadding='5' width='60%' align='center'>");
             stringBuffer.append("<tr><th>Id</th><th>Name</th><th>Duration</th><th>UserName</th><th>Status</th>");
@@ -17,7 +18,7 @@ public class Display {
             stringBuffer.append("<tr><th>Id</th><th>Name</th><th>Duration</th><th>Status</th>");
         }
         for (Activity activity : DBOperation.activityList) {
-            if (user.getUserID() == activity.getUserID() | user.isAdmin() | activity.getUserID()==1) {
+            if (user.getUserID() == activity.getUserID() | user.isAdmin() | activity.getUserID() == 1) {
                 stringBuffer.append("<tr>");
                 stringBuffer.append("<td>" + activity.getActID() + "</td>");
                 stringBuffer.append("<td>" + activity.getActName() + "</td>");
@@ -29,7 +30,7 @@ public class Display {
                 stringBuffer.append(" <form method='get' action='MainServlet'>");
                 switch (activity.getActStatus()) {
                     /* Marked 4 Del*/
-                    case 1:{
+                    case 1: {
                         if (user.getUserID() == 1) {
                             stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=remove&actid=");
                             stringBuffer.append(activity.getActID());
@@ -37,16 +38,12 @@ public class Display {
                             stringBuffer.append("<input type='button' value='Remove'>");
                             stringBuffer.append("</a>");
                         } else {
-//                            stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=Pending&actid=");
-//                            stringBuffer.append(activity.getActID());
-//                            stringBuffer.append("'>");
                             stringBuffer.append("<input type='button' value='Pending'>");
-//                            stringBuffer.append("</a>");
                         }
                         break;
                     }
 
-                     /*Marked 4 Add */
+                    /*Marked 4 Add */
                     case 2: {
                         if (user.getUserID() == 1) {
                             stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=approve&actid=");
@@ -55,11 +52,7 @@ public class Display {
                             stringBuffer.append("<input type='button' value='Approve'>");
                             stringBuffer.append("</a>");
                         } else {
-//                            stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=Pending&actid=");
-//                            stringBuffer.append(activity.getActID());
-//                            stringBuffer.append("'>");
                             stringBuffer.append("<input type='button' value='Pending'>");
-//                            stringBuffer.append("</a>");
                         }
                         break;
                     }
@@ -79,7 +72,7 @@ public class Display {
                     }
 
                     /*Marked as Taken */
-                    default:{
+                    default: {
                         if (user.getUserID() == 1) {
                             stringBuffer.append("<input type='button' value='Taken'>");
                         } else {
@@ -99,7 +92,9 @@ public class Display {
         }
         stringBuffer.append("</table>");
         stringBuffer.append("<br/><br/><br/>");
-        stringBuffer.append("<input type='submit' name='command' value='Logout'>");
+        stringBuffer.append("<a href='/MainServlet?command=Logout'>");
+        stringBuffer.append("<input type='button' name='command' value='Logout'>");
+        stringBuffer.append("</a>");
         stringBuffer.append("</form>");
         return stringBuffer;
     }

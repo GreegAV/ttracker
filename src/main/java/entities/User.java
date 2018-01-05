@@ -104,14 +104,6 @@ public class User {
         return null;
     }
 
-//    public boolean isUserExists(String loginName) {
-//        boolean exists = false;
-//        for (User tmpUser : DBOperation.userList) {
-//            if (tmpUser.getUserLogin().equalsIgnoreCase(loginName))
-//                exists = true;
-//        }
-//        return exists;
-//    }
 
     @Override
     public String toString() {

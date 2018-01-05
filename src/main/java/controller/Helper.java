@@ -14,14 +14,8 @@ public class Helper {
     private Helper() {
         commands.put("Logout", new LogoutCommand());
         commands.put("Login", new RegisterCommand());
-//        commands.put("Approve", new ApproveCommand());
-//        commands.put("Pending", new PendingCommand());
-//        commands.put("Free", new FreeCommand());
-//        commands.put("Take", new TakeCommand());
-        commands.put("changeStatus", new changeStatusCommand());
-//        commands.put("order", new OrderCommand());
-//        commands.put("addProduct", new AddNewProductCommand());
-//        commands.put("addMoney", new AddMoneyCommand());
+        commands.put("changeStatus", new ChangeStatusCommand());
+        commands.put("Add time", new AddTimeCommand());
     }
 
     public static Helper getInstance() {

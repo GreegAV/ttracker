@@ -30,8 +30,6 @@ public class MainServlet extends HttpServlet {
             page = "/error.jsp";
         }
         getServletContext().getRequestDispatcher(page).forward(request, response);
-//        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(page);
-//        dispatcher.forward(request, response);
     }
 
     @Override

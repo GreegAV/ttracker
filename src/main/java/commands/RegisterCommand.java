@@ -22,11 +22,12 @@ public class RegisterCommand implements ICommand {
             System.out.println(loggedUser.getUserName());
             response.getWriter().print(Display.showPage(loggedUser));
             request.getServletContext().setAttribute("loggedUser", loggedUser);
-        }
-
-        System.out.println("Username/Password error!");
+        } else {
+            response.getWriter().print("Username/Password error!");
             return "/index.jsp";
         }
+        return "";
     }
 
 
+}

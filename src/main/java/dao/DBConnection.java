@@ -29,16 +29,6 @@ public class DBConnection {
     public static Connection getConnection() {
         Connection connection = null;
         try {
-            //  Load the properties file
-//            Properties properties = new Properties();
-//            properties.load(new FileInputStream("db.properties"));
-            // Read the props
-            //user=root
-            //password=root
-            //dburl=jdbc:mysql://localhost:3306/
-            //dbname=timetrack
-            //dbconparams=?useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-
             String dbUser = "root";
             String dbPassword = "root";
             String dbURL = "jdbc:mysql://localhost:3306/";
@@ -46,12 +36,6 @@ public class DBConnection {
             String dbConParams = "?useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
             String dbConUrl = dbURL + dbName + dbConParams;
 
-//            String dbUser = properties.getProperty("user");
-//            String dbPassword = properties.getProperty("password");
-//            String dbURL = properties.getProperty("dburl");
-//            String dbName = properties.getProperty("dbname");
-//            String dbConParams = properties.getProperty("dbconparams");
-//            String dbConUrl=dbURL+dbName+"?"+dbConParams;
             //  Get a connection to database
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(dbConUrl, dbUser, dbPassword);

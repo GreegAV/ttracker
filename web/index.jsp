@@ -8,7 +8,7 @@
 
 <body>
 <div align="center">
-  <form name="loginForm" method="get" action="MainServlet">
+  <form name="loginForm" method="post" action="MainServlet">
     <table align="center" width="25%" border="0">
       <tr>
         <td align="center">
