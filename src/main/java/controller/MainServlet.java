@@ -6,11 +6,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-//@WebServlet("/MainServlet")
 public class MainServlet extends HttpServlet {
 
-//    private static Logger logger = Logger.getLogger(MainServlet.class);
+    private static Logger logger = Logger.getLogger(MainServlet.class.getName());
 
     private Helper helper = Helper.getInstance();
 
@@ -24,8 +25,10 @@ public class MainServlet extends HttpServlet {
         try {
             ICommand command = helper.getCommand(request);
             page = command.execute(request, response);
-//            logger.error("Redirect to "+page);
+            logger.log(Level.INFO, "Redirect to "+page);
+//           logger.log("Redirect to "+page);
         } catch (ServletException | IOException e) {
+            logger.log(Level.INFO, e.getMessage());
 //            logger.error(e.getMessage());
             page = "/error.jsp";
         }
