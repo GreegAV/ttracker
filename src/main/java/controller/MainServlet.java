@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/MainServlet")
+//@WebServlet("/MainServlet")
 public class MainServlet extends HttpServlet {
 
 //    private static Logger logger = Logger.getLogger(MainServlet.class);
