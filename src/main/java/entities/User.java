@@ -36,6 +36,14 @@ public class User {
         return null;
     }
 
+    public static String getUserNameByID(int userID) {
+        for (User user : DBOperation.userList) {
+            if (user.userID == userID)
+                return user.userName;
+        }
+        return null;
+    }
+
     public int getUserID() {
         return userID;
     }
@@ -95,15 +103,6 @@ public class User {
         }
         return null;
     }
-
-    public static String getUserNameByID(int userID) {
-        for (User user : DBOperation.userList) {
-            if (user.userID == userID)
-                return user.userName;
-        }
-        return null;
-    }
-
 
     @Override
     public String toString() {

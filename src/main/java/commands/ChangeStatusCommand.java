@@ -1,5 +1,6 @@
 package commands;
 
+import controller.MainServlet;
 import dao.DBOperation;
 import entities.*;
 
@@ -7,12 +8,14 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.logging.Logger;
 
 public class ChangeStatusCommand implements controller.ICommand {
     private static final int FORDEL = 1;
     private static final int FORADD = 2;
     private static final int FREE = 3;
     private static final int TAKEN = 4;
+    private static Logger logger = Logger.getLogger(ChangeStatusCommand.class.getName());
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException {

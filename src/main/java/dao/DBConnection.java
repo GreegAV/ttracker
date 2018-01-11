@@ -3,14 +3,17 @@ package dao;
 import java.io.FileInputStream;
 import java.sql.*;
 import java.util.Properties;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class DBConnection {
+    private static Logger logger = Logger.getLogger(DBConnection.class.getName());
 
     public static ResultSet getResultSet(Statement statement, String sqlSelect) {
         try {
             return statement.executeQuery(sqlSelect);
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, e.getMessage());
         }
         return null;
     }
@@ -21,7 +24,7 @@ public class DBConnection {
                 return connection.createStatement();
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, e.getMessage());
         }
         return null;
     }
@@ -40,11 +43,12 @@ public class DBConnection {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(dbConUrl, dbUser, dbPassword);
             if (connection != null) {
-                System.out.println("\nConnection successful!\n");
+                logger.log(Level.INFO, "\nConnection successful!\n");
                 return connection;
-            } else System.out.println("Connection failed!");
+            } else
+                logger.log(Level.INFO, "\nConnection successful!\n");
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, e.getMessage());
         }
         return null;
     }
@@ -54,7 +58,7 @@ public class DBConnection {
             try {
                 resultSet.close();
             } catch (SQLException e) {
-                e.printStackTrace();
+                logger.log(Level.SEVERE, e.getMessage());
             }
         }
     }
@@ -64,7 +68,7 @@ public class DBConnection {
             try {
                 statement.close();
             } catch (SQLException e) {
-                e.printStackTrace();
+                logger.log(Level.SEVERE, e.getMessage());
             }
         }
     }
@@ -74,7 +78,7 @@ public class DBConnection {
             try {
                 connection.close();
             } catch (SQLException e) {
-                e.printStackTrace();
+                logger.log(Level.SEVERE, e.getMessage());
             }
         }
     }

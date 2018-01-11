@@ -26,10 +26,8 @@ public class MainServlet extends HttpServlet {
             ICommand command = helper.getCommand(request);
             page = command.execute(request, response);
             logger.log(Level.INFO, "Redirect to "+page);
-//           logger.log("Redirect to "+page);
         } catch (ServletException | IOException e) {
-            logger.log(Level.INFO, e.getMessage());
-//            logger.error(e.getMessage());
+            logger.log(Level.SEVERE, e.getMessage());
             page = "/error.jsp";
         }
         getServletContext().getRequestDispatcher(page).forward(request, response);

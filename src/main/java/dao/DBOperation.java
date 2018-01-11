@@ -2,15 +2,20 @@ package dao;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
+import controller.MainServlet;
 import entities.*;
 
 
 public class DBOperation {
 
+    //    private static ArrayList<User> simpleUserList = getSimpleUserListFromDB();
+    private static Logger logger = Logger.getLogger(DBOperation.class.getName());
+
     public static ArrayList<Activity> activityList = getActListFromDB();
     public static ArrayList<User> userList = getUserListFromDB();
-//    private static ArrayList<User> simpleUserList = getSimpleUserListFromDB();
 
     private static ArrayList<User> getUserListFromDB() {
         ArrayList<User> fullUserList = new ArrayList<User>();
@@ -53,7 +58,7 @@ public class DBOperation {
             DBConnection.closeConnection(connection);
             return userList;
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, e.getMessage());
         }
         return null;
     }
@@ -79,7 +84,7 @@ public class DBOperation {
             DBConnection.closeConnection(connection);
             return activities;
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, e.getMessage());
         }
         return null;
     }
@@ -97,7 +102,7 @@ public class DBOperation {
             statement.executeUpdate();
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, e.getMessage());
         }
 
     }
