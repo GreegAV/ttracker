@@ -2,17 +2,15 @@ package dao;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
-import controller.MainServlet;
 import entities.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 public class DBOperation {
 
-    //    private static ArrayList<User> simpleUserList = getSimpleUserListFromDB();
-    private static Logger logger = Logger.getLogger(DBOperation.class.getName());
+    static Logger logger = LoggerFactory.getLogger(DBOperation.class);
 
     public static ArrayList<Activity> activityList = getActListFromDB();
     public static ArrayList<User> userList = getUserListFromDB();
@@ -58,7 +56,7 @@ public class DBOperation {
             DBConnection.closeConnection(connection);
             return userList;
         } catch (SQLException e) {
-            logger.log(Level.SEVERE, e.getMessage());
+            logger.error(e.getMessage());
         }
         return null;
     }
@@ -84,7 +82,7 @@ public class DBOperation {
             DBConnection.closeConnection(connection);
             return activities;
         } catch (SQLException e) {
-            logger.log(Level.SEVERE, e.getMessage());
+            logger.error(e.getMessage());
         }
         return null;
     }
@@ -102,7 +100,7 @@ public class DBOperation {
             statement.executeUpdate();
 
         } catch (SQLException e) {
-            logger.log(Level.SEVERE, e.getMessage());
+            logger.error(e.getMessage());
         }
 
     }

@@ -2,8 +2,6 @@ package entities;
 
 import dao.DBOperation;
 
-import javax.servlet.ServletContext;
-import java.io.Serializable;
 import java.util.ArrayList;
 
 public class User {

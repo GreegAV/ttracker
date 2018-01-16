@@ -1,19 +1,18 @@
 package dao;
 
-import java.io.FileInputStream;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.sql.*;
-import java.util.Properties;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class DBConnection {
-    private static Logger logger = Logger.getLogger(DBConnection.class.getName());
+    static Logger logger = LoggerFactory.getLogger(DBConnection.class);
 
     public static ResultSet getResultSet(Statement statement, String sqlSelect) {
         try {
             return statement.executeQuery(sqlSelect);
         } catch (SQLException e) {
-            logger.log(Level.SEVERE, e.getMessage());
+            logger.error(e.getMessage());
         }
         return null;
     }
@@ -24,7 +23,7 @@ public class DBConnection {
                 return connection.createStatement();
             }
         } catch (SQLException e) {
-            logger.log(Level.SEVERE, e.getMessage());
+            logger.error(e.getMessage());
         }
         return null;
     }
@@ -43,12 +42,12 @@ public class DBConnection {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(dbConUrl, dbUser, dbPassword);
             if (connection != null) {
-                logger.log(Level.INFO, "\nConnection successful!\n");
+                logger.info("\nConnection successful!\n");
                 return connection;
             } else
-                logger.log(Level.INFO, "\nConnection successful!\n");
+                logger.info("\nConnection fail!\n");
         } catch (Exception e) {
-            logger.log(Level.SEVERE, e.getMessage());
+            logger.error(e.getMessage());
         }
         return null;
     }
@@ -58,7 +57,7 @@ public class DBConnection {
             try {
                 resultSet.close();
             } catch (SQLException e) {
-                logger.log(Level.SEVERE, e.getMessage());
+                logger.error(e.getMessage());
             }
         }
     }
@@ -68,7 +67,7 @@ public class DBConnection {
             try {
                 statement.close();
             } catch (SQLException e) {
-                logger.log(Level.SEVERE, e.getMessage());
+                logger.error(e.getMessage());
             }
         }
     }
@@ -78,7 +77,7 @@ public class DBConnection {
             try {
                 connection.close();
             } catch (SQLException e) {
-                logger.log(Level.SEVERE, e.getMessage());
+                logger.error(e.getMessage());
             }
         }
     }

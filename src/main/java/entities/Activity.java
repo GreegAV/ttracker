@@ -2,7 +2,6 @@ package entities;
 
 import dao.DBOperation;
 
-import java.io.Serializable;
 
 public class Activity {
     private int actID;

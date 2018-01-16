@@ -15,7 +15,7 @@
     </servlet-mapping>
     <filter>
         <filter-name>EncodingFilter</filter-name>
-        <filter-class>filter.EncodingFilter</filter-class>
+        <filter-class>service.EncodingFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>EncodingFilter</filter-name>
