@@ -2,8 +2,6 @@ package entities;
 
 import dao.DBOperation;
 
-import javax.servlet.ServletContext;
-import java.io.Serializable;
 import java.util.ArrayList;
 
 public class User {
@@ -32,6 +30,14 @@ public class User {
                     tmpUser.getUserPassword().equals(loginPass)) {
                 return tmpUser;
             }
+        }
+        return null;
+    }
+
+    public static String getUserNameByID(int userID) {
+        for (User user : DBOperation.userList) {
+            if (user.userID == userID)
+                return user.userName;
         }
         return null;
     }
@@ -95,15 +101,6 @@ public class User {
         }
         return null;
     }
-
-    public static String getUserNameByID(int userID) {
-        for (User user : DBOperation.userList) {
-            if (user.userID == userID)
-                return user.userName;
-        }
-        return null;
-    }
-
 
     @Override
     public String toString() {

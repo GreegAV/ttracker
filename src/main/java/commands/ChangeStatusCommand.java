@@ -1,9 +1,11 @@
 package commands;
 
+import controller.MainServlet;
 import dao.DBOperation;
 import entities.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -13,11 +15,10 @@ public class ChangeStatusCommand implements controller.ICommand {
     private static final int FORADD = 2;
     private static final int FREE = 3;
     private static final int TAKEN = 4;
+    static Logger logger = LoggerFactory.getLogger(ChangeStatusCommand.class);
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("text/html");
-        response.setCharacterEncoding("UTF-8");
 
         String action = request.getParameter("action");
         int actid = Integer.parseInt(request.getParameter("actid"));

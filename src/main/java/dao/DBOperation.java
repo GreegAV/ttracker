@@ -4,13 +4,16 @@ import java.sql.*;
 import java.util.ArrayList;
 
 import entities.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 public class DBOperation {
 
+    static Logger logger = LoggerFactory.getLogger(DBOperation.class);
+
     public static ArrayList<Activity> activityList = getActListFromDB();
     public static ArrayList<User> userList = getUserListFromDB();
-//    private static ArrayList<User> simpleUserList = getSimpleUserListFromDB();
 
     private static ArrayList<User> getUserListFromDB() {
         ArrayList<User> fullUserList = new ArrayList<User>();
@@ -53,7 +56,7 @@ public class DBOperation {
             DBConnection.closeConnection(connection);
             return userList;
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
         return null;
     }
@@ -79,7 +82,7 @@ public class DBOperation {
             DBConnection.closeConnection(connection);
             return activities;
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
         return null;
     }
@@ -97,7 +100,7 @@ public class DBOperation {
             statement.executeUpdate();
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
 
     }

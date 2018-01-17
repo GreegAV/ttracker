@@ -1,6 +1,8 @@
 package commands;
 
 import controller.ICommand;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -8,13 +10,14 @@ import javax.servlet.http.HttpServletResponse;
 
 public class LogoutCommand implements ICommand {
 
-    //    private static final Logger LOGGER = Logger.getLogger(LogoutCommand.class);
+    static Logger logger = LoggerFactory.getLogger(LogoutCommand.class);
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         request.getSession().invalidate();
         request.getSession(false);
-        System.out.println("LogoutCommand passed!!!");
+        logger.info("LogoutCommand passed!!!");
+//        logger.log(Level.INFO, "LogoutCommand passed!!!");
         return "/index.jsp";
     }
 }

@@ -2,12 +2,14 @@ package controller;
 
 
 import commands.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 
 public class Helper {
-//    private static final Logger LOGGER = Logger.getLogger(Helper.class);
+    static Logger logger = LoggerFactory.getLogger(RegisterCommand.class);
     private static Helper instance = null;
     private HashMap<String, ICommand> commands = new HashMap<>();
 
@@ -30,10 +32,10 @@ public class Helper {
 
     public ICommand getCommand(HttpServletRequest request) {
         ICommand command = commands.get(request.getParameter("command"));
-        System.out.println("request.getParameter: "+request.getParameter("command"));
+        logger.info("request.getParameter: " + request.getParameter("command"));
         if (command == null) {
             command = new HomeCommand();
-            System.out.println("Переход на домашнюю страницу.");
+            logger.info("Переход на домашнюю странТицу.");
         }
         return command;
     }
