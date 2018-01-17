@@ -85,8 +85,8 @@ public class DBOperation {
     }
 
     public static void updateActivityDB(Activity activity) {
-        final String SQL = "UPDATE timetrack.activities  SET "
-                + "actDuration=?, actMarked=?, WHERE" + "actID=? ";
+        final String SQL = "UPDATE timetrack.activities SET "
+                + "actDuration=?, actMarked=? WHERE " + "actID=? ";
 
         try (Connection connection = DBConnection.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL)) {
