@@ -13,8 +13,8 @@ public class RegisterCommand implements ICommand {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-        response.setContentType("text/html");
-        response.setCharacterEncoding("UTF-8");
+//        response.setContentType("text/html");
+//        response.setCharacterEncoding("UTF-8");
 
         User loggedUser = User.isUserValid(request.getParameter("nameInput"), request.getParameter("passInput"));
 
