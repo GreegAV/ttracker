@@ -11,8 +11,6 @@ import java.io.IOException;
 public class AddTimeCommand implements controller.ICommand {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException {
-//        response.setContentType("text/html");
-//        response.setCharacterEncoding("UTF-8");
 
         String action = request.getParameter("action");
         int actid = Integer.parseInt(request.getParameter("actid"));

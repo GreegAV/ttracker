@@ -18,7 +18,6 @@ public class LogoutCommand implements ICommand {
         request.getSession(false);
         //TODO commit changes to DB
         logger.info("LogoutCommand passed!!!");
-//        System.out.println("LogoutCommand passed!!!");
         return "/index.jsp";
     }
 }
