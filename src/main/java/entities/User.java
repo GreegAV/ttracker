@@ -27,7 +27,7 @@ public class User {
     }
 
     public static User isUserValid(String loginName, String loginPass) {
-        for (User tmpUser : DBOperation.userList) {
+        for (User tmpUser : DBOperation.getUserListFromDB()) {
             if (tmpUser.getUserLogin().equalsIgnoreCase(loginName) &&
                     tmpUser.getUserPassword().equals(loginPass)) {
                 return tmpUser;
@@ -89,7 +89,7 @@ public class User {
     }
 
     public User getUserByID(int userID) {
-        for (User user : DBOperation.userList) {
+        for (User user : DBOperation.getUserListFromDB()) {
             if (user.userID == userID)
                 return user;
         }
@@ -97,7 +97,7 @@ public class User {
     }
 
     public static String getUserNameByID(int userID) {
-        for (User user : DBOperation.userList) {
+        for (User user : DBOperation.getUserListFromDB()) {
             if (user.userID == userID)
                 return user.userName;
         }

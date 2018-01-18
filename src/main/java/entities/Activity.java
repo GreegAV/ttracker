@@ -21,12 +21,18 @@ public class Activity {
         this.actDuration = actDuration;
         this.actStatus = actStatus;
         this.userID = userID;
-        this.userName = "";
+        this.userName ="" ;
     }
 
     public static Activity getActByID(int actID) {
-        for (Activity activity : DBOperation.activityList) {
+        for (Activity activity : DBOperation.getActListFromDB()) {
             if (activity.actID == actID) return activity;
+        }
+        return null;
+    }
+    public String getUserNameByID(int userID) {
+        for (User user : DBOperation.getUserListFromDB()) {
+            if (user.getUserID() == userID) return user.getUserName();
         }
         return null;
     }
@@ -80,7 +86,7 @@ public class Activity {
     }
 
     public String getActNameByID(int actID) {
-        for (Activity activity : DBOperation.activityList) {
+        for (Activity activity : DBOperation.getActListFromDB()) {
             if (activity.actID == actID) return activity.actName;
         }
         return "";

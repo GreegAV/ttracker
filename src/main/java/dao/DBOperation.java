@@ -5,17 +5,15 @@ import java.util.ArrayList;
 
 import entities.*;
 
-
 public class DBOperation {
 
-    public static ArrayList<Activity> activityList = getActListFromDB();
-    public static ArrayList<User> userList = getUserListFromDB();
-//    private static ArrayList<User> simpleUserList = getSimpleUserListFromDB();
+//    public static ArrayList<Activity> activityList = getActListFromDB();
+//    private static ArrayList<User> userList = getUserListFromDB();
 
-    private static ArrayList<User> getUserListFromDB() {
+    public static ArrayList<User> getUserListFromDB() {
         ArrayList<User> fullUserList = new ArrayList<User>();
         for (User tempUser : getSimpleUserListFromDB()) {
-            for (Activity actTemp : activityList) {
+            for (Activity actTemp : getActListFromDB()) {
                 if (actTemp.getUserID() == tempUser.getUserID()) {
                     actTemp.setUserName(tempUser.getUserName());
                 }
@@ -40,7 +38,7 @@ public class DBOperation {
                 boolean isAdm = resultSet.getBoolean(5);
 
                 ArrayList<Activity> actList = new ArrayList<Activity>();
-                for (Activity actTemp : activityList) {
+                for (Activity actTemp : getActListFromDB()) {
                     if (actTemp.getUserID() == userID) {
                         actList.add(actTemp);
                     }
@@ -58,7 +56,7 @@ public class DBOperation {
         return null;
     }
 
-    private static ArrayList<Activity> getActListFromDB() {
+    public static ArrayList<Activity> getActListFromDB() {
         String actSQLSelect = "select * from activities";
         try {
             Connection connection = DBConnection.getConnection();
@@ -86,15 +84,18 @@ public class DBOperation {
 
     public static void updateActivityDB(Activity activity) {
         final String SQL = "UPDATE timetrack.activities SET "
-                + "actDuration=?, actMarked=? WHERE " + "actID=? ";
+                + "actDuration=?, actMarked=?, userID=? WHERE " + "actID=? ";
 
         try (Connection connection = DBConnection.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL)) {
 
             statement.setLong(1, activity.getActDuration());
             statement.setInt(2, activity.getActStatus());
-            statement.setInt(3, activity.getActID());
+            statement.setInt(3, activity.getUserID());
+            statement.setInt(4, activity.getActID());
             statement.executeUpdate();
+            DBConnection.closeStatement(statement);
+            DBConnection.closeConnection(connection);
 
         } catch (SQLException e) {
             e.printStackTrace();
