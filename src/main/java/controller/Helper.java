@@ -15,6 +15,7 @@ public class Helper {
     private static Helper instance = null;
     private HashMap<String, ICommand> commands = new HashMap<>();
 
+    // Adding command to list of available commands
     private Helper() {
         commands.put("Logout", new LogoutCommand());
         commands.put("Login", new RegisterCommand());
@@ -32,14 +33,13 @@ public class Helper {
         return instance;
     }
 
+    // Getting passed command
     public ICommand getCommand(HttpServletRequest request) {
         String parsedCommand = request.getParameter("command");
         ICommand command = commands.get(parsedCommand);
-        System.out.println("request.getParameter: " + parsedCommand);
         if (command == null) {
             command = new HomeCommand();
             logger.info("Переход на домашнюю страницу.");
-//            System.out.println("Переход на домашнюю страницу.");
         }
         logger.info("Переход на cтраницу " + parsedCommand);
         return command;
