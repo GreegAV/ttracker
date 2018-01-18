@@ -6,8 +6,12 @@ import commands.*;
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Helper {
-//    private static final Logger LOGGER = Logger.getLogger(Helper.class);
+
+    private static Logger logger = LoggerFactory.getLogger(RegisterCommand.class);
     private static Helper instance = null;
     private HashMap<String, ICommand> commands = new HashMap<>();
 
@@ -29,12 +33,15 @@ public class Helper {
     }
 
     public ICommand getCommand(HttpServletRequest request) {
-        ICommand command = commands.get(request.getParameter("command"));
-        System.out.println("request.getParameter: "+request.getParameter("command"));
+        String parsedCommand = request.getParameter("command");
+        ICommand command = commands.get(parsedCommand);
+        System.out.println("request.getParameter: " + parsedCommand);
         if (command == null) {
             command = new HomeCommand();
-            System.out.println("Переход на домашнюю страницу.");
+            logger.info("Переход на домашнюю страницу.");
+//            System.out.println("Переход на домашнюю страницу.");
         }
+        logger.info("Переход на cтраницу " + parsedCommand);
         return command;
     }
 }
