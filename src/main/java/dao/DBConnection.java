@@ -44,9 +44,9 @@ public class DBConnection {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(dbConUrl, dbUser, dbPassword);
             if (connection != null) {
-                System.out.println("\nConnection successful!\n");
+                logger.info("\nConnection successful!\n");
                 return connection;
-            } else System.out.println("Connection failed!");
+            } else logger.error("Connection failed!");
         } catch (Exception e) {
             logger.error(e.getMessage());
         }

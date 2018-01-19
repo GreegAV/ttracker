@@ -6,16 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="fix updating username in activity in DB after dropping">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java" />
+    <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/AddTimeCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/AddTimeCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/Display.java" afterPath="$PROJECT_DIR$/src/main/java/commands/Display.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/LogoutCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/LogoutCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Helper.java" afterPath="$PROJECT_DIR$/src/main/java/controller/Helper.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/DBConnection.java" afterPath="$PROJECT_DIR$/src/main/java/dao/DBConnection.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DBOperation.java" afterPath="$PROJECT_DIR$/src/main/java/dao/DBOperation.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -156,8 +149,8 @@
       <file leaf-file-name="DBConnection.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/DBConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="21" column="65" lean-forward="true" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+            <state relative-caret-position="306">
+              <caret line="51" column="10" lean-forward="false" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
               <folding>
                 <element signature="method#getResultSet#0;class#DBConnection#0" expanded="false" />
               </folding>
@@ -655,7 +648,7 @@
       <workItem from="1514888427801" duration="26000" />
       <workItem from="1514888637392" duration="84644000" />
       <workItem from="1516288278569" duration="10595000" />
-      <workItem from="1516373039998" duration="4545000" />
+      <workItem from="1516373039998" duration="4732000" />
     </task>
     <task id="LOCAL-00001" summary="throws -&gt; printstacktrace">
       <created>1514468744209</created>
@@ -965,11 +958,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516290225273</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="adding slf4j&#10;trying to implement pagination by bikes and crutches">
+      <created>1516377929263</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1516377929263</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137866000" />
+    <option name="totallyTimeSpent" value="138053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1036,7 +1036,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="4.2" />
     <MESSAGE value="new ideas" />
     <MESSAGE value="tostring" />
     <MESSAGE value="userlist + activitylist completed" />
@@ -1061,7 +1060,8 @@
     <MESSAGE value="slf4j in MainServlet&#10;Comments in Helper, MainServlet" />
     <MESSAGE value="slf4j in other files" />
     <MESSAGE value="fix updating username in activity in DB after dropping" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix updating username in activity in DB after dropping" />
+    <MESSAGE value="adding slf4j&#10;trying to implement pagination by bikes and crutches" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding slf4j&#10;trying to implement pagination by bikes and crutches" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1363,8 +1363,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="21" column="65" lean-forward="true" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+        <state relative-caret-position="306">
+          <caret line="51" column="10" lean-forward="false" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
           <folding>
             <element signature="method#getResultSet#0;class#DBConnection#0" expanded="false" />
           </folding>
