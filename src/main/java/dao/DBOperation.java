@@ -4,12 +4,12 @@ import java.sql.*;
 import java.util.ArrayList;
 
 import entities.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class DBOperation {
-
-//    public static ArrayList<Activity> activityList = getActListFromDB();
-//    private static ArrayList<User> userList = getUserListFromDB();
-
+    private static Logger logger = LoggerFactory.getLogger(DBOperation.class);
+    
     public static ArrayList<User> getUserListFromDB() {
         ArrayList<User> fullUserList = new ArrayList<User>();
         for (User tempUser : getSimpleUserListFromDB()) {
@@ -25,11 +25,11 @@ public class DBOperation {
 
     private static ArrayList<User> getSimpleUserListFromDB() {
         String usersSQLSelect = "select * from users";
-        try {
+        try (Connection connection = DBConnection.getConnection();
+             Statement statement = DBConnection.getStatement(connection);
+             ResultSet resultSet = DBConnection.getResultSet(statement, usersSQLSelect)
+        ) {
             ArrayList<User> userList = new ArrayList<User>();
-            Connection connection = DBConnection.getConnection();
-            Statement statement = DBConnection.getStatement(connection);
-            ResultSet resultSet = DBConnection.getResultSet(statement, usersSQLSelect);
             while (resultSet.next()) {
                 int userID = resultSet.getInt(1);
                 String userLogin = resultSet.getString(2);
@@ -46,22 +46,19 @@ public class DBOperation {
                 User user = new User(userID, userLogin, userPass, userName, isAdm, actList);
                 userList.add(user);
             }
-            DBConnection.closeResultSet(resultSet);
-            DBConnection.closeStatement(statement);
-            DBConnection.closeConnection(connection);
             return userList;
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
         return null;
     }
 
     public static ArrayList<Activity> getActListFromDB() {
         String actSQLSelect = "select * from activities";
-        try {
-            Connection connection = DBConnection.getConnection();
-            Statement statement = DBConnection.getStatement(connection);
-            ResultSet resultSet = DBConnection.getResultSet(statement, actSQLSelect);
+        try (Connection connection = DBConnection.getConnection();
+             Statement statement = DBConnection.getStatement(connection);
+             ResultSet resultSet = DBConnection.getResultSet(statement, actSQLSelect)
+        ) {
             ArrayList<Activity> activities = new ArrayList<Activity>();
             while (resultSet.next()) {
                 int actID = resultSet.getInt(1);   //actID
@@ -72,12 +69,9 @@ public class DBOperation {
                 Activity act = new Activity(actID, actName, actTime, actMark, actUser);   //actUserID
                 activities.add(act);
             }
-            DBConnection.closeResultSet(resultSet);
-            DBConnection.closeStatement(statement);
-            DBConnection.closeConnection(connection);
             return activities;
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
         return null;
     }
@@ -98,8 +92,18 @@ public class DBOperation {
             DBConnection.closeConnection(connection);
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
 
+    }
+
+    public static int getNumberOfActivities() {
+        int numActivities = 0;
+        for (Activity actTemp : getActListFromDB()) {
+            if (actTemp.getActID() != 0) {
+                numActivities++;
+            }
+        }
+        return numActivities;
     }
 }

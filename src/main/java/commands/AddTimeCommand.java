@@ -33,6 +33,6 @@ public class AddTimeCommand implements controller.ICommand {
         }
 
 
-        return "";
+        return "/MainServlet";
     }
 }

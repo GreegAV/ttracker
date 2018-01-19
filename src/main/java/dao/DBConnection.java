@@ -1,16 +1,20 @@
 package dao;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.FileInputStream;
 import java.sql.*;
 import java.util.Properties;
 
 public class DBConnection {
+    private static Logger logger = LoggerFactory.getLogger(DBConnection.class);
 
     public static ResultSet getResultSet(Statement statement, String sqlSelect) {
         try {
             return statement.executeQuery(sqlSelect);
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
         return null;
     }
@@ -21,7 +25,7 @@ public class DBConnection {
                 return connection.createStatement();
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
         return null;
     }
@@ -44,7 +48,7 @@ public class DBConnection {
                 return connection;
             } else System.out.println("Connection failed!");
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
         return null;
     }
@@ -54,7 +58,7 @@ public class DBConnection {
             try {
                 resultSet.close();
             } catch (SQLException e) {
-                e.printStackTrace();
+                logger.error(e.getMessage());
             }
         }
     }
@@ -64,7 +68,7 @@ public class DBConnection {
             try {
                 statement.close();
             } catch (SQLException e) {
-                e.printStackTrace();
+                logger.error(e.getMessage());
             }
         }
     }
@@ -74,7 +78,7 @@ public class DBConnection {
             try {
                 connection.close();
             } catch (SQLException e) {
-                e.printStackTrace();
+                logger.error(e.getMessage());
             }
         }
     }

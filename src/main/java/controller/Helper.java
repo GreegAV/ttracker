@@ -21,6 +21,7 @@ public class Helper {
         commands.put("Login", new RegisterCommand());
         commands.put("changeStatus", new ChangeStatusCommand());
         commands.put("Add time", new AddTimeCommand());
+        commands.put("ChangePage", new ChangePageCommand());
     }
 
     public static Helper getInstance() {
