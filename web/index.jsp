@@ -22,7 +22,6 @@
       <tr>
         <td align="center">
           <input type="submit" name="command" value="Login">
-          <%--<input type="hidden" name="command" value="register">--%>
         </td>
       </tr>
     </table>

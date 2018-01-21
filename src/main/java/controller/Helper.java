@@ -20,7 +20,7 @@ public class Helper {
         commands.put("Logout", new LogoutCommand());
         commands.put("Login", new RegisterCommand());
         commands.put("changeStatus", new ChangeStatusCommand());
-        commands.put("Add time", new AddTimeCommand());
+        commands.put("addTime", new AddTimeCommand());
         commands.put("ChangePage", new ChangePageCommand());
     }
 

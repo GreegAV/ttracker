@@ -19,8 +19,8 @@ public class RegisterCommand implements ICommand {
         Display.curPage=1;
 
         if (loggedUser != null) {
-            System.out.println(loggedUser.getUserName());
-            response.getWriter().print(Display.showPage(loggedUser));
+            logger.info(loggedUser.getUserName()+" logged in.");
+            response.getWriter().print(Display.showPage(loggedUser, request));
             request.getServletContext().setAttribute("loggedUser", loggedUser);
         } else {
             logger.info("Username/Password error!");

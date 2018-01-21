@@ -20,7 +20,7 @@ public class ChangePageCommand implements ICommand {
         Display.curPage = Integer.parseInt(request.getParameter("Page"));
         System.out.println(Display.curPage);
         logger.info("Changing page to "+Display.curPage);
-        response.getWriter().print(Display.showPage(loggedUser));
+        response.getWriter().print(Display.showPage(loggedUser, request));
 
         return "/MainServlet";
     }

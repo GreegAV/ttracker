@@ -18,9 +18,11 @@ public class ChangeStatusCommand implements controller.ICommand {
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         String action = request.getParameter("action");
-        int actid = Integer.parseInt(request.getParameter("actid"));
 
-        Activity activity = Activity.getActByID(actid);
+//        int actid = Integer.parseInt(request.getParameter("actid"));
+//        Activity activity = Activity.getActByID(actid);
+        Activity activity = Activity.getActByID(Integer.parseInt(request.getParameter("actid")));
+
         User loggedUser = (User) request.getServletContext().getAttribute("loggedUser");
 
         if (action.equalsIgnoreCase("remove")) {
@@ -29,7 +31,7 @@ public class ChangeStatusCommand implements controller.ICommand {
                 activity.setUserID(1);
                 activity.setUserName(User.getUserNameByID(1));
                 DBOperation.updateActivityDB(activity);
-                response.getWriter().print(Display.showPage(loggedUser));
+                response.getWriter().print(Display.showPage(loggedUser, request));
             }
         }
 
@@ -37,7 +39,7 @@ public class ChangeStatusCommand implements controller.ICommand {
             if (activity != null) {
                 activity.setActStatus(TAKEN);
                 DBOperation.updateActivityDB(activity);
-                response.getWriter().print(Display.showPage(loggedUser));
+                response.getWriter().print(Display.showPage(loggedUser, request));
             }
         }
 
@@ -47,7 +49,7 @@ public class ChangeStatusCommand implements controller.ICommand {
                 activity.setUserID(loggedUser.getUserID());
                 activity.setUserName(loggedUser.getUserName());
                 DBOperation.updateActivityDB(activity);
-                response.getWriter().print(Display.showPage(loggedUser));
+                response.getWriter().print(Display.showPage(loggedUser, request));
             }
         }
 
@@ -55,12 +57,12 @@ public class ChangeStatusCommand implements controller.ICommand {
             if (activity != null) {
                 activity.setActStatus(FORDEL);
                 DBOperation.updateActivityDB(activity);
-                response.getWriter().print(Display.showPage(loggedUser));
+                response.getWriter().print(Display.showPage(loggedUser, request));
             }
         }
 
-        if (action.equalsIgnoreCase("addtime")) {
-            if (activity != null) {
+        if (action.equalsIgnoreCase("addTime")) {
+//            if (activity != null) {
                 System.out.println("Add time");
                 // TODO addtime to activity
 //                DBOperation.updateActivityDB(activity);
@@ -68,8 +70,8 @@ public class ChangeStatusCommand implements controller.ICommand {
 //                for (String str : timeString) {
 //                    System.out.println(str);
 //                }
-                response.getWriter().print(Display.showPage(loggedUser));
-            }
+                response.getWriter().print(Display.showPage(loggedUser, request));
+//            }
         }
 
 
