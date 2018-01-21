@@ -9,12 +9,7 @@
     <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/commands/AddTimeCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/AddTimeCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/ChangeStatusCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/ChangeStatusCommand.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/commands/Display.java" afterPath="$PROJECT_DIR$/src/main/java/commands/Display.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Helper.java" afterPath="$PROJECT_DIR$/src/main/java/controller/Helper.java" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -108,9 +103,11 @@
       <file leaf-file-name="AddTimeCommand.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/AddTimeCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-              <folding />
+            <state relative-caret-position="340">
+              <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,8 +127,8 @@
       <file leaf-file-name="Display.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="170" column="39" lean-forward="false" selection-start-line="170" selection-start-column="39" selection-end-line="170" selection-end-column="39" />
+            <state relative-caret-position="298">
+              <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#addLine2AdminTable#0;class#Display#0" expanded="false" />
@@ -290,9 +287,9 @@
         <option value="$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Helper.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/ChangeStatusCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/Activity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/Activity.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/Display.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/Activity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/Activity.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/AddTimeCommand.java" />
       </list>
     </option>
@@ -660,7 +657,7 @@
       <workItem from="1514888427801" duration="26000" />
       <workItem from="1514888637392" duration="84644000" />
       <workItem from="1516288278569" duration="10595000" />
-      <workItem from="1516373039998" duration="15486000" />
+      <workItem from="1516373039998" duration="15565000" />
     </task>
     <task id="LOCAL-00001" summary="throws -&gt; printstacktrace">
       <created>1514468744209</created>
@@ -984,11 +981,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516378075634</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Adding time WORKED!">
+      <created>1516559181100</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1516559181100</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148807000" />
+    <option name="totallyTimeSpent" value="148886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1055,7 +1059,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="tostring" />
     <MESSAGE value="userlist + activitylist completed" />
     <MESSAGE value="userlist + activitylist completed fin" />
     <MESSAGE value="Рисует таблицу активностей" />
@@ -1080,7 +1083,8 @@
     <MESSAGE value="fix updating username in activity in DB after dropping" />
     <MESSAGE value="adding slf4j&#10;trying to implement pagination by bikes and crutches" />
     <MESSAGE value="adding slf4j instead of System.out.println." />
-    <option name="LAST_COMMIT_MESSAGE" value="adding slf4j instead of System.out.println." />
+    <MESSAGE value="Adding time WORKED!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding time WORKED!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1373,17 +1377,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="170" column="39" lean-forward="false" selection-start-line="170" selection-start-column="39" selection-end-line="170" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addLine2AdminTable#0;class#Display#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/ChangeStatusCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -1394,11 +1387,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addLine2AdminTable#0;class#Display#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/AddTimeCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="340">
+          <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

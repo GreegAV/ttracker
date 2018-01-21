@@ -159,40 +159,20 @@ public class Display {
                 break;
             }
         }
-//        stringBuffer.append("</form>");
         stringBuffer.append("</td>");
         stringBuffer.append("<td width='15%'>");
-        /////////////////////////////// Adding time cell
-//                stringBuffer.append(activity.getActID());
-//                stringBuffer.append("'>");
-//                stringBuffer.append("<input type='button' value='Take'>");
-//                stringBuffer.append("</a>");
 
         if (activity.getUserID() != 1 & activity.getActStatus() == 4) {
-
             stringBuffer.append("<form method='get' action='MainServlet'>");
             stringBuffer.append("<input type='hidden' name='command' value='addTime'>");
             stringBuffer.append("<p><input name='actid=");
             stringBuffer.append(activity.getActID());
             stringBuffer.append("&amp;amount' type='number' min='1' max='86400' size='2'>&nbsp;&nbsp;");
             stringBuffer.append("<input type='submit' value='Добавить время'>");                  //          +!!!!
-//            request.getServletContext().setAttribute("actid", activity.getActID());
             stringBuffer.append("</p>");
             stringBuffer.append("</form>");
         } else
             stringBuffer.append("&nbsp;");
-
-//          <table align="center" width="25%" border="0">
-//      <tr><td align="center">
-//          Login<br> <input type="text" name="nameInput" required><br>
-//          Password<br> <input type="password" name="passInput" required><br>
-//        </td></tr>
-//      <tr><td>&nbsp;</td></tr>
-//      <tr><td align="center">
-//          <input type="submit" name="command" value="Login">
-//        </td></tr>
-//    </table>
-
         ///////////////////////////////
         stringBuffer.append("</td>");
         stringBuffer.append("</tr>");
