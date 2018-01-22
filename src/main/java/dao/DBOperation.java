@@ -4,11 +4,10 @@ import java.sql.*;
 import java.util.ArrayList;
 
 import entities.*;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 public class DBOperation {
-    private static Logger logger = LoggerFactory.getLogger(DBOperation.class);
+    private static Logger logger = Logger.getLogger(DBOperation.class);
     
     public static ArrayList<User> getUserListFromDB() {
         ArrayList<User> fullUserList = new ArrayList<User>();

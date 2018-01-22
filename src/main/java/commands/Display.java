@@ -38,19 +38,10 @@ public class Display {
         stringBuffer.append("<td width=75%>");
         stringBuffer.append("<center>");
 
-////////////////////////////////////////////// Pagination
-        //stringBuffer.append("<form method='get' action='MainServlet'>");
-        //            stringBuffer.append("<input type='hidden' name='command' value='addTime'>");
-        //            stringBuffer.append("<p><input name='actid=");
-        //            stringBuffer.append(activity.getActID());
-        //            stringBuffer.append("&amp;amount' type='number' min='1' max='86400' size='2'>&nbsp;&nbsp;");
-        //            stringBuffer.append("<input type='submit' value='Добавить время'>");                  //          +!!!!
-        //            stringBuffer.append("</p>");
-        //            stringBuffer.append("</form>");
-//////////////////////////////////////////////
         int userPages = (numUserActivities % ITEMS_PER_USERPAGE > 0) ?
                 ((numUserActivities / ITEMS_PER_USERPAGE) + 1) :
                 (numUserActivities / ITEMS_PER_USERPAGE);
+
         if (userPages > 1) {
             stringBuffer.append(" | ");
             for (int i = 0; i < userPages; i++) {
@@ -81,16 +72,14 @@ public class Display {
         stringBuffer.append("<table border='1' cellpadding='5' width='75%' align='center'>");
         stringBuffer.append("<tr><th>Id</th><th>Name</th><th>Duration</th><th>Status</th><th>Add time</th>");
         numUserActivities = 0;
-//        if (page2show == 1) {
-            for (Activity activity : DBOperation.getActListFromDB()) {
-                if (user.getUserID() == activity.getUserID() | activity.getUserID() == 1) {
-                    numUserActivities++;
-                    if ((numUserActivities>=(page2show-1)*ITEMS_PER_USERPAGE)&(numUserActivities <= ITEMS_PER_USERPAGE*page2show)) {
-                        addLine2UserTable(stringBuffer, activity, request);
-                    }
+        for (Activity activity : DBOperation.getActListFromDB()) {
+            if (user.getUserID() == activity.getUserID() | activity.getUserID() == 1) {
+                numUserActivities++;
+                if ((numUserActivities >= (page2show - 1) * ITEMS_PER_USERPAGE) & (numUserActivities <= ITEMS_PER_USERPAGE * page2show)) {
+                    addLine2UserTable(stringBuffer, activity, request);
                 }
             }
-//        }
+        }
         return stringBuffer;
     }
 

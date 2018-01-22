@@ -1,14 +1,16 @@
 package dao;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
+
+import org.apache.log4j.Logger;
 
 import java.io.FileInputStream;
 import java.sql.*;
 import java.util.Properties;
 
 public class DBConnection {
-    private static Logger logger = LoggerFactory.getLogger(DBConnection.class);
+    private static Logger logger = Logger.getLogger(DBConnection.class);
 
     public static ResultSet getResultSet(Statement statement, String sqlSelect) {
         try {
