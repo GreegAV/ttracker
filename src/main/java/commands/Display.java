@@ -8,7 +8,7 @@ import javax.servlet.http.HttpSession;
 
 public class Display {
     static final int ITEMS_PER_USERPAGE = 5;
-    static final int ITEMS_PER_ADMINPAGE = 10;
+    static final int ITEMS_PER_ADMINPAGE = 7;
     static int itemsInDB = DBOperation.getNumberOfActivities();
     static int adminPages = (itemsInDB % ITEMS_PER_ADMINPAGE > 0) ? (1 + itemsInDB / ITEMS_PER_ADMINPAGE) : (itemsInDB / ITEMS_PER_ADMINPAGE);
     static int numUserActivities = 0;
@@ -21,13 +21,13 @@ public class Display {
         stringBuffer.append("<br/>");
 
         if (user.isAdmin()) {
-            formatAdminPage(stringBuffer);
+            formatAdminPage(stringBuffer, page2show);
         } else {
             formatUserPage(user, stringBuffer, request, page2show);
         }
 
         stringBuffer.append("</table>");
-        stringBuffer.append("<br/><br/><br/>");
+        stringBuffer.append("<br/>");
         stringBuffer.append("<center>");
 
         stringBuffer.append("<table border=0><tr><td width=25%>");
@@ -35,12 +35,27 @@ public class Display {
         stringBuffer.append("<input type='button' name='command' value='Logout'>");
         stringBuffer.append("</a>");
         stringBuffer.append("</td>");
-        stringBuffer.append("<td width=75%>");
+        stringBuffer.append("<td>");
         stringBuffer.append("<center>");
 
-        int userPages = (numUserActivities % ITEMS_PER_USERPAGE > 0) ?
-                ((numUserActivities / ITEMS_PER_USERPAGE) + 1) :
-                (numUserActivities / ITEMS_PER_USERPAGE);
+        paginator(stringBuffer, user);
+        stringBuffer.append("</td>");
+        stringBuffer.append("<br/><br/><br/>");
+
+        return stringBuffer;
+    }
+
+    private static void paginator(StringBuffer stringBuffer, User user) {
+        int userPages;
+        if (!user.isAdmin()) {
+            userPages = (numUserActivities % ITEMS_PER_USERPAGE > 0) ?
+                    ((numUserActivities / ITEMS_PER_USERPAGE) + 1) :
+                    (numUserActivities / ITEMS_PER_USERPAGE);
+        } else {
+            userPages = (itemsInDB % ITEMS_PER_ADMINPAGE > 0) ?
+                    ((itemsInDB / ITEMS_PER_ADMINPAGE) + 1) :
+                    (itemsInDB / ITEMS_PER_ADMINPAGE);
+        }
 
         if (userPages > 1) {
             stringBuffer.append(" | ");
@@ -51,20 +66,18 @@ public class Display {
                 stringBuffer.append(" | ");
             }
         }
-        stringBuffer.append("</td>");
-        stringBuffer.append("<br/><br/><br/>");
-
-        return stringBuffer;
     }
 
-    private static StringBuffer formatAdminPage(StringBuffer stringBuffer) {
+    private static StringBuffer formatAdminPage(StringBuffer stringBuffer, int page2show) {
         stringBuffer.append("<table border='1' cellpadding='5' width='60%' align='center'>");
         stringBuffer.append("<tr><th>Id</th><th>Name</th><th>Duration</th><th>UserName</th><th>Status</th>");
-///////////////////
+        int displayedActivities = 0;
         for (Activity activity : DBOperation.getActListFromDB()) {
-            addLine2AdminTable(stringBuffer, activity);
+            displayedActivities++;
+            if ((displayedActivities > (page2show - 1) * ITEMS_PER_ADMINPAGE) & (displayedActivities <= ITEMS_PER_ADMINPAGE * page2show)) {
+                addLine2AdminTable(stringBuffer, activity);
+            }
         }
-//////////////////
         return stringBuffer;
     }
 
