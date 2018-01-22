@@ -10,11 +10,10 @@ public class Display {
     static final int ITEMS_PER_USERPAGE = 5;
     static final int ITEMS_PER_ADMINPAGE = 10;
     static int itemsInDB = DBOperation.getNumberOfActivities();
-    static int curPage = 0;
     static int adminPages = (itemsInDB % ITEMS_PER_ADMINPAGE > 0) ? (1 + itemsInDB / ITEMS_PER_ADMINPAGE) : (itemsInDB / ITEMS_PER_ADMINPAGE);
     static int numUserActivities = 0;
 
-    public static StringBuffer showPage(User user, HttpServletRequest request) {
+    public static StringBuffer showPage(User user, HttpServletRequest request, int page2show) {
         StringBuffer stringBuffer = new StringBuffer();
 
         stringBuffer.append("<center>");
@@ -24,15 +23,12 @@ public class Display {
         if (user.isAdmin()) {
             formatAdminPage(stringBuffer);
         } else {
-            formatUserPage(user, stringBuffer, request);
+            formatUserPage(user, stringBuffer, request, page2show);
         }
 
         stringBuffer.append("</table>");
         stringBuffer.append("<br/><br/><br/>");
         stringBuffer.append("<center>");
-
-        int userPages = (numUserActivities % ITEMS_PER_USERPAGE > 0) ? (1 + numUserActivities / ITEMS_PER_USERPAGE) : (numUserActivities / ITEMS_PER_USERPAGE);
-
 
         stringBuffer.append("<table border=0><tr><td width=25%>");
         stringBuffer.append("<a href='/MainServlet?command=Logout'>");
@@ -41,6 +37,20 @@ public class Display {
         stringBuffer.append("</td>");
         stringBuffer.append("<td width=75%>");
         stringBuffer.append("<center>");
+
+////////////////////////////////////////////// Pagination
+        //stringBuffer.append("<form method='get' action='MainServlet'>");
+        //            stringBuffer.append("<input type='hidden' name='command' value='addTime'>");
+        //            stringBuffer.append("<p><input name='actid=");
+        //            stringBuffer.append(activity.getActID());
+        //            stringBuffer.append("&amp;amount' type='number' min='1' max='86400' size='2'>&nbsp;&nbsp;");
+        //            stringBuffer.append("<input type='submit' value='Добавить время'>");                  //          +!!!!
+        //            stringBuffer.append("</p>");
+        //            stringBuffer.append("</form>");
+//////////////////////////////////////////////
+        int userPages = (numUserActivities % ITEMS_PER_USERPAGE > 0) ?
+                ((numUserActivities / ITEMS_PER_USERPAGE) + 1) :
+                (numUserActivities / ITEMS_PER_USERPAGE);
         if (userPages > 1) {
             stringBuffer.append(" | ");
             for (int i = 0; i < userPages; i++) {
@@ -67,15 +77,20 @@ public class Display {
         return stringBuffer;
     }
 
-    private static StringBuffer formatUserPage(User user, StringBuffer stringBuffer, HttpServletRequest request) {
+    private static StringBuffer formatUserPage(User user, StringBuffer stringBuffer, HttpServletRequest request, int page2show) {
         stringBuffer.append("<table border='1' cellpadding='5' width='75%' align='center'>");
         stringBuffer.append("<tr><th>Id</th><th>Name</th><th>Duration</th><th>Status</th><th>Add time</th>");
-        for (Activity activity : DBOperation.getActListFromDB()) {
-            if (user.getUserID() == activity.getUserID() | activity.getUserID() == 1) {
-                numUserActivities++;
-                addLine2UserTable(stringBuffer, activity, request);
+        numUserActivities = 0;
+//        if (page2show == 1) {
+            for (Activity activity : DBOperation.getActListFromDB()) {
+                if (user.getUserID() == activity.getUserID() | activity.getUserID() == 1) {
+                    numUserActivities++;
+                    if ((numUserActivities>(page2show-1)*ITEMS_PER_USERPAGE)&(numUserActivities < ITEMS_PER_USERPAGE*page2show)) {
+                        addLine2UserTable(stringBuffer, activity, request);
+                    }
+                }
             }
-        }
+//        }
         return stringBuffer;
     }
 
@@ -128,7 +143,6 @@ public class Display {
         stringBuffer.append("<td width=50%>" + activity.getActName() + "</td>");
         stringBuffer.append("<td width=10%>" + activity.getActDuration() + "</td>");
         stringBuffer.append("<td  width=10% align='center'>");
-//        stringBuffer.append(" <form method='get' action='MainServlet'>");
         switch (activity.getActStatus()) {
             /* Marked 4 Del*/
             case 1: {
@@ -173,7 +187,6 @@ public class Display {
             stringBuffer.append("</form>");
         } else
             stringBuffer.append("&nbsp;");
-        ///////////////////////////////
         stringBuffer.append("</td>");
         stringBuffer.append("</tr>");
     }

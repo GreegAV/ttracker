@@ -31,7 +31,7 @@ public class ChangeStatusCommand implements controller.ICommand {
                 activity.setUserID(1);
                 activity.setUserName(User.getUserNameByID(1));
                 DBOperation.updateActivityDB(activity);
-                response.getWriter().print(Display.showPage(loggedUser, request));
+                response.getWriter().print(Display.showPage(loggedUser, request,1));
             }
         }
 
@@ -39,7 +39,7 @@ public class ChangeStatusCommand implements controller.ICommand {
             if (activity != null) {
                 activity.setActStatus(TAKEN);
                 DBOperation.updateActivityDB(activity);
-                response.getWriter().print(Display.showPage(loggedUser, request));
+                response.getWriter().print(Display.showPage(loggedUser, request,1));
             }
         }
 
@@ -49,7 +49,7 @@ public class ChangeStatusCommand implements controller.ICommand {
                 activity.setUserID(loggedUser.getUserID());
                 activity.setUserName(loggedUser.getUserName());
                 DBOperation.updateActivityDB(activity);
-                response.getWriter().print(Display.showPage(loggedUser, request));
+                response.getWriter().print(Display.showPage(loggedUser, request,1));
             }
         }
 
@@ -57,7 +57,7 @@ public class ChangeStatusCommand implements controller.ICommand {
             if (activity != null) {
                 activity.setActStatus(FORDEL);
                 DBOperation.updateActivityDB(activity);
-                response.getWriter().print(Display.showPage(loggedUser, request));
+                response.getWriter().print(Display.showPage(loggedUser, request,1));
             }
         }
 
@@ -70,7 +70,7 @@ public class ChangeStatusCommand implements controller.ICommand {
 //                for (String str : timeString) {
 //                    System.out.println(str);
 //                }
-                response.getWriter().print(Display.showPage(loggedUser, request));
+                response.getWriter().print(Display.showPage(loggedUser, request,1));
 //            }
         }
 

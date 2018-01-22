@@ -17,12 +17,12 @@ public class ChangePageCommand implements ICommand {
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         User loggedUser = (User) request.getServletContext().getAttribute("loggedUser");
-        Display.curPage = Integer.parseInt(request.getParameter("Page"));
-        System.out.println(Display.curPage);
-        logger.info("Changing page to "+Display.curPage);
-        response.getWriter().print(Display.showPage(loggedUser, request));
+        int page2show = Integer.parseInt(request.getParameter("Page"));
+        System.out.println("Going to page "+page2show);
+        logger.info("Changing page to "+page2show);
+        response.getWriter().print(Display.showPage(loggedUser, request, page2show));
 
-        return "/MainServlet";
+        return "";
     }
 
 

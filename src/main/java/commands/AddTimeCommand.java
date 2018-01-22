@@ -20,7 +20,7 @@ public class AddTimeCommand implements controller.ICommand {
         if (activity != null) {
             activity.addDuration(amount);
             DBOperation.updateActivityDB(activity);
-            response.getWriter().print(Display.showPage(loggedUser, request));
+            response.getWriter().print(Display.showPage(loggedUser, request,1));
         }
 
         return "";

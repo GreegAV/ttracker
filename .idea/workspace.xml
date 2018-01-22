@@ -8,7 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/AddTimeCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/AddTimeCommand.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/ChangeStatusCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/ChangeStatusCommand.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/commands/Display.java" afterPath="$PROJECT_DIR$/src/main/java/commands/Display.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -102,8 +106,8 @@
       <file leaf-file-name="AddTimeCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/AddTimeCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+            <state relative-caret-position="238">
+              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,8 +118,8 @@
       <file leaf-file-name="ChangeStatusCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/ChangeStatusCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+            <state relative-caret-position="238">
+              <caret line="72" column="81" lean-forward="false" selection-start-line="72" selection-start-column="81" selection-end-line="72" selection-end-column="81" />
               <folding>
                 <element signature="e#629#699#0" expanded="false" />
               </folding>
@@ -126,24 +130,24 @@
       <file leaf-file-name="Display.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="157" column="44" lean-forward="true" selection-start-line="157" selection-start-column="44" selection-end-line="157" selection-end-column="44" />
+            <state relative-caret-position="153">
+              <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1498#1555#0" expanded="false" />
                 <element signature="method#addLine2AdminTable#0;class#Display#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entities/User.java">
+      <file leaf-file-name="ChangePageCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="28" column="23" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+            <state relative-caret-position="340">
+              <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
               <folding>
-                <element signature="method#User#0;class#User#0" expanded="false" />
-                <element signature="method#toString#0;class#User#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,8 +166,8 @@
       <file leaf-file-name="MainServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/MainServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -172,8 +176,8 @@
       <file leaf-file-name="RegisterCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+            <state relative-caret-position="227">
+              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -282,13 +286,13 @@
         <option value="$PROJECT_DIR$/src/main/java/dao/DBConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DBConnection.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Helper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/Activity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/Activity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/ChangeStatusCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/Activity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/Activity.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/AddTimeCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/Display.java" />
       </list>
     </option>
@@ -656,7 +660,7 @@
       <workItem from="1514888427801" duration="26000" />
       <workItem from="1514888637392" duration="84644000" />
       <workItem from="1516288278569" duration="10595000" />
-      <workItem from="1516373039998" duration="17006000" />
+      <workItem from="1516373039998" duration="22165000" />
     </task>
     <task id="LOCAL-00001" summary="throws -&gt; printstacktrace">
       <created>1514468744209</created>
@@ -994,11 +998,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516559246957</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Nailing UI">
+      <created>1516617954231</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1516617954237</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150327000" />
+    <option name="totallyTimeSpent" value="155486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1065,7 +1076,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="userlist + activitylist completed" />
     <MESSAGE value="userlist + activitylist completed fin" />
     <MESSAGE value="Рисует таблицу активностей" />
     <MESSAGE value="Рисует таблицу активностей ПРАВИЛЬНО" />
@@ -1090,7 +1100,8 @@
     <MESSAGE value="adding slf4j&#10;trying to implement pagination by bikes and crutches" />
     <MESSAGE value="adding slf4j instead of System.out.println." />
     <MESSAGE value="Adding time WORKED!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding time WORKED!" />
+    <MESSAGE value="Nailing UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nailing UI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1327,42 +1338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="26" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/MainServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/Helper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
@@ -1383,20 +1358,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="26" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/MainServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/ChangeStatusCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        <state relative-caret-position="238">
+          <caret line="72" column="81" lean-forward="false" selection-start-line="72" selection-start-column="81" selection-end-line="72" selection-end-column="81" />
           <folding>
             <element signature="e#629#699#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/AddTimeCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/AddTimeCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1405,10 +1416,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/Display.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="157" column="44" lean-forward="true" selection-start-line="157" selection-start-column="44" selection-end-line="157" selection-end-column="44" />
+        <state relative-caret-position="153">
+          <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1498#1555#0" expanded="false" />
             <element signature="method#addLine2AdminTable#0;class#Display#0" expanded="false" />
           </folding>
         </state>
