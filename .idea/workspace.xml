@@ -7,24 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_13.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_0_13.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_nop_1_7_25.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/Display.java" afterPath="$PROJECT_DIR$/src/main/java/commands/Display.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/LogoutCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/LogoutCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Helper.java" afterPath="$PROJECT_DIR$/src/main/java/controller/Helper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainServlet.java" afterPath="$PROJECT_DIR$/src/main/java/controller/MainServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DBConnection.java" afterPath="$PROJECT_DIR$/src/main/java/dao/DBConnection.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DBOperation.java" afterPath="$PROJECT_DIR$/src/main/java/dao/DBOperation.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ttracker.iml" afterPath="$PROJECT_DIR$/ttracker.iml" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/slf4j-api-1.7.25.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/slf4j-nop-1.7.25.jar" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -154,7 +139,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="527">
-              <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+              <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -443,6 +428,13 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ttracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ttracker" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -678,14 +670,7 @@
       <workItem from="1514888427801" duration="26000" />
       <workItem from="1514888637392" duration="84644000" />
       <workItem from="1516288278569" duration="10595000" />
-      <workItem from="1516373039998" duration="27801000" />
-    </task>
-    <task id="LOCAL-00003" summary="2">
-      <created>1514474231782</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1514474231782</updated>
+      <workItem from="1516373039998" duration="27837000" />
     </task>
     <task id="LOCAL-00004" summary="3">
       <created>1514475652993</created>
@@ -1023,15 +1008,21 @@
       <option name="project" value="LOCAL" />
       <updated>1516631682525</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="migrating to log4j">
+      <created>1516634982678</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1516634982678</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161122000" />
+    <option name="totallyTimeSpent" value="161158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.375817" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
@@ -1054,7 +1045,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33858266" sideWeight="0.4969743" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2137628" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2137628" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1094,7 +1085,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Рисует таблицу активностей ПРАВИЛЬНО" />
     <MESSAGE value="user validation" />
     <MESSAGE value="add buttons" />
     <MESSAGE value="add commands" />
@@ -1119,7 +1109,8 @@
     <MESSAGE value="Nailing UI" />
     <MESSAGE value="Pagination works?" />
     <MESSAGE value="Pagination works." />
-    <option name="LAST_COMMIT_MESSAGE" value="Pagination works." />
+    <MESSAGE value="migrating to log4j" />
+    <option name="LAST_COMMIT_MESSAGE" value="migrating to log4j" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1444,7 +1435,7 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
-          <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
           <folding />
         </state>
       </provider>
