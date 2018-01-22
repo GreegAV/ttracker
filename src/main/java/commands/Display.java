@@ -68,7 +68,7 @@ public class Display {
     }
 
     private static StringBuffer formatUserPage(User user, StringBuffer stringBuffer, HttpServletRequest request) {
-        stringBuffer.append("<table border='1' cellpadding='5' width='60%' align='center'>");
+        stringBuffer.append("<table border='1' cellpadding='5' width='75%' align='center'>");
         stringBuffer.append("<tr><th>Id</th><th>Name</th><th>Duration</th><th>Status</th><th>Add time</th>");
         for (Activity activity : DBOperation.getActListFromDB()) {
             if (user.getUserID() == activity.getUserID() | activity.getUserID() == 1) {
@@ -124,10 +124,10 @@ public class Display {
 
     private static void addLine2UserTable(StringBuffer stringBuffer, Activity activity, HttpServletRequest request) {
         stringBuffer.append("<tr>");
-        stringBuffer.append("<td>" + activity.getActID() + "</td>");
-        stringBuffer.append("<td>" + activity.getActName() + "</td>");
-        stringBuffer.append("<td>" + activity.getActDuration() + "</td>");
-        stringBuffer.append("<td align='center'>");
+        stringBuffer.append("<td width=5%>" + activity.getActID() + "</td>");
+        stringBuffer.append("<td width=50%>" + activity.getActName() + "</td>");
+        stringBuffer.append("<td width=10%>" + activity.getActDuration() + "</td>");
+        stringBuffer.append("<td  width=10% align='center'>");
 //        stringBuffer.append(" <form method='get' action='MainServlet'>");
         switch (activity.getActStatus()) {
             /* Marked 4 Del*/
@@ -160,7 +160,7 @@ public class Display {
             }
         }
         stringBuffer.append("</td>");
-        stringBuffer.append("<td width='15%'>");
+        stringBuffer.append("<td align=center width='25%'>");
 
         if (activity.getUserID() != 1 & activity.getActStatus() == 4) {
             stringBuffer.append("<form method='get' action='MainServlet'>");
