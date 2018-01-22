@@ -85,7 +85,7 @@ public class Display {
             for (Activity activity : DBOperation.getActListFromDB()) {
                 if (user.getUserID() == activity.getUserID() | activity.getUserID() == 1) {
                     numUserActivities++;
-                    if ((numUserActivities>(page2show-1)*ITEMS_PER_USERPAGE)&(numUserActivities < ITEMS_PER_USERPAGE*page2show)) {
+                    if ((numUserActivities>=(page2show-1)*ITEMS_PER_USERPAGE)&(numUserActivities <= ITEMS_PER_USERPAGE*page2show)) {
                         addLine2UserTable(stringBuffer, activity, request);
                     }
                 }

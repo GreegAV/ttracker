@@ -7,12 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_13.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_0_13.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/AddTimeCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/AddTimeCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/ChangeStatusCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/ChangeStatusCommand.java" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/commands/Display.java" afterPath="$PROJECT_DIR$/src/main/java/commands/Display.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java" />
+      <change beforePath="$PROJECT_DIR$/ttracker.iml" afterPath="$PROJECT_DIR$/ttracker.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,42 +68,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LogoutCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/LogoutCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Helper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Helper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Activity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entities/Activity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="76" column="25" lean-forward="false" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
-              <folding>
-                <element signature="e#1721#1722#0" expanded="true" />
-                <element signature="e#1767#1768#0" expanded="true" />
-                <element signature="method#toString#0;class#Activity#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AddTimeCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/AddTimeCommand.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -118,7 +83,7 @@
       <file leaf-file-name="ChangeStatusCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/ChangeStatusCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="346">
               <caret line="72" column="81" lean-forward="false" selection-start-line="72" selection-start-column="81" selection-end-line="72" selection-end-column="81" />
               <folding>
                 <element signature="e#629#699#0" expanded="false" />
@@ -130,13 +95,43 @@
       <file leaf-file-name="Display.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+            <state relative-caret-position="170">
+              <caret line="73" column="55" lean-forward="true" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1498#1555#0" expanded="false" />
                 <element signature="method#addLine2AdminTable#0;class#Display#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logback.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/db.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,7 +152,7 @@
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="26" selection-end-column="12" />
+              <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="26" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -167,7 +162,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/MainServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+              <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -177,7 +172,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="227">
-              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+              <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -213,6 +208,8 @@
       <find>\&quot;</find>
       <find>showPage(loggedUser)</find>
       <find>requestString</find>
+      <find>&amp;gt;</find>
+      <find>&amp;quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>Page(user, stringBuffer)</replace>
@@ -220,6 +217,8 @@
       <replace>logger.error(e.getMessage());</replace>
       <replace>'</replace>
       <replace>showPage(loggedUser, request)</replace>
+      <replace>&gt;</replace>
+      <replace>&quot;</replace>
       <replace>request.getQueryString()</replace>
     </replaceStrings>
   </component>
@@ -243,7 +242,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/dao/DigDB.java" />
         <option value="$PROJECT_DIR$/src/db.properties" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DigDB.java" />
         <option value="src:table:/ac6624ba/704bc9d8-b854-44ad-8add-c2f6434e65be/timetrack.activities" />
@@ -277,7 +275,6 @@
         <option value="$PROJECT_DIR$/src/main/java/commands/HomeCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/changeStatusCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/UTFFilter.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/controller/MainServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/User.java" />
@@ -293,6 +290,8 @@
         <option value="$PROJECT_DIR$/src/main/java/commands/ChangeStatusCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/AddTimeCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/java/commands/Display.java" />
       </list>
     </option>
@@ -398,16 +397,7 @@
               <item name="ttracker" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ttracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ttracker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ttracker" type="b2602c69:ProjectViewProjectNode" />
@@ -660,14 +650,7 @@
       <workItem from="1514888427801" duration="26000" />
       <workItem from="1514888637392" duration="84644000" />
       <workItem from="1516288278569" duration="10595000" />
-      <workItem from="1516373039998" duration="22165000" />
-    </task>
-    <task id="LOCAL-00001" summary="throws -&gt; printstacktrace">
-      <created>1514468744209</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1514468744209</updated>
+      <workItem from="1516373039998" duration="24686000" />
     </task>
     <task id="LOCAL-00002" summary="1">
       <created>1514469783716</created>
@@ -1005,11 +988,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516617954237</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Pagination works?">
+      <created>1516624628508</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1516624628521</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155486000" />
+    <option name="totallyTimeSpent" value="158007000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1076,7 +1066,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="userlist + activitylist completed fin" />
     <MESSAGE value="Рисует таблицу активностей" />
     <MESSAGE value="Рисует таблицу активностей ПРАВИЛЬНО" />
     <MESSAGE value="user validation" />
@@ -1101,7 +1090,8 @@
     <MESSAGE value="adding slf4j instead of System.out.println." />
     <MESSAGE value="Adding time WORKED!" />
     <MESSAGE value="Nailing UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nailing UI" />
+    <MESSAGE value="Pagination works?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pagination works?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1123,13 +1113,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__taglibs_standard_1_1_2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1213,7 +1196,7 @@
         <state relative-caret-position="-604">
           <caret line="9" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#getUserListFromDB#0;class#DBOperation#0" expanded="false" />
             <marker date="1516377797717" expanded="true" signature="3224:3332" ph="UPDATE timetrack.activities... " />
           </folding>
@@ -1245,13 +1228,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/home.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/ApproveCommand.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/ICommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1276,14 +1252,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/web.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/MySQLDAOFactory.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/DAOFactory.java" />
@@ -1300,7 +1268,7 @@
         <state relative-caret-position="170">
           <caret line="10" column="78" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="78" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#getUserListFromDB#0;class#DBOperation#0" expanded="false" />
             <marker date="1516377797717" expanded="true" signature="3224:3332" ph="UPDATE timetrack.activities... " />
           </folding>
@@ -1333,7 +1301,7 @@
         <state relative-caret-position="306">
           <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1341,7 +1309,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/Helper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
-          <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+          <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1351,8 +1319,8 @@
         <state relative-caret-position="168">
           <caret line="76" column="25" lean-forward="false" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
           <folding>
-            <element signature="e#1721#1722#0" expanded="true" />
-            <element signature="e#1767#1768#0" expanded="true" />
+            <element signature="e#1721#1722#0" expanded="false" />
+            <element signature="e#1767#1768#0" expanded="false" />
             <element signature="method#toString#0;class#Activity#0" expanded="false" />
           </folding>
         </state>
@@ -1361,7 +1329,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1371,7 +1339,7 @@
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="26" selection-end-column="12" />
+          <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="26" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1379,28 +1347,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/MainServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/ChangeStatusCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="72" column="81" lean-forward="false" selection-start-line="72" selection-start-column="81" selection-end-line="72" selection-end-column="81" />
-          <folding>
-            <element signature="e#629#699#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1414,10 +1362,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/ChangeStatusCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="72" column="81" lean-forward="false" selection-start-line="72" selection-start-column="81" selection-end-line="72" selection-end-column="81" />
+          <folding>
+            <element signature="e#629#699#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/Display.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+        <state relative-caret-position="170">
+          <caret line="73" column="55" lean-forward="true" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1498#1555#0" expanded="false" />
