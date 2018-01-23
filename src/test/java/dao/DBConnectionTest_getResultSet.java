@@ -11,6 +11,6 @@ public class DBConnectionTest_getResultSet {
 
     @Test
     public void getResultSet() throws SQLException {
-        assertNotNull(DBConnection.getStatement(DBConnection.getConnection()).executeQuery("SELECT * FROM users"));
+        assertNotNull(DBConnection.getStatement(ConnectionPool.getInstance().getConnection()).executeQuery("SELECT * FROM users"));
     }
 }
