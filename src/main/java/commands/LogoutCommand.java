@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.sql.SQLException;
 
-
 public class LogoutCommand implements ICommand {
 
     private static Logger logger = org.apache.log4j.Logger.getLogger(LogoutCommand.class);
