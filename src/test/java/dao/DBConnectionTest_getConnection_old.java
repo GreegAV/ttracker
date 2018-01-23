@@ -19,8 +19,9 @@ public class DBConnectionTest_getConnection_old {
         String dbPassword = configManager.getProperty(ConfigManager.PASSWORD);
         String dbURL = configManager.getProperty(ConfigManager.URL);
         String dbName = configManager.getProperty(ConfigManager.DBNAME);
-        String dbConectionParams = configManager.getProperty(ConfigManager.CONNECTIONPARAMS);
-        String dbConnectionString = dbURL + dbName + dbConectionParams;
+//        String dbConectionParams = configManager.getProperty(ConfigManager.CONNECTIONPARAMS);
+//        String dbConnectionString = dbURL + dbName + dbConectionParams;
+        String dbConnectionString = dbURL + dbName;
         //  Get a connection to database
         Class.forName("com.mysql.jdbc.Driver");
         connection=DriverManager.getConnection(dbConnectionString, dbUser, dbPassword);

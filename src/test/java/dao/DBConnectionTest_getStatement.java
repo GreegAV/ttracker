@@ -11,8 +11,7 @@ public class DBConnectionTest_getStatement {
 
     @Test
     public void getStatement() throws SQLException {
-        ConnectionPool connectionPool=ConnectionPool.getInstance();
-        Connection connection = connectionPool.getConnection();
-        assertNotNull(DBConnection.getStatement(connection));
+//        assertNotNull(DBConnection.getStatement(DBConnection.getConnection()));
+        assertNotNull(DBConnection.getStatement(ConnectionPool.getInstance().getConnection()));
     }
 }

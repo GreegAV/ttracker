@@ -2,6 +2,7 @@ package dao;
 
 import org.apache.log4j.Logger;
 
+import javax.sql.DataSource;
 import java.sql.*;
 
 public class DBConnection {
@@ -9,7 +10,12 @@ public class DBConnection {
 
     public static ResultSet getResultSet(Statement statement, String sqlSelect) {
         try {
-            return statement.executeQuery(sqlSelect);
+            if (statement != null) {
+                return statement.executeQuery(sqlSelect);
+            } else {
+                logger.error("Null statement received!");
+                System.out.println("Null statement received!");
+            }
         } catch (SQLException e) {
             logger.error(e.getMessage());
         }
@@ -20,6 +26,9 @@ public class DBConnection {
         try {
             if (connection != null) {
                 return connection.createStatement();
+            } else {
+                System.out.println("Null connection received!");
+                logger.error("Null connection received!");
             }
         } catch (SQLException e) {
             logger.error(e.getMessage());
@@ -27,29 +36,16 @@ public class DBConnection {
         return null;
     }
 
-    public static Connection getConnection() {
-        Connection connection = null;
-        try {
-            String dbUser = "root";
-            String dbPassword = "root";
-            String dbURL = "jdbc:mysql://localhost:3306/";
-            String dbName = "timetrack";
-            String dbConectionParams = "?useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-            String dbConnectionString = dbURL + dbName + dbConectionParams;
-
-            //  Get a connection to database
-            Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection(dbConnectionString, dbUser, dbPassword);
-            if (connection != null) {
-                logger.info("\nConnection successful!\n");
-                return connection;
-            } else
-                logger.error("Connection failed!");
-        } catch (Exception e) {
-            logger.error(e.getMessage());
-        }
-        return null;
-    }
+//    public static Connection getConnection() {
+//        DataSource dataSource = ConnectionPoolHolder.getDataSource();
+//        Connection connection = null;
+//        try {
+//            connection = dataSource.getConnection();
+//        } catch (SQLException e) {
+//            logger.error(e.getMessage());
+//        }
+//        return connection;
+//    }
 
     public static void closeResultSet(ResultSet resultSet) {
         if (resultSet != null) {

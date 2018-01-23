@@ -8,7 +8,7 @@ import org.apache.log4j.Logger;
 
 public class DBOperation {
     private static Logger logger = Logger.getLogger(DBOperation.class);
-    
+
     public static ArrayList<User> getUserListFromDB() {
         ArrayList<User> fullUserList = new ArrayList<User>();
         for (User tempUser : getSimpleUserListFromDB()) {
@@ -24,7 +24,8 @@ public class DBOperation {
 
     private static ArrayList<User> getSimpleUserListFromDB() {
         String usersSQLSelect = "select * from users";
-        try (Connection connection = DBConnection.getConnection();
+//        try (Connection connection = DBConnection.getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
              Statement statement = DBConnection.getStatement(connection);
              ResultSet resultSet = DBConnection.getResultSet(statement, usersSQLSelect)
         ) {
@@ -48,13 +49,14 @@ public class DBOperation {
             return userList;
         } catch (SQLException e) {
             logger.error(e.getMessage());
+            System.out.println(e.getMessage());
         }
         return null;
     }
 
     public static ArrayList<Activity> getActListFromDB() {
         String actSQLSelect = "select * from activities";
-        try (Connection connection = DBConnection.getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
              Statement statement = DBConnection.getStatement(connection);
              ResultSet resultSet = DBConnection.getResultSet(statement, actSQLSelect)
         ) {
@@ -79,7 +81,7 @@ public class DBOperation {
         final String SQL = "UPDATE timetrack.activities SET "
                 + "actDuration=?, actMarked=?, userID=? WHERE " + "actID=? ";
 
-        try (Connection connection = DBConnection.getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL)) {
 
             statement.setLong(1, activity.getActDuration());
