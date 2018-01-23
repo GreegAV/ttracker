@@ -1,14 +1,10 @@
 package controller;
 
-
 import commands.*;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
-
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
 
 public class Helper {
 
@@ -41,9 +37,9 @@ public class Helper {
         ICommand command = commands.get(parsedCommand);
         if (command == null) {
             command = new HomeCommand();
-            logger.info("Переход на домашнюю страницу.");
+            logger.info("Transfer to homepage");
         }
-        logger.info("Переход на cтраницу " + parsedCommand);
+        logger.info("Transfer to page " + parsedCommand);
         return command;
     }
 }

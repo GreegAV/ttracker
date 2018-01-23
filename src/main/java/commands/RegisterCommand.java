@@ -15,13 +15,11 @@ public class RegisterCommand implements ICommand {
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         User loggedUser = User.isUserValid(request.getParameter("nameInput"), request.getParameter("passInput"));
-//        Display.curPage=1;
 
         if (loggedUser != null) {
             logger.info(loggedUser.getUserName() + " logged in.");
-            System.out.println(loggedUser.getUserName() + " logged in.");
-            response.getWriter().print(Display.showPage(loggedUser, request, 1));
             request.getServletContext().setAttribute("loggedUser", loggedUser);
+            response.getWriter().print(Display.showPage(loggedUser, request, 1));
         } else {
             logger.info("Username/Password error!");
             return "/error.jsp";

@@ -1,13 +1,8 @@
 package dao;
 
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
-
 import org.apache.log4j.Logger;
 
-import java.io.FileInputStream;
 import java.sql.*;
-import java.util.Properties;
 
 public class DBConnection {
     private static Logger logger = Logger.getLogger(DBConnection.class);
@@ -39,16 +34,17 @@ public class DBConnection {
             String dbPassword = "root";
             String dbURL = "jdbc:mysql://localhost:3306/";
             String dbName = "timetrack";
-            String dbConParams = "?useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-            String dbConUrl = dbURL + dbName + dbConParams;
+            String dbConectionParams = "?useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+            String dbConnectionString = dbURL + dbName + dbConectionParams;
 
             //  Get a connection to database
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection(dbConUrl, dbUser, dbPassword);
+            connection = DriverManager.getConnection(dbConnectionString, dbUser, dbPassword);
             if (connection != null) {
                 logger.info("\nConnection successful!\n");
                 return connection;
-            } else logger.error("Connection failed!");
+            } else
+                logger.error("Connection failed!");
         } catch (Exception e) {
             logger.error(e.getMessage());
         }
@@ -84,5 +80,4 @@ public class DBConnection {
             }
         }
     }
-
 }
