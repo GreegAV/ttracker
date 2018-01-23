@@ -6,14 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="Cleanup">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getResultSet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getStatement.java" />
+    <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UTFFilter.java" afterPath="$PROJECT_DIR$/src/main/java/service/UTFFilter.java" />
-      <change beforePath="$PROJECT_DIR$/ttracker.iml" afterPath="$PROJECT_DIR$/ttracker.iml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest.java" afterPath="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -129,7 +124,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBConnection.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DBConnection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/DBConnection.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -140,6 +135,16 @@
                 <element signature="method#getStatement#0;class#DBConnection#0" expanded="false" />
                 <element signature="method#getConnection#0;class#DBConnection#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBConnectionTest_getConnection.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -762,14 +767,7 @@
       <workItem from="1514888427801" duration="26000" />
       <workItem from="1514888637392" duration="84644000" />
       <workItem from="1516288278569" duration="10595000" />
-      <workItem from="1516373039998" duration="37938000" />
-    </task>
-    <task id="LOCAL-00007" summary="3,5">
-      <created>1514477009416</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1514477009416</updated>
+      <workItem from="1516373039998" duration="37990000" />
     </task>
     <task id="LOCAL-00008" summary="3,75">
       <created>1514483720743</created>
@@ -1107,7 +1105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516704665473</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="add some testes">
+      <created>1516707315958</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1516707315958</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1137,7 +1142,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171259000" />
+    <option name="totallyTimeSpent" value="171311000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1204,7 +1209,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value=":(" />
     <MESSAGE value="1" />
     <MESSAGE value="passing parameters!!!!!" />
     <MESSAGE value="autorization&#10;list activities acc to it" />
@@ -1229,7 +1233,8 @@
     <MESSAGE value="pagination for adminpage" />
     <MESSAGE value="extracting doPagination to separate class" />
     <MESSAGE value="Cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup" />
+    <MESSAGE value="add some testes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some testes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1543,14 +1548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dao/DBConnectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getResultSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1582,6 +1579,14 @@
             <element signature="method#getStatement#0;class#DBConnection#0" expanded="false" />
             <element signature="method#getConnection#0;class#DBConnection#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 import static org.junit.Assert.*;
 
-public class DBConnectionTest {
+public class DBConnectionTest_getConnection {
 
     @Test
     public void getConnection() throws ClassNotFoundException, SQLException {
