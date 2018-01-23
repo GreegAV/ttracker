@@ -9,15 +9,12 @@
     <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="">
       <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dao/ConfigManager.java" />
       <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dao/ConnectionPool.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/dao/ConfigManagerTest_getInstance.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/dao/ConfigManagerTest_getProperty.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection_pool.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/DBConnection.java" afterPath="$PROJECT_DIR$/src/main/java/dao/DBConnection.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/DBOperation.java" afterPath="$PROJECT_DIR$/src/main/java/dao/DBOperation.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection.java" afterPath="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection_old.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getResultSet.java" afterPath="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getResultSet.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection_old.java" afterPath="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection_old.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection_pool.java" afterPath="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection_pool.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getStatement.java" afterPath="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getStatement.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -73,72 +70,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DBConnection.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DBConnection.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/DBConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-901">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnectionPool.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/ConnectionPool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="44" lean-forward="true" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
+            <state relative-caret-position="52">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#closeConnection#0;class#ConnectionPool#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBConnectionTest_getConnection_pool.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection_pool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding>
-                <element signature="e#522#559#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfigManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/ConfigManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-              <folding>
-                <element signature="e#913#914#0" expanded="true" />
-                <element signature="e#968#969#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entities/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-              <folding>
-                <element signature="method#User#0;class#User#0" expanded="false" />
-                <element signature="method#toString#0;class#User#0" expanded="false" />
+                <element signature="e#1077#1125#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -179,8 +118,8 @@
       <find>Page</find>
       <find>\n</find>
       <find />
-      <find>ConfigurationManager</find>
       <find>ConnectionPool</find>
+      <find>ConfigurationManager</find>
     </findStrings>
     <replaceStrings>
       <replace>Page(user, stringBuffer)</replace>
@@ -191,8 +130,8 @@
       <replace>&gt;</replace>
       <replace>request.getQueryString()</replace>
       <replace>&quot;</replace>
-      <replace>ConfigManager</replace>
       <replace>ConnPool</replace>
+      <replace>ConfigManager</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -215,7 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/dao/DAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/FullBase.java" />
         <option value="$PROJECT_DIR$/web/home.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/commands/TakeCommand.java" />
@@ -256,16 +194,17 @@
         <option value="$PROJECT_DIR$/src/main/java/dao/DBConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DBOperation.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DBConnection.java" />
-        <option value="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getStatement.java" />
         <option value="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getResultSet.java" />
         <option value="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection.java" />
         <option value="$PROJECT_DIR$/src/test/java/dao/ConfigManagerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/dao/ConfigManagerTest_getProperty.java" />
         <option value="$PROJECT_DIR$/src/test/java/dao/ConfigManagerTest_getInstance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/ConnectionPool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/ConfigManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getStatement.java" />
         <option value="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection_pool.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/ConfigManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/ConnectionPool.java" />
+        <option value="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection_old.java" />
       </list>
     </option>
   </component>
@@ -484,7 +423,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DBConnectionTest_getConnection_pool">
+  <component name="RunManager" selected="JUnit.DBConnectionTest_getConnection_old">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -556,7 +495,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="DBConnectionTest_getConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DBConnectionTest_getConnection_old" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="dao.*" />
@@ -567,7 +506,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.DBConnectionTest_getConnection" />
+      <option name="MAIN_CLASS_NAME" value="dao.DBConnectionTest_getConnection_old" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -766,18 +705,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.ttracker" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.dao in ttracker" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.DBConnectionTest_getConnection" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DBConnectionTest_getConnection_pool" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ConfigManagerTest_getInstance" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ConfigManagerTest_getProperty" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DBConnectionTest_getConnection_pool" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ConfigManagerTest_getInstance" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ConfigManagerTest_getProperty" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.DBConnectionTest_getConnection_old" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.DBConnectionTest_getConnection_pool" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DBConnectionTest_getConnection_old" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.dao in ttracker" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ConfigManagerTest_getProperty" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ConfigManagerTest_getInstance" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.DBConnectionTest_getConnection" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DBConnectionTest_getConnection_pool" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ConfigManagerTest_getProperty" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ConfigManagerTest_getInstance" />
       </list>
     </recent_temporary>
   </component>
@@ -798,14 +737,7 @@
       <workItem from="1514888427801" duration="26000" />
       <workItem from="1514888637392" duration="84644000" />
       <workItem from="1516288278569" duration="10595000" />
-      <workItem from="1516373039998" duration="47783000" />
-    </task>
-    <task id="LOCAL-00009" summary="3,8">
-      <created>1514484948279</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1514484948279</updated>
+      <workItem from="1516373039998" duration="48835000" />
     </task>
     <task id="LOCAL-00010" summary="4">
       <created>1514485966890</created>
@@ -1143,47 +1075,53 @@
       <option name="project" value="LOCAL" />
       <updated>1516707343456</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="add some testes">
+      <created>1516720376395</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1516720376396</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConfigManagerTest_getInstance - 2018.01.23 at 16h 53m 40s.xml">
-      <configuration name="ConfigManagerTest_getInstance" configurationId="JUnit" />
+    <history-entry file="DBConnectionTest_getConnection_old - 2018.01.23 at 17h 26m 30s.xml">
+      <configuration name="DBConnectionTest_getConnection_old" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConfigManagerTest_getProperty - 2018.01.23 at 16h 54m 54s.xml">
-      <configuration name="ConfigManagerTest_getProperty" configurationId="JUnit" />
+    <history-entry file="DBConnectionTest_getConnection_old - 2018.01.23 at 17h 26m 44s.xml">
+      <configuration name="DBConnectionTest_getConnection_old" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConfigManagerTest_getProperty - 2018.01.23 at 16h 55m 47s.xml">
-      <configuration name="ConfigManagerTest_getProperty" configurationId="JUnit" />
+    <history-entry file="DBConnectionTest_getConnection_old - 2018.01.23 at 17h 28m 05s.xml">
+      <configuration name="DBConnectionTest_getConnection_old" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DBConnectionTest_getConnection_pool - 2018.01.23 at 16h 51m 41s.xml">
+    <history-entry file="DBConnectionTest_getConnection_old - 2018.01.23 at 17h 28m 16s.xml">
+      <configuration name="DBConnectionTest_getConnection_old" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DBConnectionTest_getConnection_old - 2018.01.23 at 17h 29m 57s.xml">
+      <configuration name="DBConnectionTest_getConnection_old" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DBConnectionTest_getConnection_pool - 2018.01.23 at 17h 26m 38s.xml">
       <configuration name="DBConnectionTest_getConnection_pool" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DBConnectionTest_getConnection_pool - 2018.01.23 at 16h 52m 14s.xml">
-      <configuration name="DBConnectionTest_getConnection_pool" configurationId="JUnit" />
+    <history-entry file="dao_in_ttracker - 2018.01.23 at 17h 26m 05s.xml">
+      <configuration name="dao in ttracker" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DBConnectionTest_getConnection_pool - 2018.01.23 at 16h 57m 55s.xml">
-      <configuration name="DBConnectionTest_getConnection_pool" configurationId="JUnit" />
+    <history-entry file="dao_in_ttracker - 2018.01.23 at 17h 26m 28s.xml">
+      <configuration name="dao in ttracker" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DBConnectionTest_getConnection_pool - 2018.01.23 at 17h 00m 08s.xml">
-      <configuration name="DBConnectionTest_getConnection_pool" configurationId="JUnit" />
+    <history-entry file="dao_in_ttracker - 2018.01.23 at 17h 28m 26s.xml">
+      <configuration name="dao in ttracker" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DBConnectionTest_getConnection_pool - 2018.01.23 at 17h 02m 13s.xml">
-      <configuration name="DBConnectionTest_getConnection_pool" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DBConnectionTest_getConnection_pool - 2018.01.23 at 17h 10m 21s.xml">
-      <configuration name="DBConnectionTest_getConnection_pool" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="dao_in_ttracker - 2018.01.23 at 16h 56m 21s.xml">
+    <history-entry file="dao_in_ttracker - 2018.01.23 at 17h 29m 04s.xml">
       <configuration name="dao in ttracker" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181104000" />
+    <option name="totallyTimeSpent" value="182156000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.375817" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
@@ -1204,9 +1142,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37007874" sideWeight="0.4969743" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37007874" sideWeight="0.4969743" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25841874" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25841874" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33070865" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1582,24 +1520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="76" lean-forward="false" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection_old.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getResultSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1632,50 +1552,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ConfigManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="136">
+          <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+          <folding>
+            <element signature="e#983#984#0" expanded="true" />
+            <element signature="e#1038#1039#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ConfigManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ConnectionPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getStatement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-          <folding>
-            <element signature="e#913#914#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-          </folding>
+          <caret line="14" column="63" lean-forward="true" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection_pool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="157">
+          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
           <folding>
-            <element signature="e#522#559#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="114" lean-forward="false" selection-start-line="5" selection-start-column="114" selection-end-line="5" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection_old.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="25" column="87" lean-forward="false" selection-start-line="25" selection-start-column="87" selection-end-line="25" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-901">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ConnectionPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="44" lean-forward="true" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
+        <state relative-caret-position="52">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#closeConnection#0;class#ConnectionPool#0" expanded="false" />
+            <element signature="e#1077#1125#0" expanded="false" />
           </folding>
         </state>
       </provider>

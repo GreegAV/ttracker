@@ -13,15 +13,17 @@ public class DBConnectionTest_getConnection_old {
     @Test
     public void getConnection() throws ClassNotFoundException, SQLException {
         Connection connection = null;
-            String dbUser = "root";
-            String dbPassword = "root";
-            String dbURL = "jdbc:mysql://localhost:3306/";
-            String dbName = "timetrack";
-            String dbConectionParams = "?useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-            String dbConnectionString = dbURL + dbName + dbConectionParams;
+        ConfigManager configManager = ConfigManager.getInstance();
 
-            //  Get a connection to database
-            Class.forName("com.mysql.jdbc.Driver");
-            assertNotNull(DriverManager.getConnection(dbConnectionString, dbUser, dbPassword));
+        String dbUser = configManager.getProperty(ConfigManager.USERNAME);
+        String dbPassword = configManager.getProperty(ConfigManager.PASSWORD);
+        String dbURL = configManager.getProperty(ConfigManager.URL);
+        String dbName = configManager.getProperty(ConfigManager.DBNAME);
+        String dbConectionParams = configManager.getProperty(ConfigManager.CONNECTIONPARAMS);
+        String dbConnectionString = dbURL + dbName + dbConectionParams;
+        //  Get a connection to database
+        Class.forName("com.mysql.jdbc.Driver");
+        connection=DriverManager.getConnection(dbConnectionString, dbUser, dbPassword);
+        assertNotNull(connection);
     }
 }
