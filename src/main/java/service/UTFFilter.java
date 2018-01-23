@@ -14,7 +14,6 @@ public class UTFFilter implements Filter {
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
-
         filterChain.doFilter(request, response);
     }
 
