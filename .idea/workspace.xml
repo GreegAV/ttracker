@@ -6,17 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="Adding activity to database">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/commands/AddActivityCommand.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/commands/AddNewActivityCommand.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dao/DAOActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/newact.jsp" />
+    <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/Display.java" afterPath="$PROJECT_DIR$/src/main/java/commands/Display.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/RegisterNewUserCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/RegisterNewUserCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Helper.java" afterPath="$PROJECT_DIR$/src/main/java/controller/Helper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DAOUser.java" afterPath="$PROJECT_DIR$/src/main/java/dao/DAOUser.java" />
-      <change beforePath="$PROJECT_DIR$/web/register.jsp" afterPath="$PROJECT_DIR$/web/register.jsp" />
+      <change beforePath="$PROJECT_DIR$/sql/timetrack.sql" afterPath="$PROJECT_DIR$/sql/timetrack.sql" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -74,8 +66,8 @@
       <file leaf-file-name="Display.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+            <state relative-caret-position="244">
+              <caret line="75" column="28" lean-forward="true" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
               <folding>
                 <element signature="method#formatUserPage#0;class#Display#0" expanded="false" />
                 <element signature="method#addLine2AdminTable#0;class#Display#0" expanded="false" />
@@ -798,14 +790,7 @@
       <workItem from="1514888637392" duration="84644000" />
       <workItem from="1516288278569" duration="10595000" />
       <workItem from="1516373039998" duration="55363000" />
-      <workItem from="1516736370511" duration="21824000" />
-    </task>
-    <task id="LOCAL-00021" summary="userlist + activitylist completed fin">
-      <created>1514936400773</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1514936400773</updated>
+      <workItem from="1516736370511" duration="21938000" />
     </task>
     <task id="LOCAL-00022" summary="Рисует таблицу активностей">
       <created>1514972441363</created>
@@ -1143,7 +1128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516809423131</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Adding activity to database">
+      <created>1516812302222</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1516812302222</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1179,7 +1171,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210508000" />
+    <option name="totallyTimeSpent" value="210622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1730,8 +1722,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/Display.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+        <state relative-caret-position="244">
+          <caret line="75" column="28" lean-forward="true" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
           <folding>
             <element signature="method#formatUserPage#0;class#Display#0" expanded="false" />
             <element signature="method#addLine2AdminTable#0;class#Display#0" expanded="false" />
