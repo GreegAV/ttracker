@@ -41,7 +41,7 @@ public class Display {
 
     private static StringBuffer formatAdminPage(StringBuffer stringBuffer, int page2show) {
         stringBuffer.append("<table border='1' cellpadding='5' width='60%' align='center'>")
-                .append("<tr><th>Id</th><th>Name</th><th>Duration</th><th>UserName</th><th>Status</th>");
+                .append("<tr><th>№№</th><th>Активность</th><th>Длительность</th><th>Владелец</th><th>Статус</th>");
         int displayedActivities = 0;
         for (Activity activity : DAOOperation.getActListFromDB()) {
             displayedActivities++;
@@ -55,7 +55,7 @@ public class Display {
 
     private static StringBuffer formatUserPage(User user, StringBuffer stringBuffer, HttpServletRequest request, int page2show) {
         stringBuffer.append("<table border='1' cellpadding='5' width='75%' align='center'>")
-                .append("<tr><th>Id</th><th>Name</th><th>Duration</th><th>Status</th><th>Add time</th>");
+                .append("<tr><th>№№</th><th>Активность</th><th>Длительность</th><th>Status</th><th>Добавить время</th>");
         numUserActivities = 0;
         for (Activity activity : DAOOperation.getActListFromDB()) {
             if (user.getUserID() == activity.getUserID() | activity.getUserID() == 1) {
@@ -83,7 +83,7 @@ public class Display {
                 stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=remove&actid=")
                         .append(activity.getActID())
                         .append("'>")
-                        .append("<input type='button' value='Remove'>")
+                        .append("<input type='button' value='Удалить'>")
                         .append("</a>");
                 break;
             }
@@ -92,18 +92,18 @@ public class Display {
                 stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=approve&actid=")
                         .append(activity.getActID())
                         .append("'>")
-                        .append("<input type='button' value='Approve'>")
+                        .append("<input type='button' value='Подтвердить'>")
                         .append("</a>");
                 break;
             }
             /*Marked as Free */
             case 3: {
-                stringBuffer.append("<input type='button' value='Free'>");
+                stringBuffer.append("<input type='button' value='Свободна'>");
                 break;
             }
             /*Marked as Taken */
             default: {
-                stringBuffer.append("<input type='button' value='Taken'>");
+                stringBuffer.append("<input type='button' value='Занята'>");
                 break;
             }
         }
@@ -119,12 +119,12 @@ public class Display {
         switch (activity.getActStatus()) {
             /* Marked 4 Del*/
             case 1: {
-                stringBuffer.append("<input type='button' value='Pending deletion'>");
+                stringBuffer.append("<input type='button' value='На подтверждении'>");
                 break;
             }
             /* Marked 4 Add*/
             case 2: {
-                stringBuffer.append("<input type='button' value='Pending addition'>");
+                stringBuffer.append("<input type='button' value='На подтверждении'>");
                 break;
             }
             /*Marked as Free */
@@ -132,7 +132,7 @@ public class Display {
                 stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=take&actid=")
                         .append(activity.getActID())
                         .append("'>")
-                        .append("<input type='button' value='Take'>")
+                        .append("<input type='button' value='Получить'>")
                         .append("</a>");
                 break;
             }
@@ -141,7 +141,7 @@ public class Display {
                 stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=drop&actid=")
                         .append(activity.getActID())
                         .append("'>")
-                        .append("<input type='button' value='Drop'>")
+                        .append("<input type='button' value='Отказаться'>")
                         .append("</a>");
                 break;
             }
