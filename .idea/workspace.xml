@@ -120,8 +120,8 @@
       <file leaf-file-name="Display.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-702">
-              <caret line="57" column="113" lean-forward="false" selection-start-line="57" selection-start-column="113" selection-end-line="57" selection-end-column="113" />
+            <state relative-caret-position="158">
+              <caret line="48" column="59" lean-forward="true" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -331,6 +331,22 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="commands" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ttracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ttracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ttracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ttracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ttracker" type="b2602c69:ProjectViewProjectNode" />
@@ -744,14 +760,7 @@
       <workItem from="1514888637392" duration="84644000" />
       <workItem from="1516288278569" duration="10595000" />
       <workItem from="1516373039998" duration="55363000" />
-      <workItem from="1516736370511" duration="9426000" />
-    </task>
-    <task id="LOCAL-00016" summary="1">
-      <created>1514928504255</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1514928504255</updated>
+      <workItem from="1516736370511" duration="10438000" />
     </task>
     <task id="LOCAL-00017" summary="tostring">
       <created>1514929767622</created>
@@ -1089,7 +1098,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516797070793</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Translation">
+      <created>1516798679500</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1516798679500</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1125,7 +1141,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198110000" />
+    <option name="totallyTimeSpent" value="199122000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1192,7 +1208,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="login&amp;redirect OK" />
     <MESSAGE value="display status/button OK" />
     <MESSAGE value="add Logout" />
     <MESSAGE value="Changing activity status completed" />
@@ -1217,7 +1232,8 @@
     <MESSAGE value="add readme, sql" />
     <MESSAGE value="Cleanup" />
     <MESSAGE value="Cleanup declaration of ArrayList, .append in stringbuffer, etc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup declaration of ArrayList, .append in stringbuffer, etc" />
+    <MESSAGE value="Translation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Translation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1678,8 +1694,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/Display.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702">
-          <caret line="57" column="113" lean-forward="false" selection-start-line="57" selection-start-column="113" selection-end-line="57" selection-end-column="113" />
+        <state relative-caret-position="158">
+          <caret line="48" column="59" lean-forward="true" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
           <folding />
         </state>
       </provider>

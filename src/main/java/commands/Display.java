@@ -28,7 +28,7 @@ public class Display {
                 .append("<center>")
                 .append("<table border=0><tr><td width=25%>")
                 .append("<a href='/MainServlet?command=Logout'>")
-                .append("<input type='button' name='command' value='Logout'>")
+                .append("<input type='button' name='command' value='Выход'>")
                 .append("</a><td>")
                 .append("<center>");
         doPagination(stringBuffer, user);
@@ -75,39 +75,47 @@ public class Display {
                 .append("<td>").append(activity.getActName()).append("</td>")
                 .append("<td>").append(activity.getActDuration()).append("</td>")
                 .append("<td>").append(activity.getUserNameByID(activity.getUserID())).append("</td>")
-                .append("<td align='center'>")
                 .append(" <form method='get' action='MainServlet'>");
         switch (activity.getActStatus()) {
             /* Marked 4 Del*/
             case 1: {
+                stringBuffer.append("<td align='center'>");
                 stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=remove&actid=")
                         .append(activity.getActID())
                         .append("'>")
                         .append("<input type='button' value='Удалить'>")
                         .append("</a>");
+                stringBuffer.append("</td>");
                 break;
             }
             /*Marked 4 Add */
             case 2: {
+                stringBuffer.append("<td align='center'>");
                 stringBuffer.append("<a href='/MainServlet?command=changeStatus&action=approve&actid=")
                         .append(activity.getActID())
                         .append("'>")
                         .append("<input type='button' value='Подтвердить'>")
                         .append("</a>");
+                stringBuffer.append("</td>");
                 break;
             }
             /*Marked as Free */
             case 3: {
+                stringBuffer.append("<td align='center'>");
                 stringBuffer.append("<input type='button' value='Свободна'>");
+                stringBuffer.append("</td>");
                 break;
             }
             /*Marked as Taken */
             default: {
+                stringBuffer.append("<td align='center'>");
                 stringBuffer.append("<input type='button' value='Занята'>");
+                stringBuffer.append("</td>");
                 break;
             }
         }
-        stringBuffer.append("</form></td></tr>");
+
+        stringBuffer.append("</form></tr>");
     }
 
     private static void addLine2UserTable(StringBuffer stringBuffer, Activity activity, HttpServletRequest request) {
