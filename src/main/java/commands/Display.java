@@ -24,16 +24,30 @@ public class Display {
             formatUserPage(user, stringBuffer, request, page2show);
         }
 
-        stringBuffer.append("<br/>")
-                .append("<center>")
-                .append("<table border=0><tr><td width=25%>")
+        stringBuffer.append("<br/><br/>");
+
+        doPagination(stringBuffer, user);
+
+        stringBuffer.append("<br/><br/><center>");
+
+        stringBuffer.append("<table border=0><tr><td>")
                 .append("<a href='/MainServlet?command=Logout'>")
                 .append("<input type='button' name='command' value='Выход'>")
-                .append("</a><td>")
-                .append("<center>");
-        doPagination(stringBuffer, user);
-        stringBuffer.append("</td></tr></table>")
-                .append("<br/><br/><br/>")
+                .append("</a>")
+                .append("<br /></td>");
+
+        if (user.isAdmin()) {
+            stringBuffer.append("</tr><tr><td>")
+                    .append("<form method='post' action='MainServlet'>")
+                    .append("<input type='hidden' name='command' value='addUser'>")
+                    .append("<input type='submit' value='Добавить пользователя'>")
+                    .append("</form>")
+                    .append("</td>");
+        }
+
+        stringBuffer.append("</tr></table>");
+
+        stringBuffer.append("<br/><br/><br/>")
                 .append("<div align='center'><br/><br/><br/><font size='-1'> &copy; GreegAV 2018</font></div>")
                 .append("<br/></center>");
         return stringBuffer;
@@ -55,7 +69,7 @@ public class Display {
 
     private static StringBuffer formatUserPage(User user, StringBuffer stringBuffer, HttpServletRequest request, int page2show) {
         stringBuffer.append("<table border='1' cellpadding='5' width='75%' align='center'>")
-                .append("<tr><th>№№</th><th>Активность</th><th>Длительность</th><th>Status</th><th>Добавить время</th>");
+                .append("<tr><th>№№</th><th>Активность</th><th>Длительность</th><th>Статус</th><th>Добавить время</th>");
         numUserActivities = 0;
         for (Activity activity : DAOOperation.getActListFromDB()) {
             if (user.getUserID() == activity.getUserID() | activity.getUserID() == 1) {
