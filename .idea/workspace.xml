@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/web/error.jsp" afterPath="$PROJECT_DIR$/web/error.jsp" />
+      <change beforePath="$PROJECT_DIR$/Pres/02.JPG" afterPath="$PROJECT_DIR$/Pres/02.JPG" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -749,14 +749,7 @@
       <workItem from="1514888637392" duration="84644000" />
       <workItem from="1516288278569" duration="10595000" />
       <workItem from="1516373039998" duration="55363000" />
-      <workItem from="1516736370511" duration="11422000" />
-    </task>
-    <task id="LOCAL-00018" summary="1">
-      <created>1514931742517</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1514931742517</updated>
+      <workItem from="1516736370511" duration="12048000" />
     </task>
     <task id="LOCAL-00019" summary="userlist + activitylist completed">
       <created>1514933957701</created>
@@ -1094,7 +1087,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516799677206</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Гламурная страничка ошибки.">
+      <created>1516800680922</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1516800680922</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1130,7 +1130,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200106000" />
+    <option name="totallyTimeSpent" value="200732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1197,7 +1197,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="display status/button OK" />
     <MESSAGE value="add Logout" />
     <MESSAGE value="Changing activity status completed" />
     <MESSAGE value="cleanup" />
@@ -1222,7 +1221,8 @@
     <MESSAGE value="Cleanup" />
     <MESSAGE value="Cleanup declaration of ArrayList, .append in stringbuffer, etc" />
     <MESSAGE value="Translation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Translation" />
+    <MESSAGE value="Гламурная страничка ошибки." />
+    <option name="LAST_COMMIT_MESSAGE" value="Гламурная страничка ошибки." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
