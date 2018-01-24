@@ -1,6 +1,5 @@
 package dao;
 
-import entities.Activity;
 import entities.User;
 import org.apache.log4j.Logger;
 

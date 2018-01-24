@@ -21,7 +21,7 @@ public class RegisterNewUserCommand implements controller.ICommand {
             StringBuffer stringBuffer = new StringBuffer();
             stringBuffer.append("<center>")
                     .append("<img src='error.png'><br /><br />")
-                    .append("Логин " + newUserLogin + " уже существует в базе!")
+                    .append("Логин ").append(newUserLogin).append(" уже существует в базе!")
                     .append("<br /><br />")
                     .append("<form method='post' action='MainServlet'>")
                     .append("<input type='hidden' name='command' value='addUser'>")
@@ -30,18 +30,14 @@ public class RegisterNewUserCommand implements controller.ICommand {
             response.getWriter().print(stringBuffer);
         } else {
             DAOUser.addNewUser(newUserLogin, newUserName, newUserPass);
+            response.getWriter().print("Пользователь создан успешно!");
+            try {
+                Thread.sleep(1500);
+            } catch (InterruptedException e) {
+                logger.info("Pause fault!");
+                logger.info(e.getMessage());
+            }
         }
-
-//        User loggedUser = User.isUserValid(request.getParameter("nameInput"), request.getParameter("passInput"));
-
-//        if (loggedUser != null) {
-//            logger.info(loggedUser.getUserName() + " logged in.");
-//            request.getServletContext().setAttribute("loggedUser", loggedUser);
-//            response.getWriter().print(Display.showPage(loggedUser, request, 1));
-//        } else {
-//            logger.info("Username/Password error!");
-//            return "/error.jsp";
-//        }
         return "/index.jsp";
     }
 }

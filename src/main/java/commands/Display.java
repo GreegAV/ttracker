@@ -9,7 +9,7 @@ import static commands.Paginator.doPagination;
 
 public class Display {
     static final int ITEMS_PER_USERPAGE = 5;
-    static final int ITEMS_PER_ADMINPAGE = 7;
+    static final int ITEMS_PER_ADMINPAGE = 10;
     static int itemsInDB = DAOOperation.getNumberOfActivities();
     static int numUserActivities = 0;
 
@@ -30,20 +30,29 @@ public class Display {
 
         stringBuffer.append("<br/><br/><center>");
 
+        if (user.isAdmin()) {
+            stringBuffer.append("</tr><tr><td>")
+                    .append("<br />")
+                    .append("<form method='post' action='MainServlet'>")
+                    .append("<input type='hidden' name='command' value='addUser'>")
+                    .append("<input type='submit' value='Добавить пользователя'>")
+                    .append("</form>")
+                    .append("</td>");
+
+            stringBuffer.append("<tr><td>")
+                    .append("<form method='post' action='MainServlet'>")
+                    .append("<input type='hidden' name='command' value='addActivity'>")
+                    .append("<input type='submit' value='Добавить Активность'>")
+                    .append("</form>")
+                    .append("</td>");
+        }
+
         stringBuffer.append("<table border=0><tr><td>")
                 .append("<a href='/MainServlet?command=Logout'>")
                 .append("<input type='button' name='command' value='Выход'>")
                 .append("</a>")
                 .append("<br /></td>");
 
-        if (user.isAdmin()) {
-            stringBuffer.append("</tr><tr><td>")
-                    .append("<form method='post' action='MainServlet'>")
-                    .append("<input type='hidden' name='command' value='addUser'>")
-                    .append("<input type='submit' value='Добавить пользователя'>")
-                    .append("</form>")
-                    .append("</td>");
-        }
 
         stringBuffer.append("</tr></table>");
 

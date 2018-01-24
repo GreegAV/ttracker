@@ -18,6 +18,8 @@ public class Helper {
         commands.put("Login", new RegisterCommand());
         commands.put("changeStatus", new ChangeStatusCommand());
         commands.put("Register", new RegisterNewUserCommand());
+        commands.put("Activity", new AddNewActivityCommand());
+        commands.put("addActivity", new AddActivityCommand());
         commands.put("addTime", new AddTimeCommand());
         commands.put("addUser", new AddUserCommand());
         commands.put("ChangePage", new ChangePageCommand());
