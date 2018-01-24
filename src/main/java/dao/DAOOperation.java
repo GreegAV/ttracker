@@ -6,11 +6,24 @@ import java.util.ArrayList;
 import entities.*;
 import org.apache.log4j.Logger;
 
-public class DBOperation {
-    private static Logger logger = Logger.getLogger(DBOperation.class);
+public class DAOOperation {
+    private static final int ACTID=1;
+    private static final int ACTNAME=2;
+    private static final int ACTTIME=3;
+    private static final int ACTMARKED=4;
+    private static final int ACTUSERID=5;
 
+    private static final int USERID=1;
+    private static final int USERLOGIN=2;
+    private static final int USERPASS=3;
+    private static final int USERNAME=4;
+    private static final int ISADMIN=5;
+
+    private static Logger logger = Logger.getLogger(DAOOperation.class);
+
+    // Getting userlist with activities from DB
     public static ArrayList<User> getUserListFromDB() {
-        ArrayList<User> fullUserList = new ArrayList<User>();
+        ArrayList<User> fullUserList = new ArrayList<>();
         for (User tempUser : getSimpleUserListFromDB()) {
             for (Activity actTemp : getActListFromDB()) {
                 if (actTemp.getUserID() == tempUser.getUserID()) {
@@ -22,22 +35,21 @@ public class DBOperation {
         return fullUserList;
     }
 
+    // Get userlist without activities from DB
     private static ArrayList<User> getSimpleUserListFromDB() {
         String usersSQLSelect = "select * from users";
-//        try (Connection connection = DBConnection.getConnection();
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-             Statement statement = DBConnection.getStatement(connection);
-             ResultSet resultSet = DBConnection.getResultSet(statement, usersSQLSelect)
+             Statement statement = DAOConnection.getStatement(connection);
+             ResultSet resultSet = DAOConnection.getResultSet(statement, usersSQLSelect)
         ) {
-            ArrayList<User> userList = new ArrayList<User>();
+            ArrayList<User> userList = new ArrayList<>();
             while (resultSet.next()) {
-                int userID = resultSet.getInt(1);
-                String userLogin = resultSet.getString(2);
-                String userPass = resultSet.getString(3);
-                String userName = resultSet.getString(4);
-                boolean isAdm = resultSet.getBoolean(5);
-
-                ArrayList<Activity> actList = new ArrayList<Activity>();
+                int userID = resultSet.getInt(USERID);
+                String userLogin = resultSet.getString(USERLOGIN);
+                String userPass = resultSet.getString(USERPASS);
+                String userName = resultSet.getString(USERNAME);
+                boolean isAdm = resultSet.getBoolean(ISADMIN);
+                ArrayList<Activity> actList = new ArrayList<>();
                 for (Activity actTemp : getActListFromDB()) {
                     if (actTemp.getUserID() == userID) {
                         actList.add(actTemp);
@@ -49,25 +61,25 @@ public class DBOperation {
             return userList;
         } catch (SQLException e) {
             logger.error(e.getMessage());
-            System.out.println(e.getMessage());
         }
         return null;
     }
 
+    // Get list of activities from DB
     public static ArrayList<Activity> getActListFromDB() {
         String actSQLSelect = "select * from activities";
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-             Statement statement = DBConnection.getStatement(connection);
-             ResultSet resultSet = DBConnection.getResultSet(statement, actSQLSelect)
+             Statement statement = DAOConnection.getStatement(connection);
+             ResultSet resultSet = DAOConnection.getResultSet(statement, actSQLSelect)
         ) {
-            ArrayList<Activity> activities = new ArrayList<Activity>();
+            ArrayList<Activity> activities = new ArrayList<>();
             while (resultSet.next()) {
-                int actID = resultSet.getInt(1);   //actID
-                String actName = resultSet.getString(2); //actName
-                long actTime = resultSet.getLong(3);   // actDuration
-                int actMark = resultSet.getInt(4);    //actMarked
-                int actUser = resultSet.getInt(5);   //actUserID
-                Activity act = new Activity(actID, actName, actTime, actMark, actUser);   //actUserID
+                int actID = resultSet.getInt(ACTID);
+                String actName = resultSet.getString(ACTNAME);
+                long actTime = resultSet.getLong(ACTTIME);
+                int actMark = resultSet.getInt(ACTMARKED);
+                int actUser = resultSet.getInt(ACTUSERID);
+                Activity act = new Activity(actID, actName, actTime, actMark, actUser);
                 activities.add(act);
             }
             return activities;
@@ -89,13 +101,12 @@ public class DBOperation {
             statement.setInt(3, activity.getUserID());
             statement.setInt(4, activity.getActID());
             statement.executeUpdate();
-            DBConnection.closeStatement(statement);
-            DBConnection.closeConnection(connection);
+            DAOConnection.closeStatement(statement);
+            ConnectionPool.closeConnection(connection);
 
         } catch (SQLException e) {
             logger.error(e.getMessage());
         }
-
     }
 
     public static int getNumberOfActivities() {

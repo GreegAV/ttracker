@@ -9,11 +9,10 @@ import java.sql.SQLException;
 import static dao.ConfigManager.DBNAME;
 import static org.junit.Assert.*;
 
-public class DBConnectionTest_getConnection_new {
+public class DAOConnectionTest_getConnection_new {
 
     @Test
-    public void getConnection() throws ClassNotFoundException, SQLException, IllegalAccessException, InstantiationException {
-//        assertNotNull(DBConnection.getConnection());
+    public void getConnection() throws SQLException {
         assertNotNull(ConnectionPool.getInstance().getConnection());
     }
 }

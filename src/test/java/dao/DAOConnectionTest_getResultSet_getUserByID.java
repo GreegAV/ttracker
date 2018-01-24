@@ -5,10 +5,10 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class DBConnectionTest_getResultSet_getUserByID {
+public class DAOConnectionTest_getResultSet_getUserByID {
 
     @Test
     public void getResultSet() {
-        assertEquals("The Admin",User.getUserNameByID(1));
+        assertEquals("The Admin",DAOUser.getUserNameByID(1));
     }
 }

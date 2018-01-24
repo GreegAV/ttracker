@@ -2,11 +2,10 @@ package dao;
 
 import org.apache.log4j.Logger;
 
-import javax.sql.DataSource;
 import java.sql.*;
 
-public class DBConnection {
-    private static Logger logger = Logger.getLogger(DBConnection.class);
+public class DAOConnection {
+    private static Logger logger = Logger.getLogger(DAOConnection.class);
 
     public static ResultSet getResultSet(Statement statement, String sqlSelect) {
         try {
@@ -36,17 +35,6 @@ public class DBConnection {
         return null;
     }
 
-//    public static Connection getConnection() {
-//        DataSource dataSource = ConnectionPoolHolder.getDataSource();
-//        Connection connection = null;
-//        try {
-//            connection = dataSource.getConnection();
-//        } catch (SQLException e) {
-//            logger.error(e.getMessage());
-//        }
-//        return connection;
-//    }
-
     public static void closeResultSet(ResultSet resultSet) {
         if (resultSet != null) {
             try {
@@ -66,14 +54,13 @@ public class DBConnection {
             }
         }
     }
-
-    public static void closeConnection(Connection connection) {
-        if (connection != null) {
-            try {
-                connection.close();
-            } catch (SQLException e) {
-                logger.error(e.getMessage());
-            }
-        }
-    }
+//    public static void closeConnection(Connection connection) {
+//        if (connection != null) {
+//            try {
+//                connection.close();
+//            } catch (SQLException e) {
+//                logger.error(e.getMessage());
+//            }
+//        }
+//    }
 }
