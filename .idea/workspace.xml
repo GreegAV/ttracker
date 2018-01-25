@@ -8,7 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="76773e14-c03b-43dc-8a82-7e6ff51fbc6e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/sql/timetrack.sql" afterPath="$PROJECT_DIR$/sql/timetrack.sql" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DAOConnection.java" afterPath="$PROJECT_DIR$/src/main/java/dao/DAOConnection.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,7 +64,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Display.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Display.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/Display.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="244">
@@ -72,6 +73,18 @@
                 <element signature="method#formatUserPage#0;class#Display#0" expanded="false" />
                 <element signature="method#addLine2AdminTable#0;class#Display#0" expanded="false" />
                 <element signature="method#addLine2UserTable#0;class#Display#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DAOConnection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/DAOConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="577">
+              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,21 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegisterCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/RegisterCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="66" lean-forward="false" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChangePageCommand.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ChangePageCommand.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="88" />
+            <state relative-caret-position="204">
+              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -253,7 +256,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/ConnPool.java" />
         <option value="$PROJECT_DIR$/src/test/java/dao/DBConnectionTest_getConnection.java" />
         <option value="$PROJECT_DIR$/src/test/java/dao/ConfigManagerTest.java" />
@@ -278,7 +280,6 @@
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DBConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DBConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/DAOConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/ConnectionPoolHolder.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/ChangeStatusCommand.java" />
         <option value="$PROJECT_DIR$/src/test/java/dao/DAOConnectionTest_getResultSet_getUserByID.java" />
@@ -304,6 +305,8 @@
         <option value="$PROJECT_DIR$/src/main/java/commands/AddActivityCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/AddNewActivityCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/RegisterNewUserCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/DAOConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java" />
       </list>
     </option>
   </component>
@@ -398,6 +401,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ttracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ttracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ttracker" type="b2602c69:ProjectViewProjectNode" />
@@ -790,14 +801,7 @@
       <workItem from="1514888637392" duration="84644000" />
       <workItem from="1516288278569" duration="10595000" />
       <workItem from="1516373039998" duration="55363000" />
-      <workItem from="1516736370511" duration="21938000" />
-    </task>
-    <task id="LOCAL-00022" summary="Рисует таблицу активностей">
-      <created>1514972441363</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1514972441363</updated>
+      <workItem from="1516736370511" duration="22175000" />
     </task>
     <task id="LOCAL-00023" summary="Рисует таблицу активностей ПРАВИЛЬНО">
       <created>1514976069815</created>
@@ -1135,7 +1139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516812302222</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="new SQL script">
+      <created>1516812418753</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1516812418753</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1171,7 +1182,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210622000" />
+    <option name="totallyTimeSpent" value="210859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1238,7 +1249,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="update SQL string" />
     <MESSAGE value="add filter" />
     <MESSAGE value="slf4j in Helper" />
     <MESSAGE value="slf4j in MainServlet&#10;Comments in Helper, MainServlet" />
@@ -1263,7 +1273,8 @@
     <MESSAGE value="Картинки к презентации" />
     <MESSAGE value="Adding user to database" />
     <MESSAGE value="Adding activity to database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding activity to database" />
+    <MESSAGE value="new SQL script" />
+    <option name="LAST_COMMIT_MESSAGE" value="new SQL script" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1392,17 +1403,6 @@
         <state relative-caret-position="51">
           <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/DAOConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1604#1669#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1643,14 +1643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/DAOActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1729,6 +1721,24 @@
             <element signature="method#addLine2AdminTable#0;class#Display#0" expanded="false" />
             <element signature="method#addLine2UserTable#0;class#Display#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/DAOConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/ChangePageCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

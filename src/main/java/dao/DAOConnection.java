@@ -13,7 +13,6 @@ public class DAOConnection {
                 return statement.executeQuery(sqlSelect);
             } else {
                 logger.error("Null statement received!");
-                System.out.println("Null statement received!");
             }
         } catch (SQLException e) {
             logger.error(e.getMessage());
@@ -26,7 +25,6 @@ public class DAOConnection {
             if (connection != null) {
                 return connection.createStatement();
             } else {
-                System.out.println("Null connection received!");
                 logger.error("Null connection received!");
             }
         } catch (SQLException e) {
@@ -54,13 +52,4 @@ public class DAOConnection {
             }
         }
     }
-//    public static void closeConnection(Connection connection) {
-//        if (connection != null) {
-//            try {
-//                connection.close();
-//            } catch (SQLException e) {
-//                logger.error(e.getMessage());
-//            }
-//        }
-//    }
 }
